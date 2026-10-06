@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "studydeck"
+version = "2.0.0"
+description = "Motor de slides UCP-only: editorial, WCAG AA, 35 modulos, 35/35 verificados"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["slides", "pptx", "editorial", "wcag", "ucp", "teaching"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+    "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+    "python-pptx>=0.6.21",
+    "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=3.9"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+studydeck = "studydeck.cli:main"
+
+[tool.setuptools]
+packages = ["studydeck", "studydeck.modules"]
+
+[tool.setuptools.package-data]
+studydeck = ["prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
