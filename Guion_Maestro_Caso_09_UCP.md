@@ -3,7 +3,7 @@
 **Carrera de Medicina · Seminario Integrador · 5.º Semestre · Sección E**  
 **Versión de trabajo generada con StudyDeck v2.0.0 · 18 diapositivas · español**
 
-> **Estado de las fuentes:** el material disponible en el repositorio contiene los kits de StudyDeck, pero no incluye `document-v2-modular-76.pdf`, `planejamento_e_confeccao_caso09_ucp.md` ni `Caso Clínico 09.pptx`. Por ello, edad, sexo, cronología, signos, valores de laboratorio, hallazgos por imagen, nombres del grupo y créditos iconográficos quedan pendientes. No se han inventado datos del paciente. Las diapositivas 2–3 señalan los campos por completar y las diapositivas 9–10 conservan los marcadores obligatorios de las imágenes originales.
+> **Estado de las fuentes:** el material disponible en el repositorio contiene los kits de StudyDeck, pero no incluye `document-v2-modular-76.pdf`, `planejamento_e_confeccao_caso09_ucp.md` ni `Caso Clínico 09.pptx`. La bibliografía de 12 entradas que aparece en este borrador fue añadida como complemento externo y no se ha cotejado con la bibliografía que acompaña al Caso 09; debe reducirse o sustituirse al revisar los archivos originales. Por ello, edad, sexo, cronología, signos, valores de laboratorio, hallazgos por imagen, nombres del grupo y créditos iconográficos quedan pendientes. No se han inventado datos del paciente. Las diapositivas 2–3 señalan los campos por completar y las diapositivas 9–10 conservan los marcadores obligatorios de las imágenes originales.
 >
 > **Ajustes de seguridad clínica frente a la consigna:** la cifra «30 % de recurrencia en 3 meses» no se presenta como universal porque no se encontró una fuente primaria que respalde ese intervalo; se informa el resultado del ensayo PONCHO. La morfina no se declara contraindicada por espasmo del esfínter de Oddi; los antibióticos profilácticos no se recomiendan para pancreatitis o necrosis estéril, pero esto no constituye una contraindicación absoluta a los antibióticos cuando hay infección. El control a las 4–6 semanas se plantea de forma dirigida, no como indicación de TC rutinaria para toda persona asintomática.
 >
@@ -23,7 +23,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 1: Caso 09: dolor abdominal y lesión pancreática
+## DIAPOSITIVA 1: Caso clínico 09: enfoque integral de la pancreatitis aguda
 
 **Objetivo de la diapositiva:** abrir la defensa con identidad institucional común, sin asignar el seminario a una cátedra individual.
 
@@ -53,7 +53,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 2: Una defensa común, cuatro tramos
+## DIAPOSITIVA 2: Organización del equipo y orden de exposición
 
 **Objetivo de la diapositiva:** distribuir relatoría y sustentación sin nombres ficticios ni fragmentación por cátedra.
 
@@ -84,7 +84,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 3: El dolor ordena la anamnesis
+## DIAPOSITIVA 3: Historia clínica: cronología del dolor y antecedentes
 
 **Objetivo de la diapositiva:** recuperar la historia de ingreso sin completar con inferencias los datos ausentes del Caso 09.
 
@@ -117,7 +117,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 4: Dos de tres criterios sostienen el diagnóstico
+## DIAPOSITIVA 4: Diagnóstico de pancreatitis y clasificación de gravedad
 
 **Objetivo de la diapositiva:** separar diagnóstico, gravedad clínica y diagnósticos diferenciales urgentes.
 
@@ -127,7 +127,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 - **Instrucción de rotulado/señalización:** marcar «≥2/3» como umbral diagnóstico; mostrar «>48 h» junto a fallo orgánico persistente. No sumar el índice de Balthazar como criterio diagnóstico.
 
 ### Contenido en pantalla
-- **Diagnóstico Atlanta:** ≥2/3 — dolor típico; lipasa o amilasa ≥3× LSN; imagen característica.
+- **Diagnóstico de Atlanta:** se requieren 2 de 3 criterios: dolor compatible; lipasa o amilasa ≥3 veces el límite superior normal (LSN); o imagen característica.
 - **Leve:** sin fallo orgánico ni complicaciones.
 - **Moderada:** fallo transitorio ≤48 h o complicación local/sistémica.
 - **Grave:** fallo orgánico persistente >48 h.
@@ -149,7 +149,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 5: La teoría de Opie vincula obstrucción y lesión acinar
+## DIAPOSITIVA 5: Etiología biliar: mecanismo de obstrucción propuesto por Opie
 
 **Objetivo de la diapositiva:** explicar una vía mecánica posible de pancreatitis biliar y señalar los límites de la teoría de canal común.
 
@@ -180,7 +180,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 6: La tumefacción puede revertir; la ruptura de membrana no
+## DIAPOSITIVA 6: Lesión celular: cambios reversibles e irreversibles
 
 **Objetivo de la diapositiva:** contrastar lesión reversible por fallo de bomba iónica con lesión irreversible asociada a Ca²⁺, mitocondria y membranas.
 
@@ -210,7 +210,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 7: La activación precoz amplifica el daño local y sistémico
+## DIAPOSITIVA 7: Activación de enzimas e inflamación pancreática
 
 **Objetivo de la diapositiva:** enlazar colocalización lisosoma-zimógeno, catepsina B, proteasas y mediadores inflamatorios sin reducir toda la enfermedad a tripsina.
 
@@ -224,7 +224,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 - Ca²⁺ sostenido y tráfico acinar alterado.
 - Colocalización de lisosoma y gránulo de zimógeno.
 - Catepsina B activa tripsinógeno; tripsina activa otras proenzimas.
-- Histamina, TNF-α, IL-1/IL-6 y eicosanoides amplifican inflamación. [3]
+- Histamina, TNF-α, interleucinas 1 y 6 (IL-1/IL-6) y eicosanoides amplifican la inflamación. [3]
 
 ### Guía de presentación oral («lente de cátedra»)
 - **Foco general — fragmento del bloque de 2:30 del relator:** «La colocalización de enzimas lisosomales y zimógenos aproxima catepsina B y tripsinógeno dentro del acino. La activación temprana de tripsina puede amplificar proteasas, mientras las señales inflamatorias avanzan en paralelo. Histamina modifica tono vascular y permeabilidad; TNF-α, IL-1 e IL-6 participan en activación sistémica; prostaglandinas y leucotrienos pertenecen a los eicosanoides.»
@@ -241,7 +241,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 8: El plexo explica la irradiación; los signos cutáneos no descartan
+## DIAPOSITIVA 8: Manifestaciones clínicas: dolor referido, íleo y equimosis
 
 **Objetivo de la diapositiva:** integrar dolor visceral, signos de inflamación, íleo y hallazgos cutáneos de baja sensibilidad.
 
@@ -253,7 +253,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ### Contenido en pantalla
 - Aferencias viscerales por plexo celíaco/esplácnicos; referencia segmentaria T5–T9 → posible irradiación dorsal.
-- **Celso:** rubor, calor, tumor, dolor. **Galeno:** añade functio laesa.
+- **Tétrada de Celso:** rubor, calor, tumor y dolor. **Péntada de Galeno:** añade functio laesa (pérdida de función).
 - Íleo: inflamación retroperitoneal y reflejo inhibidor; balance autonómico multifactorial.
 - Cullen y Grey Turner: signos infrecuentes; su ausencia no excluye hemorragia. [9,11]
 
@@ -272,7 +272,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 9: La saponificación dibuja gotas cerosas
+## DIAPOSITIVA 9: Esteatonecrosis pancreática en la pieza macroscópica
 
 **Objetivo de la diapositiva:** demostrar macroscópicamente la esteatonecrosis enzimática mediante la fotografía oficial del PPTX original.
 
@@ -283,7 +283,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ### Contenido en pantalla
 - La lipasa libera ácidos grasos.
-- Ácidos grasos + Ca²⁺ → jabones cálcicos insolubles.
+- Ácidos grasos + calcio (Ca²⁺) → jabones cálcicos insolubles.
 - Focos blancos/cerosos: esteatonecrosis enzimática.
 - **Marcador macro pendiente:** imagen oficial del PPTX original. [7]
 
@@ -302,7 +302,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 10: El calcio marca los adipocitos lesionados
+## DIAPOSITIVA 10: Esteatonecrosis pancreática en la microfotografía H&E
 
 **Objetivo de la diapositiva:** reconocer en H&E los hallazgos microscópicos oficiales de necrosis grasa y daño acinar.
 
@@ -312,7 +312,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 - **Instrucción de rotulado/señalización:** círculo para depósito basófilo de jabón cálcico; setas a adipocito necrótico y lesión acinar solo si son visibles. Añadir H&E, aumento y escala de la fuente; no inventar aumento ni órgano de orientación.
 
 ### Contenido en pantalla
-- H&E: adipocitos necróticos y depósitos basófilos de calcio.
+- Hematoxilina-eosina (H&E): adipocitos necróticos y depósitos basófilos de calcio.
 - Correlacionar con acinos y vasos solo en estructuras visibles.
 - **Marcador micro pendiente:** microfotografía oficial H&E del PPTX original. [7]
 
@@ -331,7 +331,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 11: Edema intersticial y necrosis no son el mismo patrón
+## DIAPOSITIVA 11: Pancreatitis intersticial y necrotizante: diferencias morfológicas
 
 **Objetivo de la diapositiva:** comparar pancreatitis intersticial edematosa con pancreatitis necrotizante/hemorrágica y precisar el rol de elastasa vascular.
 
@@ -361,7 +361,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 12: Cada ventana responde una pregunta distinta
+## DIAPOSITIVA 12: Estudios de imagen: qué aporta cada modalidad y cuándo usarla
 
 **Objetivo de la diapositiva:** seleccionar radiografía, ecografía o TC según el hallazgo buscado y el momento evolutivo.
 
@@ -375,7 +375,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 - **Litiasis / vía biliar:** ecografía.
 - **Parénquima / necrosis:** TC contrastada si está indicada; evitar fase precoz y valorar tras 48–72 h, a menudo a partir de 72–96 h según evolución.
 - La TC precoz puede subestimar necrosis.
-- **Balthazar:** grado A–E (0–4) + necrosis (0/2/4/6) = CTSI 0–10; no sustituye Atlanta. [2,5,6]
+- **Índice CTSI de Balthazar:** grado A–E (0–4) + necrosis (0; <30 %: 2; 30–50 %: 4; >50 %: 6) = 0–10; no sustituye Atlanta. [2,5,6]
 
 ### Guía de presentación oral («lente de cátedra»)
 - **Foco general — fragmento del bloque de 2:30 del relator:** «La radiografía simple responde preguntas acotadas como aire libre o patrón de íleo; la ecografía busca litiasis y vía biliar; la TC contrastada evalúa perfusión, necrosis y complicaciones. Si se estudia necrosis, una TC demasiado precoz puede subestimarla; suele rendir mejor después de 48–72 horas y, a menudo, a partir de 72–96 horas desde el inicio, solo cuando el resultado cambia la conducta. Balthazar suma morfología y porcentaje de necrosis, no reemplaza Atlanta.»
@@ -392,7 +392,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 13: La ecografía distingue cálculos de imitadores
+## DIAPOSITIVA 13: Ecografía biliar: cálculo, barro y pólipo
 
 **Objetivo de la diapositiva:** identificar litiasis, barro y pólipos por ecogenicidad, movilidad y sombra acústica posterior.
 
@@ -423,7 +423,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 14: Tratar la fisiología, no perseguir profilaxis antibiótica
+## DIAPOSITIVA 14: Manejo inicial: hidratación, analgesia, antibióticos y nutrición
 
 **Objetivo de la diapositiva:** presentar soporte agudo seguro y corregir afirmaciones absolutas sobre fluidos, morfina y antibióticos.
 
@@ -434,10 +434,10 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ### Contenido en pantalla
 - Ringer lactato preferible frente a salina; reanimación moderada, individualizada y reevaluada.
-- Carga alta de Cl⁻ → acidosis hiperclorémica; efecto del pH sobre zimógenos: evidencia experimental.
+- Exceso de cloruro (Cl⁻) → acidosis hiperclorémica; el efecto del pH sobre zimógenos se apoya en evidencia experimental.
 - Morfina no está contraindicada por espasmo de Oddi; titular y vigilar íleo.
 - Sin antibióticos profilácticos para pancreatitis/necrosis estéril; tratar infección.
-- Nutrición temprana; CPRE si colangitis u obstrucción persistente. [2,4,10,12]
+- Nutrición temprana; colangiopancreatografía retrógrada endoscópica (CPRE) si hay colangitis u obstrucción persistente. [2,4,10,12]
 
 ### Guía de presentación oral («lente de cátedra»)
 - **Foco general — fragmento del bloque de 2:30 del relator:** «La prioridad es soporte individualizado: cristaloide isotónico, preferencia por Ringer lactato cuando corresponde, reevaluación hemodinámica y prevención de sobrecarga. Grandes volúmenes de salina pueden producir acidosis hiperclorémica; el vínculo entre pH bajo y activación de zimógenos es experimental, no una causalidad clínica demostrada para elegir solución. No se indica profilaxis antibiótica en necrosis estéril. La morfina no se prohíbe por el mito del esfínter de Oddi.»
@@ -454,7 +454,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 15: La colecistectomía oportuna cierra el ciclo causal
+## DIAPOSITIVA 15: Prevención de recurrencia: colecistectomía en pancreatitis biliar
 
 **Objetivo de la diapositiva:** enlazar detección de litiasis en APS con prevención secundaria y cirugía según gravedad.
 
@@ -467,7 +467,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 - APS: cólico biliar, litiasis o barro → ecografía y derivación según sospecha.
 - Pancreatitis biliar leve: colecistectomía laparoscópica durante el mismo ingreso, antes del alta si es posible.
 - Enfermedad grave, necrosis o colecciones: individualizar y diferir hasta estabilidad.
-- PONCHO: evento compuesto 17 % diferida vs 5 % misma admisión, a 6 meses.
+- PONCHO: reingreso por complicación biliar o muerte, 17 % con cirugía diferida vs 5 % en el mismo ingreso a 6 meses.
 - «30 % en 3 meses»: no usar sin fuente primaria. [2,5]
 
 ### Guía de presentación oral («lente de cátedra»)
@@ -485,7 +485,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 16: El seguimiento busca síntomas persistentes, no una imagen automática
+## DIAPOSITIVA 16: Seguimiento tras el alta: síntomas y colecciones pancreáticas
 
 **Objetivo de la diapositiva:** establecer control clínico dirigido y reconocer cuándo una colección puede haberse encapsulado.
 
@@ -497,7 +497,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 ### Contenido en pantalla
 - Alta: analgesia, tolerancia oral, control clínico y plan biliar.
 - 4–6 semanas: revisar síntomas persistentes o complicaciones.
-- >4 semanas: pseudoquiste tras forma intersticial; necrosis encapsulada si hay detritos.
+- >4 semanas: pseudoquiste encapsulado sin detritos tras forma intersticial; necrosis encapsulada si contiene detritos.
 - Fiebre, ictericia, dolor o vómitos persistentes → reevaluación.
 - Sin TC rutinaria en personas asintomáticas recuperadas. [1,2]
 
@@ -516,7 +516,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 17: Fuentes que sustentan el diagnóstico y el manejo
+## DIAPOSITIVA 17: Fuentes complementarias: diagnóstico y manejo
 
 **Objetivo de la diapositiva:** documentar en formato Vancouver las guías y estudios de diagnóstico, fisiopatología, imagen y prevención.
 
@@ -548,7 +548,7 @@ El límite de **2:30 min se asigna a cada relator**, no a cada diapositiva. Las 
 
 ---
 
-## DIAPOSITIVA 18: Fuentes que sostienen la anatomía y la morfología
+## DIAPOSITIVA 18: Fuentes complementarias: anatomía, patología e imagen
 
 **Objetivo de la diapositiva:** cerrar con referencias de índice tomográfico, patología, ecografía, signos cutáneos, analgesia y anatomía.
 

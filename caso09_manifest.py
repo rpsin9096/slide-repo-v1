@@ -37,7 +37,7 @@ SLIDES = [
     {
         'module': 'title',
         'course': 'Seminario Integrador · Medicina',
-        'title': 'Caso 09: dolor abdominal y lesión pancreática',
+        'title': 'Caso clínico 09: enfoque integral de la pancreatitis aguda',
         'subtitle': '5.º Semestre · Sección E',
         'institution': 'Universidad Central del Paraguay',
     },
@@ -45,8 +45,8 @@ SLIDES = [
     # 2. Nómina editable; nombres no incluidos en la fuente disponible.
     {
         'module': 'fixed_schema_card',
-        'kicker': 'Equipo y responsabilidades',
-        'title': 'Una defensa común, cuatro tramos',
+        'kicker': 'Organización de la exposición',
+        'title': 'Organización del equipo y orden de exposición',
         'fields': [
             {'label': 'Relator 1',
              'value': 'Apertura, historia y juicio diagnóstico · diapositivas 1–4 · [Nombre y apellido]'},
@@ -65,8 +65,8 @@ SLIDES = [
     # 3. Historia clínica: contenido individualizado pendiente de las fuentes del caso.
     {
         'module': 'case_block',
-        'kicker': 'Ingreso y secuencia temporal',
-        'title': 'El dolor ordena la anamnesis',
+        'kicker': 'Historia clínica',
+        'title': 'Historia clínica: cronología del dolor y antecedentes',
         'case_stem': 'Datos individualizados pendientes: la ficha clínica, la planificación y el PPTX original no venían en el archivo recibido.',
         'findings': [
             'Inicio, sitio, carácter, intensidad y duración del dolor.',
@@ -83,11 +83,11 @@ SLIDES = [
     # 4. Atlanta, gravedad y diferenciales de urgencia.
     {
         'module': 'fixed_schema_card',
-        'kicker': 'Decisión en urgencias',
-        'title': 'Dos de tres criterios sostienen el diagnóstico',
+        'kicker': 'Diagnóstico y gravedad',
+        'title': 'Diagnóstico de pancreatitis y clasificación de gravedad',
         'fields': [
             {'label': 'Atlanta · diagnóstico',
-             'value': '≥2/3: dolor típico; lipasa o amilasa ≥3× LSN; imagen característica.'},
+             'value': '≥2 de 3: dolor típico; lipasa o amilasa ≥3 veces el límite superior normal (LSN); o imagen característica.'},
             {'label': 'Gravedad clínica',
              'value': 'Leve: sin fallo orgánico ni complicaciones. Moderada: fallo transitorio ≤48 h o complicación; grave: fallo persistente >48 h.'},
             {'label': 'Diferenciales',
@@ -101,8 +101,8 @@ SLIDES = [
     # 5. Teoría de Opie: mecanismo posible, no afirmación universal.
     {
         'module': 'flow_diagram',
-        'kicker': 'Obstrucción y etiología biliar',
-        'title': 'La teoría de Opie vincula obstrucción y lesión acinar',
+        'kicker': 'Mecanismo biliar propuesto',
+        'title': 'Etiología biliar: mecanismo de obstrucción propuesto por Opie',
         'steps': [
             {'label': '01', 'title': 'Migración',
              'desc': 'La litiasis vesicular alcanza el colédoco distal.'},
@@ -121,8 +121,8 @@ SLIDES = [
     # 6. Daño reversible frente a irreversible.
     {
         'module': 'side_by_side',
-        'kicker': 'Umbral de daño celular',
-        'title': 'La tumefacción puede revertir; la ruptura de membrana no',
+        'kicker': 'Lesión del acino pancreático',
+        'title': 'Lesión celular: cambios reversibles e irreversibles',
         'left_card': {
             'header': 'LESIÓN REVERSIBLE',
             'title': 'Edema hidrópico',
@@ -147,8 +147,8 @@ SLIDES = [
     # 7. Colocalización acinar y mediadores.
     {
         'module': 'flow_diagram',
-        'kicker': 'Lesión acinar y mediadores',
-        'title': 'La activación precoz amplifica el daño local y sistémico',
+        'kicker': 'Activación enzimática e inflamación',
+        'title': 'Activación de enzimas e inflamación pancreática',
         'steps': [
             {'label': '01', 'title': 'Estímulo',
              'desc': 'Ca²⁺ sostenido, estrés del retículo y tráfico acinar alterado.'},
@@ -158,7 +158,7 @@ SLIDES = [
             {'label': '03', 'title': 'Proteasas',
              'desc': 'La tripsina activa otras proenzimas; elastasa y lipasa amplían la lesión.'},
             {'label': '04', 'title': 'Mediadores',
-             'desc': 'Histamina actúa rápido; TNF-α, IL-1/IL-6 y eicosanoides amplifican inflamación.'},
+             'desc': 'Histamina actúa rápido; TNF-α e interleucinas 1 y 6 (IL-1/IL-6) amplifican la inflamación.'},
         ],
         'explanation': 'La catepsina B puede activar tripsinógeno dentro de compartimentos colocalizados. La señal inflamatoria avanza en paralelo: citocinas, histamina y eicosanoides reclutan células y aumentan permeabilidad; la tripsina no explica por sí sola la respuesta sistémica.',
         'footnote': 'Histamina: vasoactiva · citocinas: respuesta sistémica · prostaglandinas/leucotrienos: eicosanoides.',
@@ -167,13 +167,13 @@ SLIDES = [
     # 8. Semiología: dolor, motilidad y hallazgos negativos.
     {
         'module': 'fixed_schema_card',
-        'kicker': 'Traducción al examen clínico',
-        'title': 'El plexo explica la irradiación; los signos cutáneos no descartan',
+        'kicker': 'Manifestaciones clínicas',
+        'title': 'Manifestaciones clínicas: dolor referido, íleo y equimosis',
         'fields': [
             {'label': 'Dolor visceral',
              'value': 'Aferencias por plexo celíaco/esplácnicos con entrada torácica T5–T9; la convergencia puede referir dolor al dorso.'},
-            {'label': 'Celso / Galeno',
-             'value': 'Tétrada: rubor, calor, tumor, dolor. Péntada: añade functio laesa (pérdida de función).'},
+            {'label': 'Signos de Celso y Galeno',
+             'value': 'Tétrada de Celso: rubor, calor, tumor, dolor. Galeno añade functio laesa (pérdida de función).'},
             {'label': 'Íleo paralítico',
              'value': 'Inflamación retroperitoneal → reflejo inhibidor; simpático reduce motilidad y parasimpático la facilita. Mecanismo multifactorial.'},
             {'label': 'Cullen',
@@ -187,10 +187,10 @@ SLIDES = [
     # 9. Imagen macroscópica oficial obligatoria: marcador que debe sustituirse.
     {
         'module': 'figure',
-        'kicker': 'Pieza macroscópica',
-        'title': 'La saponificación dibuja gotas cerosas',
+        'kicker': 'Patología macroscópica',
+        'title': 'Esteatonecrosis pancreática en la pieza macroscópica',
         'image': 'placeholder:Pieza MACRO oficial | páncreas con esteatonecrosis en gotas de cera',
-        'caption': 'La lipasa libera ácidos grasos; con Ca²⁺ forman jabones insolubles visibles como focos blancos cerosos.',
+        'caption': 'La lipasa libera ácidos grasos que se unen al calcio (Ca²⁺) y forman jabones insolubles blancos.',
         'credit': 'PPTX original Caso Clínico 09; imagen oficial ausente en el material recibido.',
         'footnote': 'Reemplazar el marcador por la fotografía macroscópica original; no usar ilustración generada.',
     },
@@ -198,10 +198,10 @@ SLIDES = [
     # 10. Microfotografía oficial H&E obligatoria: marcador que debe sustituirse.
     {
         'module': 'figure',
-        'kicker': 'Microfotografía oficial H&E',
-        'title': 'El calcio marca los adipocitos lesionados',
+        'kicker': 'Microscopía en H&E',
+        'title': 'Esteatonecrosis pancreática en la microfotografía H&E',
         'image': 'placeholder:Microfotografía H&E oficial | saponificación pancreática',
-        'caption': 'H&E: adipocitos necróticos y depósitos basófilos de calcio; correlacionar con acinos y vasos.',
+        'caption': 'H&E (hematoxilina-eosina): adipocitos necróticos y depósitos basófilos de calcio.',
         'credit': 'PPTX original Caso Clínico 09; imagen oficial ausente en el material recibido.',
         'footnote': 'Reemplazar por la microfotografía H&E original; conservar aumento, tinción y crédito docente.',
     },
@@ -209,8 +209,8 @@ SLIDES = [
     # 11. Diferencial morfológico y rol vascular de la elastasa.
     {
         'module': 'side_by_side',
-        'kicker': 'Correlación morfológica',
-        'title': 'Edema intersticial y necrosis no son el mismo patrón',
+        'kicker': 'Patrones morfológicos',
+        'title': 'Pancreatitis intersticial y necrotizante: diferencias morfológicas',
         'left_card': {
             'header': 'INTERSTICIAL EDEMATOSA',
             'title': 'Realce conservado',
@@ -235,8 +235,8 @@ SLIDES = [
     # 12. Ventanas de imagen y Balthazar.
     {
         'module': 'flow_diagram',
-        'kicker': 'Selección de estudio',
-        'title': 'Cada ventana responde una pregunta distinta',
+        'kicker': 'Estudios de imagen',
+        'title': 'Estudios de imagen: qué aporta cada modalidad y cuándo usarla',
         'steps': [
             {'label': 'AIRE', 'title': 'Radiografía simple',
              'desc': 'Considerar ante neumoperitoneo o íleo; no confirma pancreatitis.'},
@@ -245,18 +245,18 @@ SLIDES = [
             {'label': 'PARÉNQUIMA', 'title': 'TC contrastada',
              'desc': 'Evalúa perfusión, necrosis y complicaciones; la TC precoz puede subestimarlas.',
              'highlight': True},
-            {'label': 'BALTAZAR', 'title': 'Índice tomográfico',
+            {'label': 'BALTAZAR', 'title': 'Índice CTSI de Balthazar',
              'desc': 'Grado A–E (0–4) + necrosis (0/2/4/6) = 0–10; no sustituye Atlanta.'},
         ],
         'explanation': 'La TC con contraste no se indica de rutina al ingreso. Reservarla para incertidumbre, deterioro o falta de mejoría; para valorar necrosis, esperar al menos 48–72 h y, a menudo, 72–96 h desde el inicio, según evolución.',
-        'footnote': 'CTSI = grado A–E (0–4) + necrosis (0; <30%=2; 30–50%=4; >50%=6) = 0–10. No sustituye Atlanta.',
+        'footnote': 'CTSI (índice de gravedad por TC): grado A–E (0–4) + necrosis (0; <30%=2; 30–50%=4; >50%=6) = 0–10.',
     },
 
     # 13. Ecografía biliar: hallazgos y preparación.
     {
         'module': 'comparison_table',
-        'kicker': 'Semiótica ecográfica',
-        'title': 'La ecografía distingue cálculos de imitadores',
+        'kicker': 'Ecografía biliar',
+        'title': 'Ecografía biliar: cálculo, barro y pólipo',
         'headers': ['Hallazgo', 'Ecogenicidad y movilidad', 'Sombra posterior / clave'],
         'col_widths': [1.2, 2.3, 1.8],
         'rows': [
@@ -272,37 +272,37 @@ SLIDES = [
     # 14. Tratamiento hospitalario: evidencia y correcciones de seguridad.
     {
         'module': 'checklist',
-        'kicker': 'Soporte agudo',
-        'title': 'Tratar la fisiología, no perseguir profilaxis antibiótica',
+        'kicker': 'Tratamiento inicial',
+        'title': 'Manejo inicial: hidratación, analgesia, antibióticos y nutrición',
         'items': [
             {'label': 'Ringer lactato frente a salina',
              'desc': 'Preferir cristaloide isotónico balanceado; reanimación moderada, guiada por perfusión, diuresis y sobrecarga.'},
             {'label': 'Acidosis y activación enzimática',
-             'desc': 'La carga alta de Cl⁻ puede causar acidosis hiperclorémica; el efecto del pH sobre zimógenos es experimental, no causalidad clínica probada.'},
+             'desc': 'El exceso de cloruro (Cl⁻) puede causar acidosis hiperclorémica; el efecto del pH sobre zimógenos es experimental, no causalidad clínica probada.'},
             {'label': 'Analgesia titulada',
              'desc': 'Morfina no está contraindicada por espasmo de Oddi; vigilar sedación, función renal e íleo.'},
             {'label': 'Antimicrobianos',
              'desc': 'No indicar profilaxis en pancreatitis ni necrosis estéril; tratar infección documentada o clínicamente sospechada.'},
             {'label': 'Nutrición y CPRE',
-             'desc': 'Alimentación oral temprana si se tolera. CPRE ante colangitis u obstrucción persistente, no de rutina sin colangitis.'},
+             'desc': 'Alimentación oral temprana si se tolera. CPRE (colangiopancreatografía retrógrada endoscópica) ante colangitis u obstrucción biliar persistente.'},
         ],
-        'footnote': 'ACG 2024: hidratación moderada individualizada, analgesia, nutrición temprana y antibióticos solo ante infección.',
+        'footnote': 'ACG 2024: hidratación moderada, analgesia y nutrición temprana; antibióticos solo ante infección.',
     },
 
     # 15. APS, litogénesis y prevención secundaria.
     {
         'module': 'stat_card',
-        'kicker': 'Prevención de nueva lesión biliar',
-        'title': 'La colecistectomía oportuna cierra el ciclo causal',
+        'kicker': 'Prevención secundaria',
+        'title': 'Prevención de recurrencia: colecistectomía en pancreatitis biliar',
         'stat_num': '17% / 5%',
-        'stat_title': 'Evento biliar compuesto: cirugía diferida frente a la misma hospitalización (PONCHO; 6 meses)',
+        'stat_title': 'Desenlace compuesto: reingreso por complicación biliar o muerte; cirugía diferida vs mismo ingreso (6 meses).',
         'narrative_blocks': [
             {'title': 'Atención primaria',
              'desc': 'Investigar cólico biliar recurrente, litiasis o barro; solicitar ecografía ante sospecha y coordinar derivación.'},
             {'title': 'Pancreatitis leve',
              'desc': 'Si es de origen biliar y el paciente es apto, colecistectomía laparoscópica en el mismo ingreso, antes del alta.'},
             {'title': 'Evitar la cifra no validada',
-             'desc': 'No afirmar 30% en 3 meses sin fuente primaria. PONCHO informó 17% vs 5% de eventos compuestos con estrategia diferida vs misma admisión.'},
+             'desc': 'No afirmar «30 % en 3 meses» sin fuente. PONCHO: reingreso por complicación biliar o muerte, 17 % diferida vs 5 % en el mismo ingreso a 6 meses.'},
         ],
         'footnote': 'Necrosis, colecciones o gravedad mayor: individualizar y diferir la cirugía hasta estabilidad clínica.',
     },
@@ -310,15 +310,15 @@ SLIDES = [
     # 16. Seguimiento dirigido, no imagen de pesquisa rutinaria.
     {
         'module': 'timeline',
-        'kicker': 'Salida y reparación',
-        'title': 'El seguimiento busca síntomas persistentes, no una imagen automática',
+        'kicker': 'Seguimiento tras el alta',
+        'title': 'Seguimiento tras el alta: síntomas y colecciones pancreáticas',
         'milestones': [
             {'label': 'Alta', 'title': 'Recuperación inicial',
              'desc': 'Confirmar analgesia, tolerancia oral, control clínico y plan biliar.'},
             {'label': '4–6 semanas', 'title': 'Revisión dirigida',
              'desc': 'Valorar dolor, fiebre, saciedad precoz e intolerancia oral persistentes.'},
             {'label': '>4 semanas', 'title': 'Colección encapsulada',
-             'desc': 'Pseudoquiste tras pancreatitis intersticial; necrosis encapsulada si hay detritos.'},
+             'desc': 'Pseudoquiste: colección encapsulada sin detritos; necrosis encapsulada: contiene detritos.'},
             {'label': 'Signos de alarma', 'title': 'Reevaluar',
              'desc': 'Fiebre, ictericia, dolor o vómitos persistentes exigen nueva valoración.'},
         ],
@@ -328,8 +328,8 @@ SLIDES = [
     # 17. Bibliografía Vancouver numerada 1–6 por el módulo.
     {
         'module': 'references',
-        'kicker': 'Fuentes · diagnóstico, mecanismos y manejo',
-        'title': 'Fuentes que sustentan el diagnóstico y el manejo',
+        'kicker': 'Bibliografía clínica complementaria',
+        'title': 'Fuentes complementarias: diagnóstico y manejo',
         'refs': [
             'Banks PA, et al. Gut. 2013;62:102–111. doi:10.1136/gutjnl-2012-302779.',
             'Tenner S, et al. Am J Gastroenterol. 2024;119:419–437. doi:10.14309/ajg.0000000000002645.',
@@ -343,8 +343,8 @@ SLIDES = [
     # 18. Continuación de la bibliografía: las etiquetas conservan la secuencia 7–12.
     {
         'module': 'further_reading',
-        'kicker': 'Fuentes · anatomía, morfología e imagen',
-        'title': 'Fuentes que sostienen la anatomía y la morfología',
+        'kicker': 'Bibliografía de anatomía e imagen',
+        'title': 'Fuentes complementarias: anatomía, patología e imagen',
         'entries': [
             {'tag': 'REF. 07', 'title': 'Balthazar EJ, et al. Radiology. 1990;174:331–336.', 'note': ''},
             {'tag': 'REF. 08', 'title': 'Kumar V, Abbas AK, Aster JC. Robbins & Cotran. 10.ª ed. Elsevier; 2020.', 'note': ''},
