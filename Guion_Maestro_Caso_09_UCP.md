@@ -21,7 +21,7 @@ La plantilla institucional no entrega nombres del docente, integrantes, cátedra
 - **Relator 4 — diapositivas 12–14:** tratamiento, prevención, seguimiento y fuentes.
 - **Sustentación:** todo el equipo domina la conclusión diagnóstica, los límites de los datos y el origen de las imágenes.
 
-El foco general de cada diapositiva es un fragmento; el límite de **2:30 min corresponde a cada relator**, no a cada slide. Las preguntas de sabatina quedan fuera de ese tiempo.
+El foco general de cada diapositiva es un fragmento; el límite de **2:30 min corresponde a cada relator**, no a cada slide. Las preguntas de sabatina quedan fuera de ese tiempo. Se elige el módulo por función didáctica: cronología, pregunta oral, flujo, mapa conceptual, algoritmo, comparación y evidencia. Solo las dos imágenes anatomopatológicas comparten el módulo de figura, para mantener una comparación directa.
 
 ---
 
@@ -125,22 +125,19 @@ El foco general de cada diapositiva es un fragmento; el límite de **2:30 min co
 
 ---
 
-## DIAPOSITIVA 4 — El cuadro es compatible con pancreatitis aguda de posible origen biliar
+## DIAPOSITIVA 4 — El cuadro es compatible; la causa biliar no está confirmada
 
 **Objetivo:** formular el diagnóstico probable usando los datos del caso y separar evidencia de hipótesis.
 
 ### Componente visual y composición
-- **Formato:** tarjeta de razonamiento clínico con cuatro zonas: criterios, diagnóstico, etiología, gravedad/diferenciales.
-- **Especificación:** destacar «dolor + TC compatible»; representar la lipasa como elevada pero no cuantificada.
-- **Prompt de apoyo (EN):** “Create a diagnostic reasoning card for acute pancreatitis. Show the Revised Atlanta 2-of-3 criteria: compatible pain; lipase/amylase at least 3× upper limit of normal; characteristic imaging. For this case mark pain as documented, CT as described but report pending, and elevated lipase with value unknown. Label biliary cause ‘possible, not confirmed’. Do not assign severity. Spanish text, 16:9.”
+- **Formato:** módulo de pregunta oral: pregunta dominante, respuesta modelo y nota para el examinador.
+- **Especificación:** hacer legible la regla de Atlanta «2 de 3» y separar diagnóstico probable, etiología posible y gravedad no clasificable.
+- **Prompt de apoyo (EN):** “Create an academic viva-question slide in Spanish. Ask what supports acute pancreatitis and what remains unconfirmed. Show the Revised Atlanta 2-of-3 criteria; mark compatible pain as documented, CT findings as summarized pending the full report, and elevated lipase as unquantified. Label biliary cause possible, not confirmed. Do not assign severity.”
 
 ### Contenido en pantalla
-- Atlanta: diagnóstico con 2 de 3 criterios.
-- Dolor compatible: documentado.
-- TC: cambios pancreáticos descritos; falta informe completo.
-- Lipasa: elevada; sin valor ni LSN.
-- Diagnóstico: pancreatitis aguda probable; etiología biliar posible, no confirmada.
-- Gravedad: datos insuficientes para clasificar fallo orgánico.
+- **Pregunta:** ¿Qué datos permiten plantear el diagnóstico y cuáles siguen pendientes?
+- **Respuesta modelo:** Atlanta exige dos de tres criterios; constan dolor compatible y alteración pancreática descrita por TC, pero falta el informe completo. La lipasa está elevada, sin valor.
+- **Nota del examinador:** la enfermedad vesicular sugiere, pero no confirma, origen biliar. No asignar gravedad sin datos suficientes.
 
 ### Guía oral — foco general
 «La clasificación revisada de Atlanta requiere dos de tres criterios: dolor compatible, enzimas ≥3 veces el límite superior normal o imagen característica [1]. En esta transcripción hay dolor compatible y una descripción tomográfica pancreática; la lipasa solo figura como elevada. La enfermedad vesicular prolongada hace plausible la etiología biliar, pero no la confirma. La recuperación gradual, sin datos de fallo orgánico ni duración, no basta para asignar gravedad.»
@@ -191,14 +188,14 @@ El foco general de cada diapositiva es un fragmento; el límite de **2:30 min co
 
 ---
 
-## DIAPOSITIVA 6 — El examen muestra dolor superior y ruidos intestinales reducidos
+## DIAPOSITIVA 6 — Los hallazgos orientan; los signos clásicos no descartan el cuadro
 
 **Objetivo:** explicar dolor referido, íleo y signos clásicos, separando lo descrito de lo no informado.
 
 ### Componente visual y composición
-- **Formato:** esquema de tronco, páncreas, plexo celíaco y referencia dorsal; cuatro llamadas para Celso/Galeno, ruidos intestinales, Cullen y Grey Turner.
-- **Prompt de apoyo (EN):** “Create a restrained semiology diagram: pancreas and celiac plexus, visceral pain referral toward thoracic segments T5–T9 and the back; include concise Spanish labels for Celsus’ tetrad, Galen’s added functio laesa, reduced bowel sounds/possible ileus, and separate umbilical (Cullen) and flank (Grey Turner) ecchymosis callouts. State that those ecchymoses are uncommon and their absence does not exclude disease. Do not depict signs as present in this patient.”
-- **Rotulado:** indicar que la historia no informa equimosis; no rotularlas como presentes ni ausentes.
+- **Formato:** mapa conceptual radial nativo de StudyDeck, con «Manifestaciones clínicas» en el centro y cinco nodos: dolor visceral, hallazgos del caso, Celso/Galeno, Cullen y Grey Turner.
+- **Prompt de apoyo (EN):** “Create a restrained radial clinical-semiology map around ‘Clinical manifestations’. Link visceral pain to celiac/splanchnic pathways and possible T5–T9 back referral; distinguish documented upper-abdominal tenderness and reduced bowel sounds from Cullen and Grey Turner ecchymoses, which are not reported and are uncommon. Spanish labels; do not depict them as present.”
+- **Rotulado:** conservar «no informada» en los dos signos cutáneos; no convertir dato ausente en examen negativo.
 
 ### Contenido en pantalla
 - Dolor visceral: plexo celíaco/esplácnicos; referencia torácica T5–T9 → posible dolor dorsal. [5]
@@ -318,21 +315,21 @@ El foco general de cada diapositiva es un fragmento; el límite de **2:30 min co
 
 ---
 
-## DIAPOSITIVA 10 — Cada modalidad responde una pregunta clínica diferente
+## DIAPOSITIVA 10 — Elegir el estudio de imagen según la pregunta clínica
 
 **Objetivo:** usar radiografía, ecografía y TC de acuerdo con la pregunta y el momento clínico.
 
 ### Componente visual y composición
-- **Formato:** diagrama de decisión de cuatro estaciones: aire libre, litiasis, parénquima/complicaciones, CTSI.
-- **Prompt de apoyo (EN):** “Create an acute pancreatitis imaging decision flow: plain abdominal radiograph for suspected free air/ileus; ultrasound for gallstones and bile duct; contrast CT for pancreatic perfusion/complications when clinically indicated; a separate Balthazar CT Severity Index card. Note that early CT may underestimate necrosis and CT scores do not replace Revised Atlanta clinical severity. Spanish labels, 16:9.”
-- **Rotulado:** diferenciar en el caso la Rx negativa para aire libre de la TC que describió alteración pancreática; informe completo pendiente.
+- **Formato:** algoritmo vertical de cuatro pasos, no una lista de tarjetas: radiografía → ecografía → TC según indicación → CTSI como puntuación morfológica.
+- **Prompt de apoyo (EN):** “Create a four-step imaging-selection algorithm for acute pancreatitis: plain radiograph when free air is suspected; ultrasound for gallstones/ductal dilation; contrast CT for unresolved diagnosis or complications when indicated; Balthazar CTSI as a morphology score, not clinical severity. Spanish labels, 16:9. Keep the Case 09 findings separate from missing studies.”
+- **Rotulado:** Rx del caso sin aire libre; ecografía no informada; TC resumida con el informe completo pendiente.
 
 ### Contenido en pantalla
-- Radiografía: en el caso, sin aire libre; edema marcado de tejidos blandos descrito.
-- Ecografía: buscar cálculos, barro y dilatación biliar; no consta en el caso.
-- TC con contraste: valorar perfusión/complicaciones cuando esté indicada; no rutinaria al ingreso.
-- Para necrosis, la imagen puede ser más útil tras 48–72 h según evolución.
-- CTSI Balthazar 0–10 complementa, no reemplaza Atlanta. [2,6]
+1. **Radiografía simple:** sospecha de aire libre; en el caso no se observó, aunque se describió edema de tejidos blandos.
+2. **Ecografía biliar:** buscar cálculos y dilatación ductal; resultado no informado.
+3. **TC con contraste:** valorar parénquima/complicaciones ante incertidumbre o deterioro; no es rutinaria al ingreso.
+4. **CTSI de Balthazar:** grado A–E (0–4) + necrosis (0 % = 0; <30 % = 2; 30–50 % = 4; >50 % = 6), total 0–10; complementa y no reemplaza Atlanta. [2,6]
+- **Nota:** no solicitar TC de rutina en asintomáticos; la necrosis puede verse mejor tras 48–72 h. Después de 4 semanas, pseudoquiste sin detritos y necrosis encapsulada con detritos. [1,2]
 
 ### Guía oral — foco general
 «La radiografía responde preguntas como aire libre; en esta paciente no se observó, aunque se describió edema de tejidos blandos. La ecografía no aparece en la fuente y sería útil para litiasis. La TC se resume con menor atenuación y densidad líquida pancreática, pero falta el informe. No se indica TC rutinaria al ingreso para graduar gravedad; la necrosis puede requerir imagen más tardía si cambia la conducta [2]. Balthazar puntúa morfología; no es la clasificación clínica de Atlanta [6].»
@@ -347,7 +344,7 @@ El foco general de cada diapositiva es un fragmento; el límite de **2:30 min co
 
 ### Sabatina
 - **Pregunta probable:** ¿Qué diferencia el CTSI de Balthazar de la gravedad de Atlanta?
-- **Respuesta exacta:** CTSI es un puntaje morfológico de TC que combina grado A–E (0–4) con necrosis (0, 2, 4 o 6; total 0–10). Atlanta clasifica gravedad clínica por fallo orgánico y complicaciones. No son intercambiables. [1,6]
+- **Respuesta exacta:** CTSI es un puntaje morfológico de TC: grado A–E (0–4) más necrosis (0 % = 0; <30 % = 2; 30–50 % = 4; >50 % = 6), total 0–10. Atlanta clasifica gravedad clínica por fallo orgánico y complicaciones; no son intercambiables. [1,6]
 
 ---
 
@@ -417,21 +414,21 @@ El foco general de cada diapositiva es un fragmento; el límite de **2:30 min co
 
 ---
 
-## DIAPOSITIVA 13 — La evaluación biliar y la cirugía oportuna reducen recurrencias
+## DIAPOSITIVA 13 — PONCHO: colecistectomía en el ingreso para pancreatitis biliar leve
 
 **Objetivo:** conectar APS, etiología biliar, prevención secundaria y seguimiento dirigido.
 
 ### Componente visual y composición
-- **Formato:** stat card PONCHO más ruta APS → ecografía → derivación → cirugía en pancreatitis biliar leve.
-- **Prompt de apoyo (EN):** “Create an evidence card for mild gallstone pancreatitis: PONCHO composite endpoint 17% interval versus 5% same-admission cholecystectomy at six months; label readmission for recurrent gallstone complications or death. Add an APS-to-ultrasound-to-surgical referral pathway. Note that necrosis or significant collections require individualized timing. Include a 4–6-week symptom-focused follow-up and the >4-week distinction between pseudocyst (no necrotic debris) and walled-off necrosis (debris). Spanish labels, 16:9.”
-- **Rotulado:** indicar población y desenlace compuesto; no generalizar cifras a toda pancreatitis.
+- **Formato:** tarjeta PICO del ensayo PONCHO: población, intervención, comparación, desenlace; efecto principal destacado y limitación a la vista.
+- **Prompt de apoyo (EN):** “Create a PICO evidence card for the PONCHO randomized trial in mild gallstone pancreatitis. Highlight the six-month composite outcome: 17% with interval surgery versus 5% with same-admission cholecystectomy. Keep population, intervention, comparator and endpoint explicit. Add a limitation: do not extrapolate to necrosis/collections or unconfirmed biliary etiology. Add a concise primary-care follow-up note. Spanish labels.”
+- **Rotulado:** las cifras describen pancreatitis biliar leve; no atribuir esa etiología al Caso 09 sin confirmación.
 
 ### Contenido en pantalla
-- APS: investigar enfermedad biliar sintomática y coordinar ecografía/derivación.
-- Pancreatitis biliar leve y paciente apto: colecistectomía en el mismo ingreso.
-- Necrosis o colecciones: diferir e individualizar.
-- PONCHO: desenlace compuesto 17 % diferida vs 5 % misma admisión a 6 meses. [2,4]
-- Control dirigido a 4–6 semanas; no TC rutinaria en asintomáticos recuperados. [1,2]
+- **Población:** pacientes aptos con pancreatitis biliar leve.
+- **Intervención vs comparación:** colecistectomía durante el ingreso vs diferida tras el alta.
+- **Desenlace:** reingreso por complicaciones biliares o muerte a seis meses.
+- **Efecto PONCHO:** 17 % diferida vs 5 % mismo ingreso.
+- **Límite y APS:** no extrapolar a necrosis/colecciones; confirmar causa, derivar y controlar clínicamente a las 4–6 semanas.
 
 ### Guía oral — foco general
 «La historia vesicular del caso debe motivar confirmación etiológica y prevención secundaria. En pancreatitis biliar leve y paciente apto, se recomienda colecistectomía durante el mismo ingreso. En PONCHO, el desenlace de reingreso por complicaciones biliares o muerte fue 17 % con cirugía diferida y 5 % con cirugía en la misma hospitalización a seis meses [4]. Necrosis o colecciones requieren individualizar el momento [2]. El seguimiento a 4–6 semanas es clínico y dirigido; no implica TC rutinaria. Después de cuatro semanas, pseudoquiste no contiene detritos y necrosis encapsulada sí [1].»

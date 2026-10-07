@@ -57,34 +57,36 @@ SLIDES = [
         'footnote': 'Tiempo sugerido: hasta 2:30 min por relator; ajustar el reparto al equipo real.',
     },
 
-    # 3. Historia clínica con datos literales de la transcripción aportada por el usuario.
+    # 3. Historia clínica: secuencia temporal con datos literales del relato.
     {
-        'module': 'fixed_schema_card',
+        'module': 'timeline',
         'kicker': 'Historia clínica',
         'title': 'Historia clínica: mujer de 38 años con dolor abdominal agudo',
-        'fields': [
-            {'label': 'Antecedente', 'value': 'Enfermedad vesicular de larga evolución.'},
-            {'label': 'Dolor y examen', 'value': 'Dolor medio, súbito e intenso; hipersensibilidad superior y ruidos intestinales reducidos.'},
-            {'label': 'Radiografía', 'value': 'Sin aire libre; edema marcado de tejidos blandos.'},
-            {'label': 'TC y lipasa', 'value': 'Menor atenuación y densidad líquida pancreática; lipasa elevada, sin valor informado.'},
-            {'label': 'Manejo y evolución', 'value': 'Líquidos IV y sonda nasogástrica; recuperación gradual.'},
+        'milestones': [
+            {'label': 'Antecedente', 'title': 'Enfermedad vesicular',
+             'desc': 'Mujer de 38 años; enfermedad vesicular de larga evolución.'},
+            {'label': 'Inicio', 'title': 'Dolor abdominal',
+             'desc': 'Súbito, intenso y en abdomen medio.'},
+            {'label': 'Examen', 'title': 'Hipersensibilidad',
+             'desc': 'Marcada en abdomen superior; ruidos intestinales reducidos.'},
+            {'label': 'Rx / TC', 'title': 'Edema marcado de tejidos blandos',
+             'desc': 'Rx sin aire libre; TC: menor atenuación, densidad líquida pancreática.'},
+            {'label': 'Manejo', 'title': 'Lipasa elevada; recuperación gradual',
+             'desc': 'Recibió líquidos IV y sonda nasogástrica.'},
         ],
-        'footnote': 'Relato transcrito; lipasa sin valor/LSN y TC sin informe completo. No añadir datos no consignados.',
+        'footnote': 'Lipasa sin valor/LSN; informe completo de TC no disponible. No inferir otros datos.',
     },
 
-    # 4. Diagnóstico probable: distinguir criterios aportados de datos no cuantificados.
+    # 4. Diagnóstico probable, presentado como pregunta de defensa oral.
     {
-        'module': 'fixed_schema_card',
+        'module': 'viva_question',
         'kicker': 'Diagnóstico probable',
-        'title': 'El cuadro es compatible con pancreatitis aguda de posible origen biliar',
-        'fields': [
-            {'label': 'Criterios de Atlanta', 'value': 'Dolor compatible + TC con alteración pancreática descrita; la imagen debe confirmarse como característica. Lipasa elevada, sin cuantificación.'},
-            {'label': 'Diagnóstico', 'value': 'Pancreatitis aguda probable; dolor e imagen pueden aportar 2 de los 3 criterios diagnósticos.'},
-            {'label': 'Etiología', 'value': 'Origen biliar posible por enfermedad vesicular de larga evolución; no confirmado sin ecografía o datos bioquímicos.'},
-            {'label': 'Gravedad', 'value': 'Recuperación gradual; faltan datos para clasificar fallo orgánico y gravedad según Atlanta.'},
-            {'label': 'Diagnósticos diferenciales', 'value': 'Perforación, obstrucción, colecistitis/colangitis y otras causas de abdomen agudo; Rx sin aire libre no excluye por sí sola perforación.'},
-        ],
-        'footnote': 'La lipasa no está expresada como múltiplo del límite superior normal (LSN).',
+        'title': 'El cuadro es compatible; la causa biliar no está confirmada',
+        'prompt': '¿Qué datos permiten plantear el diagnóstico y cuáles siguen pendientes?',
+        'model_answer': 'Atlanta exige 2 de 3 criterios: dolor compatible, enzimas ≥3 veces el límite superior normal o imagen característica. Aquí constan dolor y alteración pancreática descrita en TC; falta informe. Lipasa elevada, sin valor. Origen biliar posible, no confirmado.',
+        'examiner_note': 'Verificar si la TC cumple criterio de imagen característica. No asignar gravedad sin datos de fallo orgánico persistente ni duración.',
+        'difficulty': 'Intermedia',
+        'footnote': 'Atlanta revisada [1]; el valor de lipasa y el informe radiológico completo no están disponibles.',
     },
 
     # 5. Etiología biliar y mecanismos celulares, sin atribuir cálculo confirmado al caso.
@@ -107,19 +109,20 @@ SLIDES = [
         'footnote': 'TNF-α e IL-1/IL-6 son citocinas; la elastasa puede dañar vasos y la lipasa favorece necrosis grasa.',
     },
 
-    # 6. Hallazgos clínicos y examen: consignar solo lo que consta en el caso.
+    # 6. Manifestaciones como mapa radial; diferencia hallazgos descritos de signos no informados.
     {
-        'module': 'fixed_schema_card',
+        'module': 'concept_map',
         'kicker': 'Manifestaciones y examen físico',
-        'title': 'El examen muestra dolor superior y ruidos intestinales reducidos',
-        'fields': [
-            {'label': 'Dolor referido', 'value': 'Aferencias esplácnicas y plexo celíaco; la convergencia torácica T5–T9 puede referir dolor al dorso.'},
-            {'label': 'Celso y Galeno', 'value': 'Tétrada de Celso: rubor, calor, tumor y dolor. Galeno añade functio laesa (pérdida de función).'},
-            {'label': 'Ruidos intestinales', 'value': 'En el caso están reducidos; pueden acompañar íleo, pero este dato aislado no lo confirma.'},
-            {'label': 'Cullen', 'value': 'Equimosis periumbilical tardía e infrecuente; el texto no informa si estaba presente.'},
-            {'label': 'Grey Turner', 'value': 'Equimosis en flancos tardía e infrecuente; el texto no informa si estaba presente.'},
+        'title': 'Los hallazgos orientan; los signos clásicos no descartan el cuadro',
+        'hub': 'Manifestaciones clínicas',
+        'nodes': [
+            {'title': 'Dolor visceral', 'desc': 'Plexo celíaco/esplácnicos; posible referencia dorsal (T5–T9).'},
+            {'title': 'Hallazgos del caso', 'desc': 'Hipersensibilidad superior y ruidos intestinales reducidos.'},
+            {'title': 'Celso / Galeno', 'desc': 'Rubor, calor, tumor y dolor; Galeno añade pérdida de función.'},
+            {'title': 'Signo de Cullen', 'desc': 'Equimosis periumbilical tardía e infrecuente; no informada.'},
+            {'title': 'Signo de Grey Turner', 'desc': 'Equimosis de flancos, tardía e infrecuente; no informada.'},
         ],
-        'footnote': 'No se describen equimosis; dato no informado no equivale a examen negativo.',
+        'footnote': 'Cullen y Grey Turner tienen baja sensibilidad; su ausencia no descarta pancreatitis [9].',
     },
 
     # 7. Imagen macro oficial exigida; no disponible para inspección en esta sesión.
@@ -170,24 +173,23 @@ SLIDES = [
         'footnote': 'Atlanta separa morfología (intersticial/necrotizante) de gravedad clínica (fallo orgánico/complicaciones).',
     },
 
-    # 10. Radiografía, ecografía, TC y CTSI.
+    # 10. Algoritmo de selección de imagen por pregunta clínica.
     {
-        'module': 'flow_diagram',
+        'module': 'algorithm',
         'kicker': 'Selección de estudios de imagen',
-        'title': 'Cada modalidad responde una pregunta clínica diferente',
+        'title': 'Elegir el estudio de imagen según la pregunta clínica',
         'steps': [
-            {'label': 'AIRE LIBRE', 'title': 'Radiografía simple',
-             'desc': 'Caso 09: no se observó aire libre; se describió edema de tejidos blandos.'},
-            {'label': 'LITIASIS', 'title': 'Ecografía',
-             'desc': 'Busca cálculos y dilatación biliar; no se informa ecografía en el caso.'},
-            {'label': 'PÁNCREAS', 'title': 'TC con contraste',
-             'desc': 'Caso 09: menor atenuación y densidad líquida; falta el informe radiológico completo.',
+            {'title': 'Radiografía simple',
+             'desc': 'Ante sospecha de aire libre; en el caso no se observó, aunque se describió edema de tejidos blandos.'},
+            {'title': 'Ecografía biliar',
+             'desc': 'Buscar cálculos y dilatación de la vía biliar; no consta resultado en la transcripción.'},
+            {'title': 'TC con contraste',
+             'desc': 'Valorar parénquima y complicaciones ante incertidumbre o deterioro; no es rutinaria al ingreso. Falta el informe del caso.',
              'highlight': True},
-            {'label': 'CTSI', 'title': 'Índice de Balthazar',
-             'desc': 'Puntaje morfológico 0–10; complementa y no reemplaza la gravedad de Atlanta.'},
+            {'title': 'CTSI de Balthazar',
+             'desc': 'CTSI: grado A–E (0–4) + necrosis (0 % = 0; <30 % = 2; 30–50 % = 4; >50 % = 6) = 0–10; complementa Atlanta.'},
         ],
-        'explanation': 'La TC no se usa de rutina al ingreso para graduar gravedad. Si hay incertidumbre, deterioro o falta de mejoría, puede evaluar complicaciones; para necrosis suele ser más útil tras 48–72 h, según evolución.',
-        'footnote': 'CTSI (índice de gravedad por TC): grado A–E (0–4) + necrosis (0; <30%=2; 30–50%=4; >50%=6) = 0–10.',
+        'footnote': 'No TC de rutina si asintomático. Necrosis más visible 48–72 h; >4 sem: pseudoquiste sin detritos; necrosis encapsulada con detritos [1,2].',
     },
 
     # 11. Hallazgos ecográficos para etiología biliar; el estudio no consta en el caso.
@@ -227,22 +229,23 @@ SLIDES = [
         'footnote': 'CPRE = colangiopancreatografía retrógrada endoscópica; reservar para colangitis u obstrucción biliar persistente.',
     },
 
-    # 13. APS, prevención secundaria y seguimiento dirigido.
+    # 13. Ensayo PONCHO en una tarjeta de evidencia PICO; límites de generalización explícitos.
     {
-        'module': 'stat_card',
+        'module': 'evidence_card',
         'kicker': 'Prevención secundaria y APS',
-        'title': 'La evaluación biliar y la cirugía oportuna reducen recurrencias',
-        'stat_num': '17 % / 5 %',
-        'stat_title': 'PONCHO: reingreso por complicación biliar o muerte; cirugía diferida vs mismo ingreso (6 meses).',
-        'narrative_blocks': [
-            {'title': 'Atención primaria',
-             'desc': 'Investigar cólico biliar, litiasis y episodios previos; solicitar ecografía según sospecha y coordinar derivación.'},
-            {'title': 'Colecistectomía',
-             'desc': 'En pancreatitis biliar leve y paciente apto, realizar durante el mismo ingreso; necrosis/colecciones requieren individualizar y diferir.'},
-            {'title': 'Control a 4–6 semanas',
-             'desc': 'Revisar síntomas persistentes. Tras 4 semanas: pseudoquiste sin detritos; necrosis encapsulada si contiene detritos.'},
-        ],
-        'footnote': 'PONCHO: 17 % con cirugía diferida vs 5 % en el mismo ingreso. No afirmar «30 % en 3 meses» sin fuente.',
+        'title': 'PONCHO: colecistectomía en el ingreso para pancreatitis biliar leve',
+        'study_name': 'Ensayo PONCHO',
+        'design': 'Ensayo multicéntrico aleatorizado',
+        'population': 'Pacientes aptos con pancreatitis biliar leve.',
+        'intervention': 'Colecistectomía durante la hospitalización inicial.',
+        'comparison': 'Colecistectomía diferida tras el alta.',
+        'outcome': 'Reingreso por complicaciones biliares o muerte a seis meses.',
+        'effect': '17 % / 5 %',
+        'effect_desc': 'Cirugía diferida vs durante el mismo ingreso; desenlace compuesto.',
+        'limitation': 'No extrapolar a etiología no confirmada ni a necrosis/colecciones; en esos casos, individualizar la cirugía.',
+        'year': '2015',
+        'credit': 'da Costa DW, et al. Lancet. 2015;386:1261–1268. doi:10.1016/S0140-6736(15)00274-3.',
+        'footnote': 'APS: confirmar etiología y derivar. Cirugía en ingreso si cuadro leve; diferir ante necrosis/colecciones. Control clínico a 4–6 semanas.',
     },
 
     # 14. Bibliografía complementaria seleccionada; debe contrastarse con las páginas originales.
