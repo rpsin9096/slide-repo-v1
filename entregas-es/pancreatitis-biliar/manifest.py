@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Actividad Integradora · Abdomen agudo inflamatorio · 12 diapositivas (es-ES).
+"""Actividad Integradora · Abdomen agudo inflamatorio · 12 diapositivas + 1 anexo de apoyo (es-ES).
 
 Motor: StudyDeck v2 (UCP-only). Sin nombres de docentes ni de cátedras en la carátula.
 Ejecutar desde esta carpeta: studydeck all manifest.py Pancreatitis_biliar_12_diapositivas_es.pptx
@@ -183,4 +183,17 @@ SLIDES = [
          'Brunton LL, Hilal-Dandan R, Knollmann BC. Goodman & Gilman: Las Bases Farmacológicas de la Terapéutica. 13.ª ed. McGraw-Hill; 2019.',
          'Argente HA, Álvarez ME. Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. 3.ª ed. Médica Panamericana; 2021.'],
      'footnote': 'Títulos abreviados por espacio; citas completas en el PDF adjunto.'},
+
+    # 13 · Anexo de apoyo para la sabatina (fuera de la secuencia de 12)
+    {'module': 'comparison_table',
+     'kicker': 'Anexo · Imagenología',
+     'title': 'Ecografía vesicular: cálculo, barro y pólipo',
+     'headers': ['Hallazgo', 'Ecogenicidad y movilidad', 'Sombra posterior / clave'],
+     'col_widths': [1.4, 2.6, 2.0],
+     'rows': [['Bilis normal', 'Anecoica; vesícula distendida.', 'Luz sin ecos internos.'],
+              ['Cálculo', 'Hiperecogénico; suele moverse con el decúbito.', 'Sombra acústica posterior.'],
+              ['Barro biliar', 'Ecos bajos dependientes; se desplaza o estratifica.', 'Habitualmente sin sombra limpia.'],
+              ['Pólipo', 'Lesión mural fija; no cambia de posición.', 'Habitualmente sin sombra posterior.']],
+     'takeaway': 'El cálculo proyecta sombra; el pólipo es fijo y no proyecta sombra.',
+     'footnote': 'Ayuno de 6–8 h; documentar planos longitudinal y transversal, posición y sombra acústica.'},
 ]
