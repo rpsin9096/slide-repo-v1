@@ -142,7 +142,7 @@ SLIDES = [
                'Balthazar C/D, sin necrosis parenquimatosa'],
               ['Ecografía abdominal', 'Imágenes hiperecogénicas móviles con sombra acústica posterior limpia',
                'Identifica la litiasis vesicular como etiología']],
-     'takeaway': 'La TC a las 72–96 h evita subestimar la necrosis; en este caso la forma es edematosa.'},
+     'takeaway': 'La TC a las 72–96 h reduce el riesgo de subestimar la necrosis; en este caso la forma es edematosa.'},
 
     # 10 · Protocolo terapéutico y conducta hospitalaria
     {'module': 'checklist',
@@ -166,7 +166,7 @@ SLIDES = [
      'title': 'Colecistectomía y seguimiento en atención primaria',
      'milestones': [
          {'label': 'Misma internación', 'title': 'Colecistectomía laparoscópica',
-          'desc': 'Tras remitir la clínica aguda (PONCHO). Previene la recidiva biliar: 30 % a 90 días sin cirugía.'},
+          'desc': 'PONCHO, 6 meses: reingreso o muerte por litiasis, 17 % con cirugía diferida frente a 5 % en el mismo ingreso.'},
          {'label': '4–6 semanas', 'title': 'Vigilancia posalta',
           'desc': 'Control de posible formación de pseudoquistes pancreáticos.'},
          {'label': 'APS', 'title': 'Prevención primaria',
@@ -179,6 +179,7 @@ SLIDES = [
      'title': 'Referencias bibliográficas (Vancouver)',
      'refs': [
          'Banks PA, et al. Classification of acute pancreatitis—2012: revision of the Atlanta classification and definitions. Gut. 2013;62(1):102-111.',
+         'Leppäniemi A, Tolonen M, Tarasconi A, et al. 2019 WSES guidelines for the management of severe acute pancreatitis. World J Emerg Surg. 2019;14:27.',
          'Tenner S, et al. American College of Gastroenterology Guideline: Management of Acute Pancreatitis. Am J Gastroenterol. 2024;119(3):419-437.',
          'da Costa DW, et al. Same-admission versus delayed cholecystectomy for mild gallstone pancreatitis (PONCHO). Lancet. 2015;386(10000):1261-1268.',
          'Kumar V, Abbas AK, Aster JC. Robbins y Cotran: Patología Estructural y Funcional. 10.ª ed. Elsevier; 2021.',
