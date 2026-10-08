@@ -193,7 +193,7 @@ SLIDES = [
      'rows': [['Bilis normal', 'Anecoica; vesícula distendida.', 'Luz sin ecos internos.'],
               ['Cálculo', 'Hiperecogénico; suele moverse con el decúbito.', 'Sombra acústica posterior.'],
               ['Barro biliar', 'Ecos bajos dependientes; se desplaza o estratifica.', 'Habitualmente sin sombra limpia.'],
-              ['Pólipo', 'Lesión mural fija; no cambia de posición.', 'Habitualmente sin sombra posterior.']],
+              ['Pólipo', 'Lesión mural fija; eco intermedio; no cambia de posición.', 'Habitualmente sin sombra posterior.']],
      'takeaway': 'El cálculo proyecta sombra; el pólipo es fijo y no proyecta sombra.',
      'footnote': 'Ayuno de 6–8 h; documentar planos longitudinal y transversal, posición y sombra acústica.'},
 ]
