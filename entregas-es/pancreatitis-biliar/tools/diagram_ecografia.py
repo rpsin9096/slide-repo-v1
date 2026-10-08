@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """Gera assets/ecografia_vesicular_esquema.png: esquema didáctico de ecografía vesicular.
 
-Convención de ultrasonido: lumen anecoico (negro), sombra acústica posterior en negro,
+Convención de ultrasonido: lumen anecoico (negro), sombra acústica posterior en negro. El cálculo es
+hiperecogénico (blanco); el pólipo, de eco intermedio, similar o algo más ecogénico que la pared,
+nunca tan brillante como una litiasis calcificada.
+
 sonda en la parte superior. Es un esquema ilustrativo, no una imagen clínica.
 Ejecutar desde la carpeta de la entrega: python tools/diagram_ecografia.py
 """
@@ -32,7 +35,7 @@ panels = [
     ("A · Bilis normal", "Anecoica: sin ecos internos", "Sin sombra posterior"),
     ("B · Cálculo", "Hiperecogénico y móvil con el decúbito", "Sombra acústica posterior limpia"),
     ("C · Barro biliar", "Ecos bajos que se estratifican", "Sin sombra limpia"),
-    ("D · Pólipo", "Lesión fija a la pared", "No cambia con el decúbito; sin sombra"),
+    ("D · Pólipo", "Fija a la pared; eco intermedio", "No cambia con el decúbito; sin sombra"),
 ]
 
 random.seed(7)  # speckle reproducible
@@ -90,8 +93,8 @@ for i, (title, line1, line2) in enumerate(panels):
                     fontsize=6.6, color="white", ha="left", va="center",
                     arrowprops=dict(arrowstyle="-", color="white", lw=0.7), zorder=5)
 
-    if i == 3:  # pólipo: masa adherida a la pared, sin sombra
-        ax.add_patch(Circle((0.5, 0.735), 0.05, facecolor="#e5e7eb", edgecolor="none", zorder=4))
+    if i == 3:  # pólipo: masa adherida a la pared, sin sombra; eco intermedio (no blanco como el cálculo)
+        ax.add_patch(Circle((0.5, 0.735), 0.05, facecolor="#aab1bb", edgecolor="none", zorder=4))
         ax.annotate("adherido", xy=(0.55, 0.735), xytext=(0.74, 0.90),
                     fontsize=6.6, color="white", ha="left", va="center",
                     arrowprops=dict(arrowstyle="-", color="white", lw=0.7), zorder=5)
