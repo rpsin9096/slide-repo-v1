@@ -143,6 +143,28 @@ SLIDES = [
         'footnote': 'Trastorno psicosomático: síntoma físico asociado a factores psicológicos; hipótesis clínica por explorar.',
     },
     {
+        'module': 'definition',
+        'kicker': 'Marco teórico · Rol del médico familiar',
+        'title': 'Nivel 4: evaluación funcional e intervención planificada',
+        'main_statement': 'El médico investiga y formula hipótesis sistémicas centradas en las relaciones familiares y en las pautas recurrentes de interacción; desplaza el foco del contenido superficial y de las causas aisladas.',
+        'elaboration': 'Indicaciones: crisis no normativa que supera el Nivel 3; problemas de salud mental o disfunción familiar consolidada; crisis normativa con reorganización compleja (enfermedad crónica, invalidez, muerte o duelo).',
+        'key_points': [
+            {
+                'title': 'Detectar problemas psicosomáticos',
+                'desc': 'Trastornos físicos asociados a factores psicológicos y tensiones relacionales; reconocer también disfunción familiar manifiesta.',
+            },
+            {
+                'title': 'Convocar a toda la familia',
+                'desc': 'Comprometer al grupo completo en una entrevista planificada y estructurada.',
+            },
+            {
+                'title': 'Neutralidad clínica estricta',
+                'desc': 'Apoyar por igual, rechazar coaliciones y evitar activamente tomar partido por cualquier integrante.',
+            },
+        ],
+        'footnote': 'En el Sr. Prado, dolor y pruebas basales orientan una hipótesis; no confirman una causa única.',
+    },
+    {
         'module': 'figure',
         'kicker': 'Nivel 4 · entrevista planificada',
         'title': 'Entrevista conjunta, posición neutral',
