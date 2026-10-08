@@ -15,9 +15,9 @@ CONFIG = {
     'PALETTE': 'ucp',
     'LANG': 'es-ES',
     'PROFILE': 'short',
-    # max_n fijado por el autor: 'auto' daría 3 para 16 diapositivas. Son 6 imágenes:
-    # 5 (esquema de obstrucción ampular), 7-8 (placeholders del caso pendientes) y 14-16 (anexos).
-    'IMAGES': {'mode': 'web-only', 'max_n': 6,
+    # max_n fijado por el autor (decisión del usuario). Son 7 imágenes:
+    # 5 (esquema de obstrucción ampular), 7-8 (placeholders del caso pendientes) y 14-17 (anexos).
+    'IMAGES': {'mode': 'web-only', 'max_n': 7,
                'allow_ai': False, 'allow_placeholder': True},
     'SHOW_FOOTER': True,
     'SHOW_SLIDE_NUMBER': True,
@@ -225,4 +225,13 @@ SLIDES = [
      'caption': 'Edematosa: acinos viables y esteatonecrosis. Necrohemorrágica: destrucción y hemorragia.',
      'credit': 'Esquema ilustrativo de código propio; no es la lámina del Caso Clínico 09.',
      'footnote': 'Comparación de arquitectura para la sabatina; la lámina real del caso sigue pendiente.'},
+
+    # 17 · Anexo · Vía del dolor pancreático
+    {'module': 'figure',
+     'kicker': 'Anexo · Fisiología del dolor',
+     'title': 'Vía del dolor pancreático y su proyección',
+     'image': 'assets/anexo_via_dolor.png',
+     'caption': 'El dolor pancreático viaja por aferencias T5–T9 y se proyecta al epigastrio y a la espalda.',
+     'credit': 'Esquema ilustrativo de código propio; vía simplificada, no imagen clínica.',
+     'footnote': 'La irradiación posterior sigue el mismo territorio metamérico que las aferencias pancreáticas (T5–T9).'},
 ]

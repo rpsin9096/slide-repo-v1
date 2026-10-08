@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Genera tres esquemas didácticos de anexo para la sabatina (diapositivas 14-16).
+"""Genera cuatro esquemas didácticos de anexo para la sabatina (diapositivas 14-17).
 
 Salidas en assets/:
   anexo_acino_colocalizacion.png   colocalización intra-acinar y activación del tripsinógeno
   anexo_ringer_vs_salina.png       cloruro y lactato: solución fisiológica frente a Ringer lactato
   anexo_histologia_comparativa.png  pancreatitis edematosa frente a necrohemorrágica
+  anexo_via_dolor.png              vía del dolor pancreático (aferencias T5–T9)
 
 Son esquemas ilustrativos hechos por código: no son imágenes clínicas del Caso Clínico 09.
 Ejecutar desde la carpeta de la entrega: python tools/diagramas_anexo.py
@@ -235,7 +236,50 @@ def diagram_histologia():
 
 
 
+# ---------------------------------------------------------- 4. vía del dolor
+def diagram_dolor():
+    fig, ax = plt.subplots(1, 1, figsize=(13, 5.2))
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.98, bottom=0.10)
+    panel_frame(ax, "Vía del dolor pancreático: aferencias viscerales y proyección")
+
+    stages = [
+        ("Páncreas inflamado", "edema, necrosis y", "distensión de la cápsula"),
+        ("Fibras aferentes viscerales", "fibras Aδ y C", "nervios esplácnicos"),
+        ("Plexo celíaco y médula", "segmentos T5–T9", "asta dorsal, vía espinotalámica"),
+        ("Tálamo y corteza", "percepción del dolor", "localización difusa"),
+    ]
+    x0, w, gap = 0.03, 0.19, 0.06
+    for i, (t1, t2, t3) in enumerate(stages):
+        x = x0 + i * (w + gap)
+        ax.add_patch(FancyBboxPatch((x, 0.53), w, 0.22, boxstyle="round,pad=0,rounding_size=0.03",
+                                    fc="#e0e7ff" if i < 3 else "#f1f5f9", ec=NAVY, lw=1.2, zorder=2))
+        label(ax, x + w / 2, 0.70, t1, size=9.5, color=NAVY, weight="bold")
+        label(ax, x + w / 2, 0.635, t2, size=8.8)
+        label(ax, x + w / 2, 0.575, t3, size=8.8, color="#475569")
+        if i < len(stages) - 1:
+            arrow(ax, (x + w + 0.005, 0.64), (x + w + gap - 0.005, 0.64), color=NAVY, lw=1.6)
+
+    # Dos proyecciones del dolor
+    cards = [
+        ("Dolor epigástrico", "Proyección anterior de las aferencias pancreáticas en el hemiabdomen superior."),
+        ("Irradiación posterior", "Se proyecta hacia la espalda, en el mismo territorio metamérico T5–T9."),
+    ]
+    cw = 0.45
+    for j, (ct, cd) in enumerate(cards):
+        cx = 0.03 + j * (cw + 0.04)
+        ax.add_patch(FancyBboxPatch((cx, 0.14), cw, 0.26, boxstyle="round,pad=0,rounding_size=0.03",
+                                    fc="#fff7ed" if j == 0 else "#fef2f2", ec="#c2410c" if j == 0 else RED,
+                                    lw=1.2, zorder=2))
+        label(ax, cx + cw / 2, 0.335, ct, size=10.5, color=NAVY, weight="bold")
+        label(ax, cx + cw / 2, 0.23, cd, size=9.2)
+
+    label(ax, 0.5, 0.075, "Esquema didáctico, no imagen clínica. Vía simplificada para orientar la anamnesis.",
+          size=8.5, color="#6b7280")
+    save(fig, "anexo_via_dolor.png")
+
+
 if __name__ == "__main__":
     diagram_acino()
     diagram_ringer()
     diagram_histologia()
+    diagram_dolor()
