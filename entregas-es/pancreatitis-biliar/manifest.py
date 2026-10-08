@@ -155,8 +155,8 @@ SLIDES = [
          {'label': 'Descompresión gástrica',
           'desc': 'Sonda nasogástrica ante gastroparesia refractaria, distensión masiva o íleo paralítico.'},
          {'label': 'Manejo del dolor',
-          'desc': 'Dipirona magnésica IV 1–2 g c/6–8 h como base; tramadol IV 50–100 mg c/8 h de rescate. '
-                  'Evitar morfina: induce espasmo del esfínter de Oddi.'},
+          'desc': 'Dipirona magnésica IV 1–2 g c/6–8 h y AINE como base; tramadol IV 50–100 mg c/8 h de rescate. '
+                  'Evitar morfina: espasmo del esfínter de Oddi.'},
          {'label': 'Antibioticoterapia',
           'desc': 'Profilaxis antimicrobiana de rutina prohibida en formas edematosas intersticiales.'}]},
 
