@@ -15,7 +15,9 @@ CONFIG = {
     'PALETTE': 'ucp',
     'LANG': 'es-ES',
     'PROFILE': 'short',
-    'IMAGES': {'mode': 'web-only', 'max_n': 'auto',
+    # max_n fijado por el autor: 'auto' daría 3 para 16 diapositivas. Son 6 imágenes:
+    # 5 (esquema de obstrucción ampular), 7-8 (placeholders del caso pendientes) y 14-16 (anexos).
+    'IMAGES': {'mode': 'web-only', 'max_n': 6,
                'allow_ai': False, 'allow_placeholder': True},
     'SHOW_FOOTER': True,
     'SHOW_SLIDE_NUMBER': True,
@@ -196,4 +198,31 @@ SLIDES = [
               ['Pólipo', 'Lesión mural fija; eco intermedio; no cambia de posición.', 'Habitualmente sin sombra posterior.']],
      'takeaway': 'El cálculo proyecta sombra; el pólipo es fijo y no proyecta sombra.',
      'footnote': 'Ayuno de 6–8 h; documentar planos longitudinal y transversal, posición y sombra acústica.'},
+
+    # 14 · Anexo · Colocalización acinar y activación del tripsinógeno
+    {'module': 'figure',
+     'kicker': 'Anexo · Fisiopatología',
+     'title': 'Colocalización acinar y activación del tripsinógeno',
+     'image': 'assets/anexo_acino_colocalizacion.png',
+     'caption': 'Catepsina B activa el tripsinógeno dentro de vacuolas ácidas del acino.',
+     'credit': 'Esquema ilustrativo de código propio; no es imagen clínica.',
+     'footnote': 'La activación ocurre en organelas ácidas, no en gránulos de cimógeno (revisión WJG, 2024).'},
+
+    # 15 · Anexo · Ringer lactato frente a solución fisiológica
+    {'module': 'figure',
+     'kicker': 'Anexo · Farmacología',
+     'title': 'Ringer lactato frente a solución fisiológica 0,9 %',
+     'image': 'assets/anexo_ringer_vs_salina.png',
+     'caption': 'El exceso de cloruro es una hipótesis de acidosis; el lactato se metaboliza a bicarbonato.',
+     'credit': 'Esquema ilustrativo de código propio; composiciones de referencia.',
+     'footnote': 'Ringer lactato: pH cercano a 6,5, levemente ácido. Dosis según la diapositiva 10.'},
+
+    # 16 · Anexo · Pancreatitis edematosa frente a necrohemorrágica
+    {'module': 'figure',
+     'kicker': 'Anexo · Anatomía patológica',
+     'title': 'Pancreatitis edematosa frente a necrohemorrágica',
+     'image': 'assets/anexo_histologia_comparativa.png',
+     'caption': 'Edematosa: acinos viables y esteatonecrosis. Necrohemorrágica: destrucción y hemorragia.',
+     'credit': 'Esquema ilustrativo de código propio; no es la lámina del Caso Clínico 09.',
+     'footnote': 'Comparación de arquitectura para la sabatina; la lámina real del caso sigue pendiente.'},
 ]
