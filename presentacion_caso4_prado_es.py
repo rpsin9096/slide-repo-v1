@@ -9,8 +9,8 @@ Build desde la raíz del repositorio:
 
 COURSE_INFO = {
     'course': 'Medicina familiar y comunitaria',
-    'institution': 'Seminario clínico',
-    'author': 'Caso 4 · Sr. Prado',
+    'institution': 'Universidad Central del Paraguay (UCP)',
+    'author': 'Dra. Rossana Gauto',
 }
 
 CONFIG = {
@@ -32,39 +32,35 @@ CONFIG = {
 SLIDES = [
     {
         'module': 'title',
-        'title': 'El dolor torácico en el sistema familiar',
-        'subtitle': 'Caso 4 · Sr. Prado · Intervención sistémica planificada · Nivel 4',
-        'course': 'Medicina familiar y comunitaria',
-        'institution': 'Seminario clínico',
-        'author': 'Caso 4 · Sr. Prado',
+        'title': 'Trabajo 3: Casos clínicos de intervención en crisis familiar',
+        'subtitle': 'Interpretación de los niveles de intervención · Caso 4: Sr. Prado · Dolor torácico',
+        'course': 'Cátedra: Medicina Familiar · 3.er Año · 5.º Semestre · Unidad II',
+        'institution': 'Universidad Central del Paraguay (UCP)',
+        'author': 'Docente: Dra. Rossana Gauto · Nombre: ________ · Fecha: ___/___/____',
     },
     {
-        'module': 'learning_objectives',
-        'kicker': 'Apertura',
-        'title': 'Objetivos de la sesión',
-        'objectives': [
+        'module': 'fixed_schema_card',
+        'kicker': 'Competencias de la cátedra',
+        'title': 'Objetivos de aprendizaje',
+        'fields': [
             {
-                'verb': 'Analizar',
-                'text': 'el dolor torácico recurrente con pruebas basales normales como hipótesis psicosomática, sin cerrar la evaluación clínica.',
-                'bloom': 'analyze',
+                'label': 'Conceptual',
+                'value': 'Explicar el Nivel 4 como evaluación funcional e intervención planificada; distinguir la hipótesis sistémica del diagnóstico orgánico confirmado.',
             },
             {
-                'verb': 'Relacionar',
-                'text': 'los cambios laborales, escolares y del ciclo vital con la percepción de soledad y las interacciones familiares.',
-                'bloom': 'analyze',
+                'label': 'Procedimental',
+                'value': 'Formular hipótesis, convocar a la familia, observar pautas de interacción y acordar cambios verificables con seguimiento a 15 días.',
             },
             {
-                'verb': 'Planificar',
-                'text': 'una entrevista familiar de Nivel 4 con acuerdos verificables para el síntoma, la escolaridad, la pareja y el embarazo.',
-                'bloom': 'apply',
+                'label': 'Actitudinal',
+                'value': 'Escuchar sin culpabilizar, rechazar coaliciones y no tomar partido; mantener una posición clínica neutral ante los reproches.',
             },
             {
-                'verb': 'Establecer',
-                'text': 'un seguimiento quincenal y criterios de derivación a terapia familiar especializada.',
-                'bloom': 'evaluate',
+                'label': 'Evidencias',
+                'value': 'Presentar el mapa de tensiones, cuatro acuerdos verificables, indicadores de seguimiento y criterios de derivación al Nivel 5.',
             },
         ],
-        'footnote': 'Caso clínico guiado mediante pensamiento en voz alta y modelo sistémico.',
+        'footnote': 'Trabajo 3 · Caso 4 · Niveles de intervención en crisis familiar.',
     },
     {
         'module': 'fixed_schema_card',
@@ -88,8 +84,8 @@ SLIDES = [
                 'value': 'Se siente solo, desatendido e irritable; interpreta el empleo de su esposa como falta de atención a su salud y al hogar.',
             },
             {
-                'label': 'Hipótesis de trabajo',
-                'value': 'El estrés y la pérdida de control pueden expresarse somáticamente; explorar esta hipótesis sin convertirla en explicación única.',
+                'label': 'Síntoma funcional',
+                'value': 'El dolor puede ser una expresión psicosomática: malestar psicológico asociado a síntomas físicos; hipótesis a explorar, no explicación única.',
             },
         ],
         'footnote': 'Las pruebas basales normales no eliminan el dolor ni cierran la valoración clínica.',
@@ -97,7 +93,7 @@ SLIDES = [
     {
         'module': 'concept_map',
         'kicker': 'Pregunta 2 · visión biopsicosocial',
-        'title': 'Cinco tensiones, un mismo sistema',
+        'title': 'Tensiones y crisis en el ciclo vital',
         'hub': 'Sistema familiar',
         'nodes': [
             {
@@ -110,18 +106,18 @@ SLIDES = [
             },
             {
                 'title': 'Ciclo vital',
-                'desc': 'Embarazo y boda de la hija de 21 años generan incertidumbre familiar.',
+                'desc': 'Embarazo y boda de la hija de 21 años descolocan a los padres.',
             },
             {
                 'title': 'Vínculo conyugal',
                 'desc': 'El trabajo se interpreta como desatención; surgen reproches y aislamiento.',
             },
             {
-                'title': 'Síntoma somático',
-                'desc': 'Puede expresar angustia y pérdida de control; hipótesis por explorar.',
+                'title': 'Trastorno psicosomático',
+                'desc': 'Dolor físico asociado a factores psicológicos; valorar el contexto familiar.',
             },
         ],
-        'footnote': 'El mapa plantea relaciones para explorar; no asigna culpas ni confirma una causa única.',
+        'footnote': 'Crisis normativa del ciclo vital: embarazo y matrimonio; estresores no normativos: presión económica y trabajo adolescente.',
     },
     {
         'module': 'figure',
@@ -129,8 +125,7 @@ SLIDES = [
         'title': 'Los cambios familiares se influyen entre sí',
         'image': 'assets/caso4_red_familiar.png',
         'caption': 'El trabajo, la escolaridad y las transiciones vitales convergen en la vivencia de soledad del paciente.',
-        'credit': 'Ilustración original generada por IA para esta presentación.',
-        'footnote': 'Representación educativa del caso; no corresponde a una familia real.',
+        'credit': 'Ilustración generada con IA.',
     },
     {
         'module': 'comparison_table',
@@ -141,50 +136,49 @@ SLIDES = [
         'rows': [
             ['1–2', 'Evaluación biomédica y consejería preventiva', 'Evaluar el síntoma y orientar la prevención.'],
             ['3', 'Contención emocional inmediata ante una crisis', 'Acompañar y contener la crisis actual.'],
-            ['4', 'Evaluación funcional e hipótesis sistémica', 'Convocar a la familia, observar interacciones y pactar acuerdos.'],
+            ['4', 'Hipótesis de trastorno psicosomático; pautas de interacción, no contenido.', 'Entrevista planificada; rechazar coaliciones y no tomar partido.'],
             ['5', 'Terapia familiar especializada', 'Derivar ante persistencia, rigidez o patología grave.'],
         ],
-        'takeaway': 'El Nivel 4 añade evaluación funcional e intervención planificada; no se limita a contener la crisis.',
-        'footnote': 'En los niveles 1–2 predomina el foco biomédico y preventivo; el Nivel 5 requiere atención especializada.',
+        'takeaway': 'El Nivel 4 pasa de la contención a cambiar pautas de interacción, sin asignar culpables ni tomar partido.',
+        'footnote': 'Trastorno psicosomático: síntoma físico asociado a factores psicológicos; hipótesis clínica por explorar.',
     },
     {
         'module': 'figure',
         'kicker': 'Nivel 4 · entrevista planificada',
-        'title': 'La familia entra en la consulta',
+        'title': 'Entrevista conjunta, posición neutral',
         'image': 'assets/entrevista_familiar_planificada.png',
-        'caption': 'La entrevista conjunta permite observar alianzas y reproches, y negociar cambios sin buscar culpables.',
-        'credit': 'Ilustración original generada por IA para esta presentación.',
-        'footnote': 'La imagen ilustra una entrevista docente, no una intervención ya realizada.',
+        'caption': 'El clínico observa las pautas de interacción y escucha a la familia sin validar ataques ni tomar partido.',
+        'credit': 'Ilustración generada con IA.',
     },
     {
         'module': 'flow_diagram',
-        'kicker': 'Intervención planificada',
-        'title': 'De la hipótesis a un cambio observable',
-        'explanation': 'El médico convoca a toda la familia, observa cómo se relacionan y formula hipótesis funcionales. La meta es modificar patrones concretos, no decidir quién tiene razón.',
+        'kicker': 'Nivel 4 · entrevista planificada',
+        'title': 'Observar pautas y neutralizar coaliciones',
+        'explanation': 'En el Nivel 4, el médico interviene en las pautas de interacción y no sobre las causas atribuidas o el contenido de las quejas. Rechaza coaliciones, no toma partido y deshace la triangulación de los hijos en el conflicto conyugal.',
         'steps': [
             {
                 'label': '01',
-                'title': 'Acordar el encuadre',
-                'desc': 'Explicar que la consulta analizará el funcionamiento familiar, no quién tiene razón.',
+                'title': 'Priorizar las pautas',
+                'desc': 'Intervenir en las pautas de interacción, no sobre las causas atribuidas ni el contenido de las quejas.',
             },
             {
                 'label': '02',
-                'title': 'Escuchar a todos',
-                'desc': 'Reunir a la familia y conocer cómo interpreta cada persona los cambios.',
-                'highlight': True,
+                'title': 'Escuchar a la familia',
+                'desc': 'Convocar a todos y observar turnos, alianzas y reproches en el contexto de los cambios.',
             },
             {
                 'label': '03',
-                'title': 'Observar patrones',
-                'desc': 'Identificar interacciones, coaliciones dañinas y reproches que mantienen la tensión.',
+                'title': 'Rechazar coaliciones',
+                'desc': 'La hija culpa a la madre por no cuidar al padre; el hijo la defiende y acusa a la hermana por el gasto.',
+                'highlight': True,
             },
             {
                 'label': '04',
-                'title': 'Pactar acciones',
-                'desc': 'Definir acuerdos concretos, responsabilidades y un momento de revisión.',
+                'title': 'Deshacer la triangulación',
+                'desc': 'No tomar partido: sacar a los hijos del conflicto conyugal y pactar apoyo, responsabilidades y seguimiento.',
             },
         ],
-        'footnote': 'La intervención se centra en la función de las interacciones, no en encontrar culpables.',
+        'footnote': 'El objetivo es modificar el patrón relacional sin decidir quién tiene razón.',
     },
     {
         'module': 'checklist',
@@ -204,11 +198,11 @@ SLIDES = [
                 'desc': 'Fijar un diálogo diario sin reproches y redistribuir tareas según la capacidad del padre.',
             },
             {
-                'label': 'Apoyar el embarazo',
-                'desc': 'Frenar los reproches cruzados y organizar una red de apoyo mutuo para la gestación.',
+                'label': 'Neutralizar coaliciones',
+                'desc': 'La hija culpa a la madre; el hijo se alía con ella y reprocha los gastos del embarazo. El médico no toma partido y pacta apoyo mutuo.',
             },
         ],
-        'footnote': 'Frenar la culpa cruzada: cuidados del padre y gastos del embarazo. El registro no reemplaza la atención si cambia el dolor.',
+        'footnote': 'El registro del dolor no sustituye la reevaluación clínica si cambia el cuadro.',
     },
     {
         'module': 'stat_card',
