@@ -23,7 +23,7 @@ Patológica, Grupo 3, Pregrado Médico.
 
 1. **Portada** (`title`) — título, subtítulo, curso e integrantes.
 2. **Caso clínico** (`timeline`) — 26 años / 47 años / 52 años (actual).
-3. **Estudios complementarios** (`stat_card`) — TFGe 11 mL/min/1,73 m² (ERC 5) + bioquímica, hemograma/orina y ecografía (con esquema).
+3. **Estudios complementarios** (`checklist`) — panel verificado: TFGe 11 (ERC 5), anemia, sedimento de orina y ecografía (con esquema).
 4. **Estudio macroscópico** (`figure`) — corte coronal del riñón contraído (con esquema anotado).
 5. **Estudio microscópico** (`figure`) — panel 2×2: obsolescencia glomerular, fibrosis intersticial (Masson), tiroidización tubular, arterioloesclerosis hialina.
 6. **Patogenia** (`flow_diagram`) — hiperfiltración de Brenner en 4 pasos.
@@ -50,6 +50,32 @@ cd tema3-glomerulonefritis
 # 4. generar el .pptx (lint fail-fast + render; el contraste bloquea la entrega)
 /tmp/sdvenv/bin/studydeck all manifest.py tema3_glomerulonefritis_cronica.pptx
 ```
+
+## Revisión PME v1.0 (auditoría de prosa médica deliberativa)
+
+Refinamientos aplicados desde la matriz de la auditoría:
+
+- **Diapositiva 2:** el hito de los 47 años asigna agencia causal explícita
+  («la sobrecarga presora aceleró el colapso hemodinámico de las nefronas»).
+- **Diapositiva 4:** el pie desempaqueta la atrofia hacia evidencia temporal
+  («reducción simétrica que confirma la lesión crónica terminal»).
+- **Diapositiva 7:** la lesión vascular se enuncia como proceso causal
+  (estrecha la luz → isquemia posglomerular → liberación desregulada de renina).
+- **Diapositiva 9:** clausura pragmática vinculante (> 85% de obsolescencia
+  glomerular contraindica la inmunosupresión e impone terapia de sustitución
+  renal inmediata).
+
+### Verificación de solapamiento (slide 3)
+
+El módulo `stat_card` **con imagen** solapa el panel del dato heroico con las
+tarjetas narrativas en **0,80 in × 1,52 in** (medido sobre el `.pptx`; el
+fixture del motor no cubre `stat_card` con imagen, por lo que `studydeck check`
+no lo detecta). La diapositiva 3 se reestructuró como `checklist` con imagen —
+el único módulo de apoyo visual sin solapamiento (ítems 0,65–8,15 in; imagen
+8,35–12,65 in) — conservando los cuatro ejes de estudios y el esquema de
+ecografía. Verificación: escaneo geométrico de los 10 slides → slide 3 CLEAN
+(el resto del deck ya era CLEAN; los 0,04 in del slide 2 son los nodos
+intencionales sobre el eje de la línea de tiempo).
 
 ## Notas del borrador
 

@@ -43,8 +43,8 @@ SLIDES = [
           'desc': 'Hematuria macroscópica post-faringitis repetida; nunca '
                   'biopsiada ni tratada.'},
          {'label': '47 años', 'title': 'Hipertensión arterial',
-          'desc': 'Diagnosticada hace 5 años con apego terapéutico irregular; '
-                  'acelera el daño hemodinámico.'},
+          'desc': 'Pauta irregular desde hace 5 años; la sobrecarga presora '
+                  'aceleró el colapso hemodinámico de las nefronas.'},
          {'label': '52 años (actual)', 'title': 'Síndrome urémico',
           'desc': 'Astenia, náuseas matutinas, prurito, nicturia y edemas en '
                   'miembros inferiores.'}],
@@ -52,21 +52,25 @@ SLIDES = [
                  'pérdida de 4 kg no voluntaria.'},
 
     # 3 — Estudios complementarios y diagnóstico funcional
-    {'module': 'stat_card',
+    # (checklist: panel de verificación de los estudios realizados; el módulo
+    #  stat_card con imagen solapa el panel del dato 0,80 in — verificado en
+    #  el .pptx — y el fixture del motor no cubre stat_card con imagen)
+    {'module': 'checklist',
      'kicker': 'Función renal',
      'title': 'Estudios complementarios: uremia terminal',
-     'stat_num': '11',
-     'stat_title': 'mL/min/1,73 m² de TFGe — ERC estadio 5 (terminal)',
-     'narrative_blocks': [
-         {'title': 'Bioquímica',
-          'desc': 'Urea 142 mg/dL y creatinina 5,8 mg/dL; calcio 7,8 mg/dL y '
-                  'fósforo 6,4 mg/dL.'},
-         {'title': 'Hemograma y orina',
-          'desc': 'Hemoglobina 8,9 g/dL (anemia normocítica normocrómica); '
-                  'proteinuria 1,8 g/24 h con cilindros céreos anchos.'},
-         {'title': 'Ecografía bilateral',
+     'items': [
+         {'label': 'TFGe 11 mL/min/1,73 m²',
+          'desc': 'ERC estadio 5 (terminal): urea 142 mg/dL y creatinina 5,8 '
+                  'mg/dL.'},
+         {'label': 'Anemia normocítica',
+          'desc': 'Hemoglobina 8,9 g/dL por déficit de eritropoyetina; calcio '
+                  '7,8 y fósforo 6,4 mg/dL.'},
+         {'label': 'Sedimento de orina',
+          'desc': 'Proteinuria 1,8 g/24 h con cilindros céreos anchos y '
+                  'hematíes dismórficos.'},
+         {'label': 'Ecografía bilateral',
           'desc': 'Riñones simétricos de 7,5-7,8 cm, hiperecogénicos, con '
-                  'corteza < 3 mm y pérdida corticomedular.'}],
+                  'corteza < 3 mm.'}],
      'image': 'imgs/eco_rinon_contraido.png',
      'caption': 'Riñón pequeño e hiperecogénico con corteza milimétrica: el '
                 'patrón ecográfico del estadio terminal.',
@@ -83,8 +87,9 @@ SLIDES = [
                 '2-3 mm y vasos arcuatos rígidos entreabiertos.',
      'credit': 'Ilustración generada para esta presentación (esquema '
                'didáctico)',
-     'footnote': 'Caso: 7,8 cm y 70 g · Normal: 12 cm y 120-150 g — atrofia '
-                 'simétrica severa.'},
+     'footnote': 'Caso: 7,8 cm y 70 g frente a valores normales (12 cm y '
+                 '120-150 g) — reducción simétrica que confirma la lesión '
+                 'crónica terminal.'},
 
     # 5 — Estudio microscópico
     {'module': 'figure',
@@ -133,8 +138,9 @@ SLIDES = [
                        'en esferas hialinas acelulares.',
                        'Fibrosis intersticial masiva con pérdida de células '
                        'productoras de eritropoyetina.',
-                       'Isquemia arteriolar con arterioloesclerosis hialina '
-                       'e hipertensión intraglomerular.',
+                       'La arteriolosclerosis hialina estrecha la luz '
+                       'vascular; determina isquemia posglomerular y '
+                       'liberación desregulada de renina.',
                        'Atrofia tubular con tiroidización y pérdida del '
                        'gradiente osmótico medular.']},
      'right_card': {'header': 'MANIFESTACIÓN', 'title': 'Expresión clínica',
@@ -191,9 +197,9 @@ SLIDES = [
                   'de eritropoyetina.'},
          {'title': 'Trasplante renal', 'highlight': True,
           'desc': 'Única terapéutica curativa definitiva.'}],
-     'footnote': 'ERC estadio G5 (TFGe < 15 mL/min/1,73 m²) · Contraindicado: '
-                 'inmunosupresión, el parénquima esclerótico no es '
-                 'recuperable.'},
+     'footnote': 'ERC G5 irreversible: > 85% de obsolescencia glomerular '
+                 'contraindica la inmunosupresión e impone terapia de '
+                 'sustitución renal inmediata.'},
 
     # 10 — Conclusiones de aprendizaje
     {'module': 'concept_map',
