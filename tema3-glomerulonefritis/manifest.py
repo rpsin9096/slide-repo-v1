@@ -7,8 +7,9 @@ Caso clínico: varón de 52 años con glomerulonefritis crónica terminal
 
 Estructura de 10 diapositivas según la Guía de Apoyo Visual, con guion del
 orador en GUION_DEL_ORADOR.md. Idioma es-ES, paleta UCP, WCAG AA.
-Imágenes locales en imgs/ como apoyo visual (esquemas didácticos generados
-para esta presentación).
+Apoyo visual en imgs/: esquema de ecografía generado (slide 3) +
+fotografías reales de web con crédito (slides 4-5: Wikimedia Commons
+y PathologyOutlines).
 """
 
 COURSE_INFO = {'course': 'Anatomía Patológica', 'institution': 'UCP',
@@ -35,21 +36,30 @@ SLIDES = [
      'course': 'Anatomía Patológica · Tema 3', 'institution': 'UCP',
      'author': 'Grupo 3 · Pregrado Médico'},
 
-    # 2 — Presentación del caso clínico (línea de tiempo)
-    {'module': 'timeline',
-     'kicker': 'Anamnesis', 'title': 'Veintiséis años de historia natural',
-     'milestones': [
-         {'label': '26 años', 'title': 'Brote nefrítico inicial',
-          'desc': 'Hematuria macroscópica post-faringitis repetida; nunca '
-                  'biopsiada ni tratada.'},
-         {'label': '47 años', 'title': 'Hipertensión arterial',
-          'desc': 'Pauta irregular desde hace 5 años; la sobrecarga presora '
-                  'aceleró el colapso hemodinámico de las nefronas.'},
-         {'label': '52 años (actual)', 'title': 'Síndrome urémico',
-          'desc': 'Astenia, náuseas matutinas, prurito, nicturia y edemas en '
-                  'miembros inferiores.'}],
-     'footnote': 'Varón de 52 años, albañil, con 8 meses de evolución y '
-                 'pérdida de 4 kg no voluntaria.'},
+    # 2 — Presentación del caso clínico (viñeta clínica, fiel al guion)
+    {'module': 'case_block',
+     'kicker': 'Caso clínico',
+     'title': 'Varón de 52 años con síndrome urémico',
+     'case_stem': 'Varón de 52 años, albañil, con cefalea persistente, fatiga '
+                  'incapacitante y edema progresivo en miembros inferiores. '
+                  'Ocho meses de astenia, náuseas matutinas, nicturia (3-4 '
+                  'por noche) y edema maleolar bilateral con prurito.',
+     'findings': [
+         'Hematuria macroscópica post-faringitis a los 26 años, sin estudio',
+         'HTA desde los 47 años; la sobrecarga presora aceleró el colapso '
+         'hemodinámico.',
+         'No fumador ni antecedentes quirúrgicos previos'],
+     'reasoning': 'El dato pivote es la hematuria juvenil post-faringitis, '
+                  'nunca biopsiada ni tratada: una glomerulopatía primaria '
+                  'no estudiada. La hipertensión secundaria aceleró el '
+                  'deterioro hasta la consulta en fase de falla orgánica '
+                  'descompensada.',
+     'diagnosis': 'Síndrome urémico en ERC estadio 5',
+     'clinical_pearl': 'La hematuria post-faringitis recurrente amerita '
+                       'biopsia renal: el diagnóstico precoz habría evitado '
+                       'la fibrosis irreversible.',
+     'footnote': 'Evolución de 8 meses con pérdida de 4 kg y anorexia '
+                 'marcada.'},
 
     # 3 — Estudios complementarios y diagnóstico funcional
     # (checklist: panel de verificación de los estudios realizados; el módulo
@@ -82,11 +92,11 @@ SLIDES = [
     # 4 — Estudio macroscópico
     {'module': 'figure',
      'kicker': 'Estudio macroscópico', 'title': 'El riñón contraído',
-     'image': 'imgs/macro_rinon_contraido.png',
-     'caption': 'Corte coronal: superficie finamente granular, corteza de '
-                '2-3 mm y vasos arcuatos rígidos entreabiertos.',
-     'credit': 'Ilustración generada para esta presentación (esquema '
-               'didáctico)',
+     'image': 'imgs/macro_rinon_contraido_web.jpg',
+     'caption': 'Superficie cortical finamente granular con regla métrica: la '
+                'morfología macro del riñón contraído terminal.',
+     'credit': 'Wikimedia Commons — Gross pathology of nephrosclerosis '
+               '(upload.wikimedia.org)',
      'footnote': 'Caso: 7,8 cm y 70 g frente a valores normales (12 cm y '
                  '120-150 g) — reducción simétrica que confirma la lesión '
                  'crónica terminal.'},
@@ -94,11 +104,11 @@ SLIDES = [
     # 5 — Estudio microscópico
     {'module': 'figure',
      'kicker': 'Estudio microscópico', 'title': 'Esclerosis, atrofia y fibrosis',
-     'image': 'imgs/micro_panel_triada.png',
-     'caption': 'Tríada de la etapa terminal: obsolescencia glomerular, '
-                'fibrosis intersticial masiva y tiroidización tubular.',
-     'credit': 'Ilustración generada para esta presentación (esquema '
-               'didáctico)',
+     'image': 'imgs/micro_rinon_web.jpg',
+     'caption': 'Fibrosis intersticial con atrofia tubular y glomérulo con '
+                'esclerosis global: histología del estadio terminal.',
+     'credit': 'PathologyOutlines — Interstitial fibrosis and tubular atrophy '
+               '(pathologyoutlines.com)',
      'footnote': 'Tinciones H&E, PAS y tricrómico de Masson · > 85% de '
                  'glomérulos con esclerosis global.'},
 

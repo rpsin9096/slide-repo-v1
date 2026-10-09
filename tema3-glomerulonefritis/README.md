@@ -16,16 +16,16 @@ Patológica, Grupo 3, Pregrado Médico.
 | `tema3_glomerulonefritis_cronica.pptx` | **Deck generado (10 diapositivas, 16:9)** |
 | `manifest.py` | Fuente del deck (COURSE_INFO + CONFIG + SLIDES) |
 | `GUION_DEL_ORADOR.md` | Guion del orador por diapositiva (~14 min) |
-| `imgs/` | Apoyo visual: esquemas didácticos (ecografía, macro, panel micro 2×2) |
+| `imgs/` | Apoyo visual: esquema de ecografía generado + fotos macro/micro reales de web (con crédito) |
 | `source/` | Materiales fuente recibidos (guía visual + caso clínico) |
 
 ## Estructura del deck
 
 1. **Portada** (`title`) — título, subtítulo, curso e integrantes.
-2. **Caso clínico** (`timeline`) — 26 años / 47 años / 52 años (actual).
+2. **Caso clínico** (`case_block`) — viñeta clínica: paciente de 52 años, motivo de consulta, evolución de 8 meses y antecedentes clave.
 3. **Estudios complementarios** (`checklist`) — panel verificado: TFGe 11 (ERC 5), anemia, sedimento de orina y ecografía (con esquema).
-4. **Estudio macroscópico** (`figure`) — corte coronal del riñón contraído (con esquema anotado).
-5. **Estudio microscópico** (`figure`) — panel 2×2: obsolescencia glomerular, fibrosis intersticial (Masson), tiroidización tubular, arterioloesclerosis hialina.
+4. **Estudio macroscópico** (`figure`) — foto macro real (Wikimedia Commons): superficie cortical finamente granular con regla métrica.
+5. **Estudio microscópico** (`figure`) — foto micro real (PathologyOutlines): fibrosis intersticial, atrofia tubular y esclerosis glomerular global.
 6. **Patogenia** (`flow_diagram`) — hiperfiltración de Brenner en 4 pasos.
 7. **Correlación clínico-patológica** (`side_by_side`) — sustrato tisular vs. expresión clínica.
 8. **Diagnóstico diferencial** (`comparison_table`) — 4 entidades × 4 criterios.
@@ -55,8 +55,9 @@ cd tema3-glomerulonefritis
 
 Refinamientos aplicados desde la matriz de la auditoría:
 
-- **Diapositiva 2:** el hito de los 47 años asigna agencia causal explícita
-  («la sobrecarga presora aceleró el colapso hemodinámico de las nefronas»).
+- **Diapositiva 2:** el antecedente de HTA asigna agencia causal explícita
+  («la sobrecarga presora aceleró el colapso hemodinámico») — preservado en
+  la viñeta clínica como hallazgo clave.
 - **Diapositiva 4:** el pie desempaqueta la atrofia hacia evidencia temporal
   («reducción simétrica que confirma la lesión crónica terminal»).
 - **Diapositiva 7:** la lesión vascular se enuncia como proceso causal
@@ -73,15 +74,43 @@ fixture del motor no cubre `stat_card` con imagen, por lo que `studydeck check`
 no lo detecta). La diapositiva 3 se reestructuró como `checklist` con imagen —
 el único módulo de apoyo visual sin solapamiento (ítems 0,65–8,15 in; imagen
 8,35–12,65 in) — conservando los cuatro ejes de estudios y el esquema de
-ecografía. Verificación: escaneo geométrico de los 10 slides → slide 3 CLEAN
-(el resto del deck ya era CLEAN; los 0,04 in del slide 2 son los nodos
-intencionales sobre el eje de la línea de tiempo).
+ecografía. Verificación: escaneo geométrico de los 10 slides → los 10 CLEAN (los
+0,04 in que mostraba el slide 2 eran los nodos intencionales de la antigua
+línea de tiempo; con la viñeta clínica no hay solapamientos).
+
+## Versión 2 — fotos web en macro/micro + caso simplificado
+
+Cambios solicitados tras la revisión PME:
+
+- **Fotos reales de web** (el motor no descarga imágenes: se descargaron y se
+  referencian como archivo local con `caption` analítico y `credit`):
+  - Slide 4 (macro): `imgs/macro_rinon_contraido_web.jpg` — Wikimedia Commons,
+    «Gross pathology of nephrosclerosis» (875×673 px). Riñón con superficie
+    cortical finamente granular, regla métrica e inserto magnificado. Nota de
+    transparencia: la foto corresponde a un caso de nefroesclerosis; la
+    morfología (riñón contraído granular) es la misma que enseña el caso.
+  - Slide 5 (micro): `imgs/micro_rinon_web.jpg` — PathologyOutlines,
+    «Interstitial fibrosis and tubular atrophy» (1160×630 px). Fibrosis
+    intersticial, atrofia tubular y glomérulo con esclerosis global.
+- **Esquema conservado donde es pertinente:** slide 3 mantiene el esquema de
+  ecografía generado (la guía pide ecografía anotada con medidas; no hay foto
+  real equivalente con esas anotaciones). Se eliminaron los esquemas macro y
+  micro reemplazados.
+- **Slide 2 simplificado:** de `timeline` (26/47/52 años) a `case_block`
+  (viñeta clínica), más fiel al guion del caso: paciente, motivo de consulta,
+  evolución de 8 meses, antecedentes clave, juicio diagnóstico, diagnóstico y
+  perla clínica. Se conservó el refinamiento PME de agencia causal en el
+  antecedente de HTA.
+
+Verificación: `imgprep` 3/3 PASS · `lint` PASS (10 slides) · build OK con
+**contraste 0 violaciones WCAG** · escaneo geométrico de solapamientos: los
+10 slides CLEAN.
 
 ## Notas del borrador
 
-- Las imágenes de `imgs/` son **esquemas didácticos generados** coherentes con la
-  guía visual (apoyo visual permitido). Para la versión final, sustituir por
-  fotografías reales (macro/micro) con `caption` analítico y `credit`.
+- Las imágenes de `imgs/` son **fotos reales de web con crédito** (slides 4-5)
+  y un **esquema didáctico generado** (slide 3, ecografía anotada). Toda imagen
+  lleva `caption` analítico (qué se enseña) y `credit` (fuente).
 - El contrato de imágenes exige: jpg/jpeg/png, 20 KB–4 MB, lado menor ≥ 300 px.
 - El motor no descarga ni genera imágenes: las figuras reales deben incorporarse
   como archivo local.
