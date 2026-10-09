@@ -104,13 +104,13 @@ SLIDES = [
     # 5 — Estudio microscópico
     {'module': 'figure',
      'kicker': 'Estudio microscópico', 'title': 'Esclerosis, atrofia y fibrosis',
-     'image': 'imgs/micro_rinon_web_anotada.jpg',
-     'caption': 'Micrografía anotada: esclerosis glomerular global, fibrosis '
-                'intersticial y atrofia tubular.',
-     'credit': 'PathologyOutlines (pathologyoutlines.com) + anotación gráfica '
-               'del Grupo 3',
-     'footnote': 'Tinciones H&E, PAS y tricrómico de Masson · > 85% de '
-                 'glomérulos con esclerosis global.'},
+     'image': 'imgs/micro_rinon_esclerosis_web_anotada.jpg',
+     'caption': 'Micrografía anotada (PAS): glomérulo con esclerosis global, '
+                'fibrosis intersticial y atrofia tubular.',
+     'credit': 'PathologyOutlines (pathologyoutlines.com) — Global '
+               'glomerulosclerosis, PAS + anotación gráfica del Grupo 3',
+     'footnote': 'Tinción PAS · > 85% de glomérulos con esclerosis global en '
+                 'la biopsia: confirma el estadio terminal.'},
 
     # 6 — Patogenia y fisiopatología (modelo de Brenner)
     {'module': 'flow_diagram',

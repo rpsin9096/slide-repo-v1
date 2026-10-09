@@ -25,7 +25,7 @@ Patológica, Grupo 3, Pregrado Médico.
 2. **Caso clínico** (`case_block`) — viñeta clínica: paciente de 52 años, motivo de consulta, evolución de 8 meses y antecedentes clave.
 3. **Estudios complementarios** (`checklist`) — panel verificado: TFGe 11 (ERC 5), anemia, sedimento de orina y ecografía (con esquema).
 4. **Estudio macroscópico** (`figure`) — foto macro real (Wikimedia Commons): superficie cortical finamente granular con regla métrica.
-5. **Estudio microscópico** (`figure`) — foto micro real anotada (PathologyOutlines): esclerosis glomerular global, fibrosis intersticial y atrofia tubular señaladas con flechas y rótulos.
+5. **Estudio microscópico** (`figure`) — foto micro real anotada (PathologyOutlines, PAS): glomérulo con esclerosis global, fibrosis intersticial y atrofia tubular señalados con elipse, flechas y rótulos.
 6. **Patogenia** (`flow_diagram`) — hiperfiltración de Brenner en 4 pasos.
 7. **Correlación clínico-patológica** (`side_by_side`) — sustrato tisular vs. expresión clínica.
 8. **Diagnóstico diferencial** (`comparison_table`) — 4 entidades × 4 criterios.
@@ -89,11 +89,12 @@ Cambios solicitados tras la revisión PME:
     cortical finamente granular, regla métrica e inserto magnificado. Nota de
     transparencia: la foto corresponde a un caso de nefroesclerosis; la
     morfología (riñón contraído granular) es la misma que enseña el caso.
-  - Slide 5 (micro): `imgs/micro_rinon_web_anotada.jpg` — PathologyOutlines,
-    «Interstitial fibrosis and tubular atrophy» (1160×630 px), con anotación
-    gráfica incorporada (ver «Versión 3 — anotación del slide 5»). Fibrosis
-    intersticial, atrofia tubular y glomérulo con esclerosis global.
-    La foto original sin anotar se conserva como `imgs/micro_rinon_web.jpg`.
+  - Slide 5 (micro): foto real de PathologyOutlines con anotación gráfica
+    incorporada (ver «Versión 3» y «Versión 4»). **Reemplazada en la Versión 4**
+    tras la auditoría de coherencia clínica: la foto v2 («Interstitial fibrosis
+    and tubular atrophy», 1160×630 px) mostraba fibrosis intersticial y atrofia
+    tubular, pero **ningún glomérulo** (ver el detalle morfométrico en
+    «Versión 4»).
 - **Esquema conservado donde es pertinente:** slide 3 mantiene el esquema de
   ecografía generado (la guía pide ecografía anotada con medidas; no hay foto
   real equivalente con esas anotaciones). Se eliminaron los esquemas macro y
@@ -112,19 +113,59 @@ Verificación: `imgprep` 3/3 PASS · `lint` PASS (10 slides) · build OK con
 
 Solicitud: sobreponer a la foto elementos que indiquen **dónde ocurre cada
 proceso**. Como el motor no coloca formas sobre las diapositivas, la anotación
-se horneó en la propia imagen (`imgs/micro_rinon_web_anotada.jpg`); los píxeles
-de la histología no se alteraron, solo se añadieron gráficos encima:
+se hornea en la propia imagen; los píxeles de la histología no se alteran,
+solo se añaden gráficos encima (chips blancos con borde azul UCP `#3854CC`,
+texto `#2B2C4A`, flechas y elipse en rojo UCP `#D92A2B`). La primera
+implementación sobre la foto «Interstitial fibrosis and tubular atrophy» fue
+**superada por la Versión 4**: la auditoría de coherencia clínica demostró
+que esa foto no contiene ningún glomérulo, por lo que el marcador de
+esclerosis glomerular global era incorrecto (ver «Versión 4»).
 
-- **Esclerosis glomerular global** — elipse roja sobre el glomérulo cicatrizado
-  (parte inferior-izquierda; elipse porque el glomérulo queda cortado por el
-  borde inferior).
-- **Fibrosis intersticial** — flecha roja hacia la zona pálida de colágeno con
-  fibroblastos fusiformes (lado derecho).
-- **Atrofia tubular** — flecha roja hacia los túbulos con membrana basal
-  engrosada (magenta, tinción tipo PAS; parte superior-central).
-- Rótulos en chips blancos con borde azul UCP (`#3854CC`) y texto en
-  `#2B2C4A`; flechas y elipse en rojo UCP (`#D92A2B`). La barra de escala de
-  90 µm queda visible y sin cubrir.
+## Versión 4 — coherencia clínica del slide 5 (reemplazo de la micrografía)
+
+**Hallazgo de la auditoría (tamaño medido con la barra de escala).** La foto
+v2/v3 (`micro_rinon_web.jpg`, «Interstitial fibrosis and tubular atrophy»,
+1160×630 px) tiene una barra de 90 µm ≈ 190-220 px (~2,1 px/µm). A ese aumento,
+un glomérulo (150-250 µm) mediría 315-550 px; la imagen **no contiene ninguna
+estructura redonda de ese tamaño** (las mayores miden ~150 px ≈ 68 µm). La
+estructura señalada con la elipse medía ~75-85 µm: corresponde a un
+**arteríolo hialinizado (arteriolosclerosis hialina)**, no a un glomérulo.
+Conclusión: el marcador «Esclerosis glomerular global» y la leyenda v2
+(«...y glomérulo con esclerosis global») eran **clínicamente incorrectos**;
+la foto solo acreditaba fibrosis intersticial y atrofia tubular.
+
+**Corrección.** Nueva micrografía: `imgs/micro_rinon_esclerosis_web.jpg` —
+PathologyOutlines, «**Global glomerulosclerosis**», tinción **PAS**
+(1716×942 px, 602 KB), del mismo tema que la foto anterior
+(`kidneyrenaldisease.html` — glomerulonefritis crónica / riñón terminal, el
+propio caso). Barra de escala de 80 µm = 204 px (2,55 px/µm).
+
+**Verificación morfométrica (clínica):**
+
+- Glomérulo central: ~192×208 µm (de cápsula a cápsula), tuft entero
+  sustituido por masa cicatricial con cápsula de Bowman engrosada (PAS) =
+  **esclerosis glomerular global**; segundo glomérulo esclerosado (~176 µm)
+  en la parte inferior-izquierda.
+- Túbulos de 43-78 µm con membrana basal engrosada (PAS+) = **atrofia
+  tubular**.
+- Intersticio pálido expandido con fibroblastos = **fibrosis intersticial**.
+
+**Anotación final** (`imgs/micro_rinon_esclerosis_web_anotada.jpg`): elipse
+roja sobre el glomérulo central con esclerosis global; flechas hacia la
+fibrosis intersticial (intersticio pálido) y hacia un túbulo atrófico (membrana
+basal magenta engrosada). La barra de 80 µm queda visible y sin cubrir.
+Diff de píxeles contra un re-encode de referencia (misma calidad): los
+gráficos quedan confinados a las regiones de los rótulos/flechas/elipse —
+**0 píxeles de histología alterados** fuera de ellos.
+
+**Manifest corregido:** caption «Micrografía anotada (PAS): glomérulo con
+esclerosis global, fibrosis intersticial y atrofia tubular.» (100 car.);
+crédito «PathologyOutlines (pathologyoutlines.com) — Global
+glomerulosclerosis, PAS + anotación gráfica del Grupo 3» (106 car.); pie
+corregido a «Tinción PAS · > 85% de glomérulos con esclerosis global en la
+biopsia: confirma el estadio terminal.» (100 car.) — la foto es una única
+tinción PAS, no el tríptico H&E/PAS/tricrómico que decía el pie anterior.
+Archivos v2 eliminados: `micro_rinon_web.jpg`, `micro_rinon_web_anotada.jpg`.
 
 Verificación: `imgprep` 4/4 PASS · `lint` PASS (10 slides) · build OK con
 **contraste 0 violaciones WCAG** · escaneo geométrico de solapamientos: los

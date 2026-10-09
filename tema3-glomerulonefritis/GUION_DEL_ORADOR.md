@@ -24,7 +24,7 @@
 
 ## Diapositiva 5 — Estudio microscópico: esclerosis y atrofia (2 min)
 
-> En el microscopio confirmamos la tríada clásica de la etapa final: primero, esclerosis glomerular global, donde el penacho capilar se convierte en una masa redonda de colágeno acelular; segundo, atrofia tubular marcada donde vemos la típica tiroidización del riñón, con túbulos atrapados llenos de proteínas densas; y tercero, fibrosis intersticial severa demostrada por la tinción tricrómica, con infiltrado inflamatorio mononuclear y daño arteriosclerótico en los vasos sanguíneos.
+> En el microscopio confirmamos la tríada clásica de la etapa final: primero, esclerosis glomerular global, donde el penacho capilar se convierte en una masa redonda de colágeno acelular; segundo, atrofia tubular marcada donde vemos la típica tiroidización del riñón, con túbulos atrapados llenos de proteínas densas; y tercero, fibrosis intersticial severa demostrada por las tinciones especiales (PAS y tricrómico), con infiltrado inflamatorio mononuclear y daño arteriosclerótico en los vasos sanguíneos.
 >
 > *(La micrografía está anotada: la elipse roja marca el glomérulo con esclerosis global y las flechas señalan la fibrosis intersticial y los túbulos atróficos — úsenlas de guía al señalar cada proceso.)*
 
