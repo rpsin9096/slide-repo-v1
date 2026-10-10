@@ -11,7 +11,7 @@ CONFIG = {
     'PALETTE': 'ucp',
     'LANG': 'pt-BR',
     'PROFILE': 'lecture',
-    'IMAGES': {'mode': 'none', 'max_n': 0,
+    'IMAGES': {'mode': 'web-only', 'max_n': 4,
                'allow_ai': False, 'allow_placeholder': False},
     'SHOW_FOOTER': True,
     'SHOW_SLIDE_NUMBER': True,
@@ -33,6 +33,9 @@ SLIDES = [
     {'module': 'definition',
      'kicker': 'Trombocitopenia',
      'title': 'Definição e três vias de redução',
+     'image': 'imagens/trombocitopenia_vias_v2.png',
+     'caption': 'Cada compartimento reduz a contagem por uma via própria: produção, sequestro ou destruição.',
+     'credit': 'Ilustração esquemática gerada por IA, apoio visual',
      'main_statement': 'Trombocitopenia é a contagem de plaquetas periféricas abaixo de 150.000/µL, '
                        'causada por produção medular insuficiente, sequestro esplênico ou destruição acelerada.',
      'elaboration': 'As três vias atuam isoladas ou combinadas; a classificação seguinte separa as '
@@ -66,6 +69,9 @@ SLIDES = [
     {'module': 'stat_card',
      'kicker': 'Sequestro esplênico',
      'title': 'Plaquetopenia sem falha de produção',
+     'image': 'imagens/baco_sequestro.png',
+     'caption': 'Baço aumentado retém a maior parte das plaquetas, com fluxo de saída reduzido.',
+     'credit': 'Ilustração esquemática gerada por IA, apoio visual',
      'stat_num': '90%',
      'stat_title': 'das plaquetas periféricas podem ser sequestradas por baço aumentado, '
                    'com plaquetopenia dilucional aparente.',
@@ -210,6 +216,9 @@ SLIDES = [
     {'module': 'definition',
      'kicker': 'Anemia',
      'title': 'Anemia limita a entrega de oxigênio',
+     'image': 'imagens/curva_hemoglobina_v2.png',
+     'caption': 'Curva deslocada à direita libera mais oxigênio em pressões tissulares baixas.',
+     'credit': 'Gráfico esquemático gerado por IA, apoio visual',
      'main_statement': 'Anemia é a redução anormal de hemoglobina e eritrócitos circulantes, '
                        'que limita a entrega tecidual de oxigênio.',
      'elaboration': 'O organismo responde com três eixos: maior cedência tecidual, redistribuição do '
@@ -275,6 +284,9 @@ SLIDES = [
     {'module': 'case_block',
      'kicker': 'Esferocitose',
      'title': 'Esferocitose hereditária',
+     'image': 'imagens/esferocito_vs_disco_v2.png',
+     'caption': 'Esferócito sem palidez central perde a forma de disco e fica rígido.',
+     'credit': 'Ilustração esquemática gerada por IA, apoio visual',
      'case_stem': 'Anomalia autossômica dominante da membrana eritrocitária. A perda de fragmentos '
                   'de membrana converte o eritrócito em esferócito rígido.',
      'reasoning': 'Sem flexibilidade, os esferócitos ficam retidos no baço e são fagocitados '
