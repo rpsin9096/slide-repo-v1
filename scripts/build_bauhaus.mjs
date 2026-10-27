@@ -34,7 +34,7 @@ md = md.replace('@table', `| Sonido | Sustrato | Topografía | Hallazgo |
 md = md.replace(/([^\n])\n(?=\*\*)/g, '$1\n\n');
 const options = {
   template: 'bauhaus', markdown: md, lang: 'es', geometry: 'v3',
-  flush_columns: true, balance_columns: true,
+  flush_columns: true, balance_columns: false,
   header_text: 'Material de Raul de Oliveira Pasin',
   header_date: { enabled: false }, alignment: 'justify',
   image_captions_enabled: true, chapters_toc: false, table_layout_mode: 'compact',

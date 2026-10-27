@@ -13,7 +13,7 @@ The current PDF is generated with the user's **compilador-handoff-v3-updated 2.z
 ## Settings and assets
 
 - `template: 'bauhaus'`, `geometry: 'v3'`, `lang: 'es'`.
-- **“Encaixar pé da página”: enabled** (`flush_columns: true`). Column balancing enabled (`balance_columns: true`). Flush fitting follows the compiler's bounded-glue rules; enabling it is not a claim that every column reaches the page foot.
+- **“Encaixar pé da página”: enabled** (`flush_columns: true`). “Quebrar colunas para acomodar” disabled (`balance_columns: false`). Flush fitting follows the compiler's bounded-glue rules; enabling it is not a claim that every column reaches the page foot.
 - Two-column layout, justified alignment, captions enabled, date and TOC disabled.
 - Running header: **Material de Raul de Oliveira Pasin**.
 - Retains the 34 visually corrected crops, original figure numbering and complete study text.
