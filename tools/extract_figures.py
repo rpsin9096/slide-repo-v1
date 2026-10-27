@@ -58,8 +58,9 @@ PAIRS = {
     'fig_3_34_3_35':  ('fig_3_34', 'fig_3_35'),     # auscultación anterior + posterior
 }
 # Recortes que el deck usa sueltos: se publican en la carpeta de salida, no en
-# `_partes`. El resto de los recortes sueltos queda solo como material de trabajo.
-SINGLES = ('fig_3_8',)
+# `_partes`. El resto de los recortes sueltos queda solo como material de trabajo
+# (fig_3_9 se conserva suelto para revisar el recorte, pero el deck usa la lámina).
+SINGLES = ('fig_3_8', 'fig_3_9')
 GAP_RATIO = 0.045      # separación entre las dos láminas, relativa a la altura
 DIVIDER = 208          # gris de la línea divisoria
 
