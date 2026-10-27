@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "note": "v3.3 routing eval: word-boundary matching, inflections, and negatives. Golden set (facet_triggers.json) stays verbatim; this file only adds cases.",
+  "queries": [
+    {"query": "the checkout keeps crashing on null input", "must_include": ["diagnosing-bugs"]},
+    {"query": "fixing the flaky retry test", "must_include": ["diagnosing-bugs"]},
+    {"query": "reviewing the pull request diff", "must_include": ["code-review"]},
+    {"query": "split the module behind a deep seam with two adapters", "must_include": ["codebase-design"]},
+    {"query": "audit contrast ratios on the settings page", "must_include": ["focus-design"]},
+    {"query": "update the prefix of the config key", "must_exclude": ["diagnosing-bugs"]},
+    {"query": "the autofix pipeline runs nightly", "must_exclude": ["diagnosing-bugs"]},
+    {"query": "this is an ideal layout for the page", "must_exclude": ["wayfinder"]},
+    {"query": "keyboard shortcut for the editor", "must_exclude": ["i-have-adhd"]},
+    {"query": "rename the variable in the parser", "must_exclude": ["diagnosing-bugs", "unlazy", "i-have-adhd"]}
+  ]
+}

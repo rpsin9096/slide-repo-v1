@@ -1,0 +1,45 @@
+# Added in v3.2 Loop 64. Before this, 34 generated artifacts were tracked,
+# including SQLite -wal/-shm sidecars and a .focusgate/.focusgate/ tree — the
+# workspace root had resolved into its own state directory and re-run itself
+# inside. See AUDIT F14.
+
+# Runtime state. Everything the tool writes while working belongs here.
+.focusgate/
+
+# Git worktrees created under the state directory. Tracked separately because
+# a committed worktree breaks every subsequent clone.
+.focusgate/worktrees/
+
+# Python bytecode. `*.pyc` is listed separately from `*.py[cod]`: both work, but a
+# rule that reads as a character class is easy to misread as covering only
+# three-letter extensions, and this file is itself a claim (C13) under test.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# Quarantined model weights. Manifest with checksums:
+#   models/router_adapter/MANIFEST.json
+# Fetch them with the documented procedure; see the manifest.
+models/router_adapter/*.safetensors
+models/router_adapter/tokenizer.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / tooling
+.idea/
+.vscode/
+*.swp
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local scratch
+*.log
+tmp/

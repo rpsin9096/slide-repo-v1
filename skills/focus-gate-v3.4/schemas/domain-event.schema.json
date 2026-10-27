@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FocusGateDomainEvent",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "timestamp",
+    "version",
+    "data"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "GATE_REGISTERED",
+        "GATE_CHECKED",
+        "STEP_TRANSITIONED",
+        "GATES_ARCHIVED",
+        "DEPTH_CHANGED",
+        "TIME_TRAVEL_ROLLED_BACK",
+        "ORACLE_EVALUATED",
+        "FACET_HYDRATED"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

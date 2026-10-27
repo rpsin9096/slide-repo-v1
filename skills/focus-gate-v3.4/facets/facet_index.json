@@ -1,0 +1,1162 @@
+{
+  "facets": {
+    "banner-safe-zone": {
+      "context": "design",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--audit-safe-zone"
+      ],
+      "priority": 6,
+      "seed": "Run --audit-safe-zone on one banner svg at 16x9.",
+      "socratic_cap": 1,
+      "summary": "Central 70 percent safe-zone validation for banner and hero formats"
+    },
+    "code-review": {
+      "context": "engineering",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [],
+      "priority": 7,
+      "seed": "Run both axes on the smallest file in the diff.",
+      "socratic_cap": 1,
+      "summary": "Dual-axis review with schema-bound findings and severity gate"
+    },
+    "codebase-design": {
+      "context": "engineering",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--audit-code-cliche"
+      ],
+      "priority": 8,
+      "seed": "List the module's public methods; delete or fold one passthrough.",
+      "socratic_cap": 2,
+      "summary": "Deep modules behind minimal public seams proven by two adapters"
+    },
+    "design-tokens": {
+      "context": "design",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--sync-tokens",
+        "--audit-tokens"
+      ],
+      "priority": 6,
+      "seed": "Run --audit-tokens on one stylesheet and fix the first hardcoded hex.",
+      "socratic_cap": 1,
+      "summary": "3-layer token governance primitive to semantic to component"
+    },
+    "diagnosing-bugs": {
+      "context": "engineering",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [],
+      "priority": 10,
+      "seed": "Run the failing command; capture exit code.",
+      "socratic_cap": 2,
+      "summary": "Reproduce-first differential diagnosis with falsifiable hypotheses"
+    },
+    "focus-design": {
+      "context": "design",
+      "mode": "WINDOW",
+      "never_when": [
+        "bespoke",
+        "landing page"
+      ],
+      "oracle": [
+        "--audit-contrast",
+        "--audit-tokens",
+        "--audit-safe-zone"
+      ],
+      "priority": 7,
+      "seed": "Run --audit-contrast on the target stylesheet.",
+      "socratic_cap": 2,
+      "summary": "Audit and repair visual delivery via pure-python visual oracles"
+    },
+    "frontend-design": {
+      "context": "design",
+      "mode": "WINDOW",
+      "never_when": [
+        "audit"
+      ],
+      "oracle": [
+        "--audit-design-cliche"
+      ],
+      "priority": 8,
+      "seed": "Draft the 4-6 named-hex token plan on one page before any CSS.",
+      "socratic_cap": 2,
+      "summary": "Bespoke visual identity with anti-cliche two-pass workflow"
+    },
+    "grilling": {
+      "context": "cognitive",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [],
+      "priority": 7,
+      "seed": "Write the decision as one falsifiable sentence in GATES.md.",
+      "socratic_cap": 5,
+      "summary": "Socratic stress-testing of gray-area decisions with grounded questions"
+    },
+    "i-have-adhd": {
+      "context": "cognitive",
+      "mode": "EPHEMERAL",
+      "never_when": [
+        "explain in detail"
+      ],
+      "oracle": [],
+      "priority": 8,
+      "seed": "Rewrite your reply's line 1 as one \u25b6 NEXT ACTION: command.",
+      "socratic_cap": 0,
+      "summary": "ADHD-shaped output: next action first, max 3 items, rest folded"
+    },
+    "loop-me": {
+      "context": "cognitive",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [],
+      "priority": 6,
+      "seed": "List the exact command you re-run by hand in a scratch file.",
+      "socratic_cap": 2,
+      "summary": "Convert recurring toil into scripted gates with push-right checkpoints"
+    },
+    "prototype": {
+      "context": "engineering",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--verify-spike",
+        "--settle-spike"
+      ],
+      "priority": 6,
+      "seed": "Create empty .focusgate/spikes/<name>.html with a status div.",
+      "socratic_cap": 1,
+      "summary": "Disposable single-question spikes that settle into micro-ADRs"
+    },
+    "triage": {
+      "context": "navigation",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [],
+      "priority": 6,
+      "seed": "Run the reporter's command once, verbatim.",
+      "socratic_cap": 2,
+      "summary": "Classify incoming items and compile ready-for-agent gate ledgers"
+    },
+    "ui-ux-pro-max": {
+      "context": "design",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--audit-contrast",
+        "--audit-tokens"
+      ],
+      "priority": 5,
+      "seed": "Tab through one component and name each visible focus change.",
+      "socratic_cap": 1,
+      "summary": "Interactive-state completeness and token-linked color discipline"
+    },
+    "unlazy": {
+      "context": "cognitive",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [
+        "--run"
+      ],
+      "priority": 9,
+      "seed": "Open the active gate's CHECK command and run it unmodified.",
+      "socratic_cap": 1,
+      "summary": "Completion discipline: gates settle only on real verified evidence"
+    },
+    "wayfinder": {
+      "context": "navigation",
+      "mode": "WINDOW",
+      "never_when": [],
+      "oracle": [],
+      "priority": 5,
+      "seed": "List unblocked gates, pick exactly one, claim it.",
+      "socratic_cap": 2,
+      "summary": "Chart milestone frontiers and claim exactly one unblocked ticket"
+    },
+    "writing-beats": {
+      "context": "writing",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [],
+      "priority": 5,
+      "seed": "Write the next single beat in 3 sentences or fewer.",
+      "socratic_cap": 3,
+      "summary": "Atomic narrative beats that ground each term before leaning on it"
+    },
+    "writing-for-agents": {
+      "context": "writing",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [],
+      "priority": 7,
+      "seed": "Convert one instruction into a CHECK/EXPECT pair.",
+      "socratic_cap": 0,
+      "summary": "Machine briefs with checkable exits and zero prompt ballast"
+    },
+    "writing-fragments": {
+      "context": "writing",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [],
+      "priority": 5,
+      "seed": "Append one unfiltered observation to .focusgate/FRAGMENTS.md.",
+      "socratic_cap": 0,
+      "summary": "Append raw observations to the fragment store without structuring"
+    },
+    "writing-shape": {
+      "context": "writing",
+      "mode": "EPHEMERAL",
+      "never_when": [],
+      "oracle": [
+        "--audit-prose-cliche"
+      ],
+      "priority": 6,
+      "seed": "Draft the 3 candidate opening theses before paragraph one.",
+      "socratic_cap": 2,
+      "summary": "Shape grounded fragments into specs via opening-thesis selection"
+    }
+  },
+  "generated_from": "facet-meta schema 1",
+  "triggers": [
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "16:9",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "3-layer",
+      "priority": 6
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "9x16",
+      "priority": 6
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "a11y",
+      "priority": 7
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "accessibility",
+      "priority": 7
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "adapter",
+      "priority": 8
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "aesthetic",
+      "priority": 8
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "agent brief",
+      "priority": 7
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "anti-cliche",
+      "priority": 8
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "architecture",
+      "priority": 8
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "architecture spec",
+      "priority": 6
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "automate",
+      "priority": 6
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "banner",
+      "priority": 6
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "beat",
+      "priority": 5
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "beats",
+      "priority": 5
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "bespoke",
+      "priority": 8
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "blocker",
+      "priority": 5
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "bounds error",
+      "priority": 10
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "brain dump",
+      "priority": 5
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "brief for gate",
+      "priority": 7
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "broken",
+      "priority": 10
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "bug",
+      "priority": 10
+    },
+    {
+      "facet": "triage",
+      "pattern": "bug report",
+      "priority": 6
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "build the",
+      "priority": 9
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "cannot start",
+      "priority": 8
+    },
+    {
+      "facet": "grilling",
+      "pattern": "challenge this decision",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "changelog",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "check my changes",
+      "priority": 7
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "checklist",
+      "priority": 6
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "clean up",
+      "priority": 8
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "cliche",
+      "priority": 8
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "color audit",
+      "priority": 7
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "color scheme",
+      "priority": 5
+    },
+    {
+      "facet": "grilling",
+      "pattern": "compare options",
+      "priority": 7
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "complete",
+      "priority": 9
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "component states",
+      "priority": 5
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "contrast",
+      "priority": 7
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "crash",
+      "priority": 10
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "creative asset",
+      "priority": 6
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "cron",
+      "priority": 6
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "crop",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "css variables",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "data contract",
+      "priority": 6
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "deadlock",
+      "priority": 10
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "deck",
+      "priority": 6
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "decouple",
+      "priority": 8
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "deep module",
+      "priority": 8
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "defect",
+      "priority": 10
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "design audit",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "design doc",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "design system",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "design tokens",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "diff",
+      "priority": 7
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "direction",
+      "priority": 5
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "display ad",
+      "priority": 6
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "distinctive",
+      "priority": 8
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "do not stop until",
+      "priority": 9
+    },
+    {
+      "facet": "prototype",
+      "pattern": "does it fit",
+      "priority": 6
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "dump",
+      "priority": 5
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "each time",
+      "priority": 6
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "emergency",
+      "priority": 10
+    },
+    {
+      "facet": "triage",
+      "pattern": "enhancement request",
+      "priority": 6
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "epic",
+      "priority": 5
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "error",
+      "priority": 10
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "every time",
+      "priority": 6
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "everything is a mess",
+      "priority": 8
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "exception",
+      "priority": 10
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "explore",
+      "priority": 5
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "exposition",
+      "priority": 5
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "fail",
+      "priority": 10
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "failing",
+      "priority": 10
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "finish",
+      "priority": 9
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "fix",
+      "priority": 10
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "flaky",
+      "priority": 10
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "fleeting",
+      "priority": 5
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "fragments",
+      "priority": 5
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "frontend design",
+      "priority": 8
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "frontier",
+      "priority": 5
+    },
+    {
+      "facet": "grilling",
+      "pattern": "gray area",
+      "priority": 7
+    },
+    {
+      "facet": "grilling",
+      "pattern": "grill me",
+      "priority": 7
+    },
+    {
+      "facet": "prototype",
+      "pattern": "hacky",
+      "priority": 6
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "handoff",
+      "priority": 7
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "hardcoded",
+      "priority": 7
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "hero",
+      "priority": 6
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "icon set",
+      "priority": 5
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "idea",
+      "priority": 5
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "implement",
+      "priority": 9
+    },
+    {
+      "facet": "triage",
+      "pattern": "incident",
+      "priority": 6
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "interaction states",
+      "priority": 5
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "interface",
+      "priority": 8
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "keep it brief",
+      "priority": 8
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "landing page",
+      "priority": 8
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "machine-readable task",
+      "priority": 7
+    },
+    {
+      "facet": "code-review",
+      "pattern": "merge",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "migration guide",
+      "priority": 6
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "milestone",
+      "priority": 5
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "narrative",
+      "priority": 5
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "next action",
+      "priority": 8
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "next ticket",
+      "priority": 5
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "nightly",
+      "priority": 6
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "no stubs",
+      "priority": 9
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "notes on",
+      "priority": 5
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "null pointer",
+      "priority": 10
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "observations",
+      "priority": 5
+    },
+    {
+      "facet": "prototype",
+      "pattern": "one html",
+      "priority": 6
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "overwhelmed",
+      "priority": 8
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "p0",
+      "priority": 10
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "palette",
+      "priority": 6
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "patch",
+      "priority": 10
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "plan the work",
+      "priority": 5
+    },
+    {
+      "facet": "grilling",
+      "pattern": "poke holes",
+      "priority": 7
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "polling",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "post-mortem",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "postmortem",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "pre-merge",
+      "priority": 7
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "presentation",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "primitive semantic",
+      "priority": 6
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "production ready",
+      "priority": 9
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "prompt for an agent",
+      "priority": 7
+    },
+    {
+      "facet": "prototype",
+      "pattern": "prototype",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "pull request",
+      "priority": 7
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "push right",
+      "priority": 6
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "raw thoughts",
+      "priority": 5
+    },
+    {
+      "facet": "triage",
+      "pattern": "ready-for-agent",
+      "priority": 6
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "recurring",
+      "priority": 6
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "redesign",
+      "priority": 8
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "refactor",
+      "priority": 8
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "regression",
+      "priority": 10
+    },
+    {
+      "facet": "triage",
+      "pattern": "regression from",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "release notes",
+      "priority": 6
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "remaining gates",
+      "priority": 9
+    },
+    {
+      "facet": "triage",
+      "pattern": "report from",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "review",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "rfc",
+      "priority": 6
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "roadmap",
+      "priority": 5
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "routine",
+      "priority": 6
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "safe box",
+      "priority": 6
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "safe zone",
+      "priority": 7
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "safe-zone",
+      "priority": 6
+    },
+    {
+      "facet": "prototype",
+      "pattern": "sandbox",
+      "priority": 6
+    },
+    {
+      "facet": "prototype",
+      "pattern": "sanity check",
+      "priority": 6
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "script this",
+      "priority": 6
+    },
+    {
+      "facet": "codebase-design",
+      "pattern": "seam",
+      "priority": 8
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "shadcn",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "shape this",
+      "priority": 6
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "ship it",
+      "priority": 9
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "short",
+      "priority": 8
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "slide",
+      "priority": 6
+    },
+    {
+      "facet": "banner-safe-zone",
+      "pattern": "social post",
+      "priority": 6
+    },
+    {
+      "facet": "grilling",
+      "pattern": "socratic",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "spec doc",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "specification",
+      "priority": 6
+    },
+    {
+      "facet": "prototype",
+      "pattern": "spike",
+      "priority": 6
+    },
+    {
+      "facet": "code-review",
+      "pattern": "standards",
+      "priority": 7
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "step by step",
+      "priority": 5
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "story of the",
+      "priority": 5
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "strategy",
+      "priority": 5
+    },
+    {
+      "facet": "grilling",
+      "pattern": "stress test my plan",
+      "priority": 7
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "styling",
+      "priority": 6
+    },
+    {
+      "facet": "writing-for-agents",
+      "pattern": "subagent",
+      "priority": 7
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "system spec",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "tailwind config",
+      "priority": 6
+    },
+    {
+      "facet": "design-tokens",
+      "pattern": "theme",
+      "priority": 6
+    },
+    {
+      "facet": "triage",
+      "pattern": "ticket",
+      "priority": 6
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "timeout",
+      "priority": 10
+    },
+    {
+      "facet": "unlazy",
+      "pattern": "to completion",
+      "priority": 9
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "token audit",
+      "priority": 7
+    },
+    {
+      "facet": "i-have-adhd",
+      "pattern": "too much",
+      "priority": 8
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "touch target",
+      "priority": 7
+    },
+    {
+      "facet": "triage",
+      "pattern": "triage",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "tutorial",
+      "priority": 6
+    },
+    {
+      "facet": "diagnosing-bugs",
+      "pattern": "typeerror",
+      "priority": 10
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "typography",
+      "priority": 8
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "typography scale",
+      "priority": 5
+    },
+    {
+      "facet": "ui-ux-pro-max",
+      "pattern": "ui states",
+      "priority": 5
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "unblocked",
+      "priority": 5
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "uncurated",
+      "priority": 5
+    },
+    {
+      "facet": "writing-fragments",
+      "pattern": "unstructured",
+      "priority": 5
+    },
+    {
+      "facet": "frontend-design",
+      "pattern": "visual identity",
+      "priority": 8
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "visual polish",
+      "priority": 7
+    },
+    {
+      "facet": "writing-beats",
+      "pattern": "walkthrough order",
+      "priority": 5
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "watch the",
+      "priority": 6
+    },
+    {
+      "facet": "focus-design",
+      "pattern": "wcag",
+      "priority": 7
+    },
+    {
+      "facet": "wayfinder",
+      "pattern": "what is left",
+      "priority": 5
+    },
+    {
+      "facet": "grilling",
+      "pattern": "which should i choose",
+      "priority": 7
+    },
+    {
+      "facet": "loop-me",
+      "pattern": "workflow",
+      "priority": 6
+    },
+    {
+      "facet": "writing-shape",
+      "pattern": "write a decision doc",
+      "priority": 6
+    }
+  ]
+}

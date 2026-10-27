@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Ambientes
+.venv/
+venv/
+
+# Ferramentas
+.pytest_cache/
+.DS_Store
+
+# Salidas de trabajo
+deck.pptx
+work/
+
+# Recortes intermedios del extractor de figuras
+_partes/
+semiotecnia-torax/__pycache__/

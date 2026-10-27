@@ -1,0 +1,85 @@
+{
+  "skill_name": "focus-gate",
+  "version": "2.8",
+  "description": "Evaluation benchmarks for FocusGate v2.8 Universal Bespoke Anti-Cliché Engine, Stage Matrix, Dual-Phase Unlazy Rigor, and Anti-Shallow Architecture.",
+  "evals": [
+    {
+      "id": "eval-01-frontend-design-synthesis",
+      "prompt": "Design a bespoke landing page with distinctive typography and custom palette for a boutique espresso machine maker",
+      "expected_archetype": "FRONTEND_BESPOKE",
+      "expected_pipeline": "Bespoke Frontend Design & Implementation",
+      "expected_stages": [
+        "frontend-design",
+        "design-tokens",
+        "prototype",
+        "codebase-design",
+        "unlazy",
+        "code-review"
+      ]
+    },
+    {
+      "id": "eval-02-stage-matrix-enforcement",
+      "prompt": "StageBoundaryGuard blocks execution of gate in stage 2 before stage 1 intra-matrix passes",
+      "expected_guard": "StageBoundaryGuard",
+      "expected_error": "StageBoundaryViolationError"
+    },
+    {
+      "id": "eval-03-unlazy-implementation-injection",
+      "prompt": "AgentBrief.to_prompt() contains 4-Pass Implementation Rigor Directive and Stage Progress Anchor",
+      "expected_substrings": [
+        "Mandatory Implementation Rigor Directive (Dual-Phase /unlazy)",
+        "Pass 1 (Complete Deliverable)",
+        "Pass 2 (Domain Elevation)",
+        "Pass 3 (Boundary Defense)",
+        "Pass 4 (Low-Cost Polish)",
+        "Stage Progress Anchor"
+      ]
+    },
+    {
+      "id": "eval-04-tool-seam-unlazy-interception",
+      "prompt": "ToolSelectionMatrix.verify_patch_preconditions rejects patches containing TODO or pass stubs",
+      "expected_rejection_substr": "Unlazy Rigor Rejection"
+    },
+    {
+      "id": "eval-05-cliche-oracle-detection",
+      "prompt": "ClicheOracle detects terracotta #D97757, warm cream #F4F1EA, tracked all-caps eyebrows, and single-word headline accents",
+      "expected_findings": [
+        "CLICHE_PALETTE_TERRACOTTA",
+        "CLICHE_CHROME_TRACKED_EYEBROW",
+        "CLICHE_TYPO_SINGLE_WORD_ACCENT"
+      ]
+    },
+    {
+      "id": "eval-06-all-19-facets-hydration",
+      "prompt": "JITHydrationEngine hydrates all 19 facets across 5 Bounded Contexts with zero errors",
+      "expected_facet_count": 19,
+      "expected_zero_error": true
+    },
+    {
+      "id": "eval-07-prose-cliche-detection",
+      "prompt": "ProseClicheOracle detects throat-clearing, 'delve into', 'a testament to', and faux-authoritative summaries",
+      "expected_findings": [
+        "PROSE_THROAT_CLEARING",
+        "PROSE_BUZZWORD_DELVE",
+        "PROSE_BUZZWORD_TESTAMENT",
+        "PROSE_FAUX_SUMMARY_CLOSING"
+      ]
+    },
+    {
+      "id": "eval-08-code-cliche-detection",
+      "prompt": "CodeClicheOracle detects junk-drawer utils.py and blanket except Exception: pass",
+      "expected_findings": [
+        "CODE_JUNK_DRAWER_MODULE",
+        "CODE_SHOTGUN_SUPPRESSION"
+      ]
+    },
+    {
+      "id": "eval-09-context-richness-sufficiency",
+      "prompt": "RichnessSufficiencyOracle flags a WINDOW-facet brief whose dependency is a bare @pointer or a lost-summary placeholder, and accepts a budgeted summary with @ref trace",
+      "expected_findings": [
+        "BARE_POINTER",
+        "LOST_SUMMARY"
+      ]
+    }
+  ]
+}

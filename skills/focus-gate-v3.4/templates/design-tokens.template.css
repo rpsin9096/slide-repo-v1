@@ -1,0 +1,11 @@
+:root {
+  --color-primitive-1: #2563eb;
+  --color-primitive-2: #10b981;
+  --color-primary: var(--color-primitive-1);
+  --color-accent: var(--color-primitive-2);
+  --color-neutral-strong: #0f172a;
+  --color-neutral-soft: #f8fafc;
+  --button-bg: var(--color-primary);
+  --button-fg: #ffffff;
+  --card-bg: #ffffff;
+}

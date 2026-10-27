@@ -1,0 +1,602 @@
+[
+  {
+    "id": "fgbench-001",
+    "query": "Design a bespoke landing page with distinctive typography and custom palette using frontend-design",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-002",
+    "query": "Implement frontend-design for an artisanal espresso machine brand with custom fonts and verified palette",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-003",
+    "query": "Create frontend-design for boutique architecture portfolio with editorial grid layout",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-004",
+    "query": "Draft frontend-design visual identity and 2-pass plan for luxury watch maker",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-005",
+    "query": "Build a handcrafted visual presentation website with frontend-design anti-cliche aesthetics",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-006",
+    "query": "Anchor visual identity using frontend-design for custom ceramics atelier",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-007",
+    "query": "Create frontend-design spike and bespoke tokens for culinary exhibition website",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-008",
+    "query": "Execute frontend-design pass for boutique publishing house with distinctive serif hierarchy",
+    "expected_archetype": "FRONTEND_BESPOKE",
+    "expected_pipeline": "Bespoke Frontend Design & Implementation"
+  },
+  {
+    "id": "fgbench-009",
+    "query": "Audit frontend color contrast and focus-design tokens to achieve WCAG 2.1 AA compliance",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-010",
+    "query": "Run focus-design token audit to eliminate hardcoded hex colors and resolve accessibility",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-011",
+    "query": "Perform focus-design accessibility contrast verification across all dashboard charts",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-012",
+    "query": "Execute focus-design audit to ensure accessible relative luminance across dark mode",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-013",
+    "query": "Audit focus-design tokens and color palettes in checkout flow for high contrast",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-014",
+    "query": "Run focus-design token audit to replace arbitrary hex values with accessible tokens",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-015",
+    "query": "Apply focus-design polish to eliminate low-contrast text and verify button accessibility",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-016",
+    "query": "Run focus-design audit across settings pages to enforce WCAG compliant color ratios",
+    "expected_archetype": "DESIGN_AUDIT",
+    "expected_pipeline": "Design Audit & Accessibility Polish"
+  },
+  {
+    "id": "fgbench-017",
+    "query": "Build a reusable button component with primary, secondary, and ghost variants in tailwind",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-018",
+    "query": "Slice a responsive card layout component with media header and action button",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-019",
+    "query": "Create an accessible modal dialog component with keyboard focus trapping",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-020",
+    "query": "Implement a data table ui component with sortable column headers and pagination",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-021",
+    "query": "Develop a responsive navigation bar component with collapsible mobile drawer menu",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-022",
+    "query": "Construct an interactive alert banner component with toast notifications",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-023",
+    "query": "Build a design system styling component with 3-layer css variables and shadcn tokens",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-024",
+    "query": "Slice a custom card component for displaying user profile metrics and activity",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-025",
+    "query": "Create a flexible button component library with accessible state variants",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-026",
+    "query": "Implement a multi-column table ui with filtering and sticky header styling",
+    "expected_archetype": "UI_COMPONENT",
+    "expected_pipeline": "UI Component & Design System Slicing"
+  },
+  {
+    "id": "fgbench-027",
+    "query": "Generate a responsive SVG banner-safe-zone preview for social media sharing cards",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-028",
+    "query": "Create a vector brand logo with monochrome variants and clean glyphs",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-029",
+    "query": "Design an SVG company logo with geometric curves and vector outlines",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-030",
+    "query": "Scaffold an SVG promotional graphic with verified banner-safe-zone platform constraints",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-031",
+    "query": "Produce an SVG emblem logo for developer documentation header",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-032",
+    "query": "Design platform app store banner with verified banner-safe-zone bounds",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-033",
+    "query": "Create a minimalist product logo with SVG vector paths and responsive scaling",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-034",
+    "query": "Generate social card graphics respecting banner-safe-zone margins for mobile feed",
+    "expected_archetype": "VISUAL_ASSET",
+    "expected_pipeline": "Visual Design & Creative Asset Production"
+  },
+  {
+    "id": "fgbench-035",
+    "query": "Write a post-mortem report on the database connection pool exhaustion incident",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-036",
+    "query": "Draft an incident postmortem analyzing the cache cluster eviction outage",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-037",
+    "query": "Compile a developer migration guide explaining the transition from v1 to v2 api",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-038",
+    "query": "Create a comprehensive tutorial documenting the distributed tracing setup across microservices",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-039",
+    "query": "Author formal release notes detailing breaking changes and deprecations in v2.8",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-040",
+    "query": "Write an incident report post-mortem documenting root cause of memory leak",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-041",
+    "query": "Publish a changelog and migration guide for breaking database schema updates",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-042",
+    "query": "Draft an outage postmortem detailing failover sequence and preventive remediations",
+    "expected_archetype": "POSTMORTEM",
+    "expected_pipeline": "Narrative Guide & Post-Mortem"
+  },
+  {
+    "id": "fgbench-043",
+    "query": "Synthesize an automated loop using loop-me to handle daily dependency upgrades",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-044",
+    "query": "Configure loop-me recurring workflow to audit production release readiness",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-045",
+    "query": "Create an automated loop-me process for weekly test flake triangulation",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-046",
+    "query": "Define push-right checkpoint doctrine and recurring schedule using loop-me",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-047",
+    "query": "Use loop-me to automate nightly benchmark regression checks with alert gates",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-048",
+    "query": "Scaffold a self-healing operational workflow with loop-me and human-in-the-loop triggers",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-049",
+    "query": "Implement automated continuous verification loop using loop-me doctrine",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-050",
+    "query": "Structure recurring task automation and rollback checkpointing via loop-me",
+    "expected_archetype": "AUTOMATION",
+    "expected_pipeline": "Loop Synthesis"
+  },
+  {
+    "id": "fgbench-051",
+    "query": "Author formal architectural RFC specification using writing-shape for billing engine",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-052",
+    "query": "Ground architectural constraints and write formal RFC spec with writing-shape",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-053",
+    "query": "Compile an RFC technical specification with writing-shape for event bus overhaul",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-054",
+    "query": "Structure multi-team specification RFC using writing-shape for technical proposal",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-055",
+    "query": "Draft architectural RFC specification with writing-shape for distributed consensus",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-056",
+    "query": "Use writing-shape to author system redesign RFC with concept prerequisites",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-057",
+    "query": "Produce comprehensive technical RFC spec with writing-shape for telemetry ingress",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-058",
+    "query": "Shape this architectural decision proposal into a formal technical rfc",
+    "expected_archetype": "SPECIFICATION",
+    "expected_pipeline": "Architectural RFC Spec"
+  },
+  {
+    "id": "fgbench-059",
+    "query": "Capture raw brainstorming thoughts using writing-fragments for new search feature",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-060",
+    "query": "Mine raw developer notes and extract spark ideas with writing-fragments",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-061",
+    "query": "Compile unstructured feature fragments and spark concept into actionable spec",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-062",
+    "query": "Organize initial brainstorm spark using writing-fragments into staged brief",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-063",
+    "query": "Synthesize early product spark ideas using writing-fragments for collaborative canvas",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-064",
+    "query": "Extract load-bearing leading concepts from raw writing-fragments notes",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-065",
+    "query": "Transform raw feature fragments into checkable implementation gates with writing-fragments",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-066",
+    "query": "Process messy brainstorm spark notes into structured architectural fragments",
+    "expected_archetype": "IDEATION",
+    "expected_pipeline": "Ideation to Implementation"
+  },
+  {
+    "id": "fgbench-067",
+    "query": "Isolate and resolve intermittent test failure using diagnosing-bugs oracle",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-068",
+    "query": "Run diagnosing-bugs to reproduce null pointer exception on malformed payload",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-069",
+    "query": "Investigate database deadlock using diagnosing-bugs tracer check",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-070",
+    "query": "Trace memory leak in websocket connection worker with diagnosing-bugs",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-071",
+    "query": "Diagnose race condition during concurrent balance transfer using diagnosing-bugs",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-072",
+    "query": "Reproduce off-by-one pagination bug using diagnosing-bugs minimal test harness",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-073",
+    "query": "Identify root cause of connection timeout under load using diagnosing-bugs",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-074",
+    "query": "Triangulate regression in session cleanup handler with diagnosing-bugs verification",
+    "expected_archetype": "DEFECT",
+    "expected_pipeline": "Rapid Defect Resolution"
+  },
+  {
+    "id": "fgbench-075",
+    "query": "Chart strategic wayfinder decision map to navigate architectural fog in auth rewrite",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-076",
+    "query": "Navigate through strategic fog to resolve technical ambiguity in multi-cloud migration path",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-077",
+    "query": "Navigate architectural uncertainty and outline frontier choices with wayfinder",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-078",
+    "query": "Maybe we should chart crossroads between gRPC and GraphQL to clear architectural fog",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-079",
+    "query": "Chart wayfinder frontier ticket sequence to decompose complex search overhaul",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-080",
+    "query": "Explore early concept choices and clear architectural fog between SQL and NoSQL storage",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-081",
+    "query": "Navigate cloud vendor lock-in fog and evaluate concept trade-offs using wayfinder",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-082",
+    "query": "Decompose open strategic questions and establish frontier paths with wayfinder",
+    "expected_archetype": "STRATEGY",
+    "expected_pipeline": "Strategic Wayfinding"
+  },
+  {
+    "id": "fgbench-083",
+    "query": "Refactor monolithic storage subsystem using codebase-design deep module seams",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-084",
+    "query": "Establish clean public interface contract with codebase-design and two adapters",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-085",
+    "query": "Redesign notification engine into deep module using codebase-design principles",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-086",
+    "query": "Isolate payment processing behind minimal seam verified by codebase-design",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-087",
+    "query": "Apply codebase-design to decouple session cache from underlying database",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-088",
+    "query": "Refactor configuration provider into deep module with codebase-design adapters",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-089",
+    "query": "Restructure telemetry ingress pipeline behind clean seam with codebase-design",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-090",
+    "query": "Design deep module boundary for user authentication using codebase-design",
+    "expected_archetype": "ARCHITECTURE",
+    "expected_pipeline": "Deep Module Redesign"
+  },
+  {
+    "id": "fgbench-091",
+    "query": "Fix typo in README documentation header",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-092",
+    "query": "Bump version number in package metadata to 2.8.1",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-093",
+    "query": "Update badge link in project markdown header",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-094",
+    "query": "Add single comment explaining lock acquisition timeout",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-095",
+    "query": "Change default timeout parameter from 30s to 60s",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-096",
+    "query": "Execute quick 2-minute atomic micro-step to rename configuration constant",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-097",
+    "query": "Correct typo in error log message string",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-098",
+    "query": "Add missing badge link in project documentation footer",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-099",
+    "query": "Bump version string in pyproject.toml",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  },
+  {
+    "id": "fgbench-100",
+    "query": "Fix typo in CLI help example description",
+    "expected_archetype": "ATOMIC",
+    "expected_pipeline": "Atomic Sprint"
+  }
+]

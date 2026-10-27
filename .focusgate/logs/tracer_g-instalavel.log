@@ -1,0 +1,11 @@
+StudyDeck v2.0.0 (UCP-only · editorial · WCAG AA)
+Uso:
+  check                              deps + self-test (35/35 modulos, contraste UCP)
+  schema [modulo|all|tokens]         contrato + quando usar + esqueleto
+  new [guia] [out.py]                scaffold minimo + guia advisory
+  ingest <fonte.pdf|txt|md>          outline do source para autorar
+  imgprep [pasta]                    contrato de imagens (20 KB-4 MB, >=300 px)
+  lint <manifest.py> [--json]        contrato por slide
+  build <manifest.py> [out.pptx]     lint fail-fast + render (contraste incluido)
+  all <manifest.py> [out.pptx]       lint -> build
+  contrast [manifest.py] [--json]    matriz UCP ou escaneo de um deck

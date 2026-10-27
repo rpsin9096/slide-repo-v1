@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusDesign UI Prototype: {prototype_title}</title>
+  <style>
+    :root {
+      --color-primitive-blue-500: #3b82f6;
+      --color-primitive-blue-600: #2563eb;
+      --color-primitive-slate-900: #0f172a;
+      --color-primitive-slate-800: #1e293b;
+      --color-primitive-slate-100: #f1f5f9;
+      --color-primitive-slate-50: #f8fafc;
+      --color-primitive-emerald-500: #10b981;
+      --color-primitive-amber-500: #f59e0b;
+
+      /* Semantic Tokens (Light Default) */
+      --color-bg: var(--color-primitive-slate-50);
+      --color-surface: #ffffff;
+      --color-border: #e2e8f0;
+      --color-text-main: var(--color-primitive-slate-900);
+      --color-text-muted: #64748b;
+      --color-primary: var(--color-primitive-blue-600);
+      --color-primary-fg: #ffffff;
+      --color-accent: var(--color-primitive-emerald-500);
+
+      /* Overlay chrome tokens (floating switcher bar) */
+      --color-overlay-bg: #0f172a;
+      --color-overlay-fg: #f8fafc;
+      --color-overlay-line: #334155;
+      --color-overlay-accent: #38bdf8;
+
+      /* Typography & Spacing */
+      --font-family-heading: system-ui, -apple-system, sans-serif;
+      --font-family-body: system-ui, -apple-system, sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --spacing-unit: 8px;
+    }
+
+    body.dark {
+      --color-bg: var(--color-primitive-slate-900);
+      --color-surface: var(--color-primitive-slate-800);
+      --color-border: #334155;
+      --color-text-main: var(--color-primitive-slate-50);
+      --color-text-muted: #94a3b8;
+      --color-primary: #60a5fa;
+      --color-primary-fg: #0f172a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text-main);
+      font-family: var(--font-family-body);
+      min-height: 100vh;
+      padding: 2rem;
+      padding-bottom: 6rem;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      font-family: var(--font-family-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .meta-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      color: var(--color-text-muted);
+    }
+
+    .prototype-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: 0 4px 6px -1px var(--color-border);
+      margin-bottom: 1.5rem;
+    }
+
+    .variant-content { display: none; }
+    .variant-content.active { display: block; }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: var(--color-primary-fg);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Floating Switcher Bar */
+    .floating-switcher {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-overlay-bg);
+      backdrop-filter: blur(8px);
+      color: var(--color-overlay-fg);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px var(--color-overlay-bg);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 9999;
+      font-size: 0.85rem;
+    }
+
+    .switcher-btn {
+      background: var(--color-overlay-line);
+      border: 1px solid var(--color-overlay-line);
+      color: var(--color-overlay-fg);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: all 0.15s;
+    }
+    .switcher-btn:hover { background: var(--color-text-muted); }
+    .switcher-btn.active {
+      background: var(--color-overlay-accent);
+      color: var(--color-overlay-bg);
+      font-weight: 700;
+      border-color: var(--color-overlay-accent);
+    }
+
+    .theme-btn {
+      background: transparent;
+      border: none;
+      color: var(--color-overlay-fg);
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>FocusDesign Prototype: {prototype_title}</h1>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
+          Hypothesis: {question}
+        </p>
+      </div>
+      <span class="meta-badge">DISPOSABLE SPIKE</span>
+    </header>
+
+    <!-- Variant A: Minimal Clean -->
+    <div id="var-a" class="variant-content active">
+      <div class="prototype-card">
+        <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Variant A: Minimal Centered</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          Focus on typography hierarchy and generous white space.
+        </p>
+        <button class="btn-primary" onclick="alert('Action triggered')">Explore Solution</button>
+      </div>
+    </div>
+
+    <!-- Variant B: Bento Grid -->
+    <div id="var-b" class="variant-content">
+      <div class="prototype-card">
+        <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Variant B: Asymmetric Bento Grid</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          Information-dense modular panels for power-user workflows.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">Bento Item 1</div>
+          <div style="padding: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md);">Bento Item 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Variant C: Split Interactive -->
+    <div id="var-c" class="variant-content">
+      <div class="prototype-card">
+        <h2 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Variant C: Split Showcase</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          Two-column high-conversion layout with sticky demonstration visual.
+        </p>
+        <button class="btn-primary">Start Immediate Trial</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Switcher -->
+  <div class="floating-switcher" id="variant-switcher">
+    <span style="opacity: 0.7;">Variant:</span>
+    <button class="switcher-btn active" onclick="setVariant('a')">A: Minimal</button>
+    <button class="switcher-btn" onclick="setVariant('b')">B: Bento</button>
+    <button class="switcher-btn" onclick="setVariant('c')">C: Split</button>
+    <div style="width: 1px; height: 16px; background: var(--color-overlay-line);"></div>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle Theme">🌓</button>
+  </div>
+
+  <script>
+    function setVariant(v) {
+      document.querySelectorAll('.variant-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.switcher-btn').forEach(btn => btn.classList.remove('active'));
+      const target = document.getElementById('var-' + v);
+      if (target) target.classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
+  <!-- Harness contract: pure reducer + Current State + walkthrough scenarios -->
+  <section class="prototype-card" style="margin-top:1.5rem;">
+    <h2 style="font-size:1.25rem;margin-bottom:0.5rem;">Current State</h2>
+    <pre id="state-panel" style="background:var(--color-bg);border:1px solid var(--color-border);border-radius:8px;padding:1rem;overflow:auto;">{}</pre>
+  </section>
+  <section class="prototype-card" style="margin-top:1.5rem;">
+    <h2 style="font-size:1.25rem;margin-bottom:0.5rem;">Walkthrough Scenarios</h2>
+    <p style="color:var(--color-text-muted);margin-bottom:1rem;">Tricky cases: theme persistence across variants, direct deep-link to variant C.</p>
+    <button class="btn-primary" data-action="scenario-theme-persist">Scenario 1: Toggle theme, cycle A-&gt;C</button>
+    <button class="btn-primary" data-action="scenario-deeplink-c" style="margin-left:0.5rem;">Scenario 2: Deep-link variant C</button>
+  </section>
+  <script id="core-logic">
+    function initialState() { return { variant: 'a', theme: 'light' }; }
+    function reduce(state, action) {
+      var next = { variant: state.variant, theme: state.theme };
+      if (action.type === 'SET_VARIANT') { next.variant = action.variant; }
+      if (action.type === 'TOGGLE_THEME') { next.theme = (state.theme === 'light') ? 'dark' : 'light'; }
+      if (action.type === 'SCENARIO_DEEPLINK_C') { next.variant = 'c'; }
+      return next;
+    }
+  </script>
+  <script>
+    (function () {
+      var state = initialState();
+      function render() {
+        document.getElementById('state-panel').textContent = JSON.stringify(state);
+      }
+      document.querySelectorAll('[data-action]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var kind = btn.getAttribute('data-action');
+          if (kind === 'scenario-theme-persist') { state = reduce(state, {type: 'TOGGLE_THEME'}); }
+          if (kind === 'scenario-deeplink-c') { state = reduce(state, {type: 'SCENARIO_DEEPLINK_C'}); }
+          render();
+        });
+      });
+      render();
+    })();
+  </script>
+</body>
+</html>

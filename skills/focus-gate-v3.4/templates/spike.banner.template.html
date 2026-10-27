@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusDesign Banner Spike: {prototype_title}</title>
+  <style>
+    :root {
+      --banner-bg: #f8fafc;
+      --banner-surface: #ffffff;
+      --banner-ink: #0f172a;
+      --banner-accent: #2563eb;
+      --banner-line: #e2e8f0;
+      --banner-safe: #10b981;
+      --font-family-body: system-ui, -apple-system, sans-serif;
+      --radius-md: 8px;
+    }
+    body.dark {
+      --banner-bg: #0f172a;
+      --banner-surface: #1e293b;
+      --banner-ink: #f8fafc;
+      --banner-line: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--banner-bg); color: var(--banner-ink);
+      font-family: var(--font-family-body); padding: 2rem; }
+    .stage { max-width: 1100px; margin: 0 auto; }
+    .canvas { position: relative; background: var(--banner-surface);
+      border: 1px solid var(--banner-line); border-radius: var(--radius-md);
+      overflow: hidden; margin: 1.5rem 0; }
+    .canvas.variant-a { aspect-ratio: 16 / 9; }
+    .canvas.variant-b { aspect-ratio: 1 / 1; }
+    .canvas.variant-c { aspect-ratio: 9 / 16; max-width: 420px; }
+    .safe-zone { position: absolute; inset: 15%; border: 2px dashed var(--banner-safe);
+      border-radius: 4px; pointer-events: none; }
+    .safe-zone span { position: absolute; top: -1.4rem; left: 0; font-size: 0.75rem;
+      color: var(--banner-safe); }
+    .hero-copy { position: absolute; inset: 15%; display: flex; flex-direction: column;
+      justify-content: center; padding: 1rem; }
+    .hero-copy h2 { font-size: clamp(1.2rem, 4vw, 2.2rem); }
+    .platform-switcher { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .platform-switcher button { background: var(--banner-surface); color: var(--banner-ink);
+      border: 1px solid var(--banner-line); border-radius: var(--radius-md);
+      padding: 0.5rem 1rem; cursor: pointer; }
+    .platform-switcher button.active { background: var(--banner-accent);
+      border-color: var(--banner-accent); color: var(--banner-surface); }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <h1>{prototype_title}</h1>
+    <p>Hypothesis: {question}</p>
+    <div class="platform-switcher" id="platform-switcher">
+      <span>Platform variant:</span>
+      <button class="active" data-platform="variant-a">Landscape 16:9</button>
+      <button data-platform="variant-b">Square 1:1</button>
+      <button data-platform="variant-c">Portrait 9:16</button>
+      <button data-theme="toggle">Toggle theme</button>
+    </div>
+    <div class="canvas variant-a" id="banner-canvas">
+      <div class="hero-copy"><h2>Headline stays inside the safe zone</h2></div>
+      <div class="safe-zone"><span>SAFE ZONE (central 70%)</span></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var canvas = document.getElementById('banner-canvas');
+      document.querySelectorAll('#platform-switcher [data-platform]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          canvas.classList.remove('variant-a', 'variant-b', 'variant-c');
+          canvas.classList.add(btn.getAttribute('data-platform'));
+          document.querySelectorAll('#platform-switcher [data-platform]').forEach(function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+        });
+      });
+      document.querySelector('[data-theme="toggle"]').addEventListener('click', function () {
+        document.body.classList.toggle('dark');
+      });
+    })();
+  </script>
+</body>
+</html>

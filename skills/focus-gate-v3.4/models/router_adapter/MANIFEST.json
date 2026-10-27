@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "removed_in": "FocusGate v3.2 Loop 64 (C15)",
+  "reason": "46MB of fine-tuned router weights committed to the source tree. A stdlib-only clone cannot use them, and they are regenerable.",
+  "source": "adapters/model_adapter.py LoRAModelAdapter.DEFAULT_RELATIVE_DIRS -> models/router_adapter",
+  "fetch": "Regenerate with scripts/colab_train_focusgate.py (ADAPTER_EXPORT_DIR='./focusgate_v28_router_adapter'), then place adapter_config.json, adapter_model.safetensors and tokenizer.json in models/router_adapter/.",
+  "behaviour_without_weights": "LoRAModelAdapter.is_available() returns False and the CLI uses its pure-stdlib fast path. No exception is raised; this is asserted by tests/test_loop64_repo_hygiene.py::test_the_loader_degrades_when_the_weights_are_absent.",
+  "files": [
+    {
+      "path": "adapter_config.json",
+      "size": 1159,
+      "size_mb": 0.0,
+      "sha256": "1408d057971960be52a85c13fa6aab4cee668bd0bfeeb7ffffd9e553f977a5e0"
+    },
+    {
+      "path": "adapter_model.safetensors",
+      "size": 36981856,
+      "size_mb": 35.27,
+      "sha256": "d91c5c67af158e253d86fce025781ae1974221de51bf81d4f96e582da4b473ca"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 11421892,
+      "size_mb": 10.89,
+      "sha256": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 691,
+      "size_mb": 0.0,
+      "sha256": "fbb05e8a722a05e92e8da2eabbb5820bbdd0d1482351a38cb14efa52fc8bdadb"
+    }
+  ],
+  "note_on_history": "These blobs remain in git history at HEAD 9a71e32. Untracking them is not a history rewrite; use git filter-repo or BFG separately if clone size matters.",
+  "note_on_readme": "README.md is an unmodified HuggingFace model-card template (209 lines, every field \"[More Information Needed]\"). Rewritten in v3.2 Loop 65."
+}

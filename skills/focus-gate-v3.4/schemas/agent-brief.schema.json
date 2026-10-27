@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentBrief",
+  "description": "Typed delegation contract for one external AI sub-agent session in FocusGate v2.8",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["briefId", "gateId", "facet", "taskSummary", "acceptanceCriteria", "contextDeltaHash", "spawnMode", "createdAt"],
+  "properties": {
+    "briefId": { "type": "string", "format": "uuid" },
+    "gateId": { "type": "string", "minLength": 1 },
+    "facet": { "type": "string", "minLength": 1 },
+    "taskSummary": { "type": "string", "maxLength": 400 },
+    "acceptanceCriteria": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "upstreamReceipts": { "type": "array", "items": { "type": "object" } },
+    "contextDeltaHash": { "type": "string" },
+    "spawnMode": { "type": "string", "enum": ["ai_session", "worktree_shell"] },
+    "maxContextTokens": { "type": "integer", "minimum": 0, "maximum": 1500 },
+    "timeoutS": { "type": "number", "minimum": 0 },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}

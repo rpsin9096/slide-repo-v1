@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EphemeralHandoffPacket",
+  "description": "Strict JSON Schema for inter-skill handoffs bounded to <= 120 tokens in FocusGate v2.8",
+  "type": "object",
+  "required": [
+    "source_facet",
+    "target_facet",
+    "receipt",
+    "delta_payload",
+    "schema_version",
+    "checksum"
+  ],
+  "properties": {
+    "source_facet": {
+      "type": "string",
+      "description": "Sending sub-skill / facet identifier"
+    },
+    "target_facet": {
+      "type": "string",
+      "description": "Receiving sub-skill / facet identifier"
+    },
+    "receipt": {
+      "type": "object",
+      "description": "Immutable GateReceipt from upstream execution",
+      "required": ["session_id", "gate_id", "facet", "status", "evidence_hash"],
+      "properties": {
+        "session_id": { "type": "string" },
+        "gate_id": { "type": "string" },
+        "facet": { "type": "string" },
+        "status": { "type": "string", "enum": ["PASS", "FAIL"] },
+        "key_findings": { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+        "artifacts_produced": { "type": "array", "items": { "type": "string" } },
+        "evidence_hash": { "type": "string" },
+        "elapsed_ms": { "type": "number" },
+        "tokens_used": { "type": "integer" }
+      }
+    },
+    "delta_payload": {
+      "type": "object",
+      "description": "Targeted key-value delta bounded to <= 100 estimated tokens"
+    },
+    "schema_version": {
+      "type": "string",
+      "enum": ["2.6", "2.8"]
+    },
+    "checksum": {
+      "type": "string",
+      "description": "SHA256 digest validating packet integrity"
+    },
+    "tokens": {
+      "type": "integer",
+      "maximum": 120,
+      "description": "Total estimated tokens in packet"
+    }
+  },
+  "additionalProperties": false
+}

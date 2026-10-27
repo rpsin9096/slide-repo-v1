@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FocusGateExecutionTrajectory",
+  "type": "object",
+  "required": [
+    "trajectoryId",
+    "query",
+    "pipelineId",
+    "timestamp",
+    "steps",
+    "oracleVerdicts",
+    "verified"
+  ],
+  "properties": {
+    "trajectoryId": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "pipelineId": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "initialContextTokens": {
+      "type": "integer"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "stepIndex",
+          "facet",
+          "action",
+          "command",
+          "oracleResult"
+        ],
+        "properties": {
+          "stepIndex": { "type": "integer" },
+          "facet": { "type": "string" },
+          "reasoningDSL": { "type": "string" },
+          "action": { "type": "string" },
+          "command": { "type": "string" },
+          "oracleResult": { "type": "string" },
+          "tokensConsumed": { "type": "integer" }
+        }
+      }
+    },
+    "oracleVerdicts": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "domainAuditScore": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

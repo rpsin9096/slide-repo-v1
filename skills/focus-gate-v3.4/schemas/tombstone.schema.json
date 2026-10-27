@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FocusGate DLQ Tombstone Schema",
+  "type": "object",
+  "required": [
+    "tombstone_id",
+    "saga_name",
+    "failed_step",
+    "failed_compensation_step",
+    "error_message",
+    "compensation_error",
+    "timestamp",
+    "remediation_cmd"
+  ],
+  "properties": {
+    "tombstone_id": { "type": "string" },
+    "saga_name": { "type": "string" },
+    "failed_step": { "type": "string" },
+    "failed_compensation_step": { "type": "string" },
+    "error_message": { "type": "string" },
+    "compensation_error": { "type": "string" },
+    "timestamp": { "type": "number" },
+    "remediation_cmd": { "type": "string" },
+    "context_snapshot": { "type": "object" }
+  },
+  "additionalProperties": false
+}

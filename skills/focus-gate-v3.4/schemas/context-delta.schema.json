@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContextDeltaEvent",
+  "description": "A single broadcast event on the SharedContextBus. Each delta must be <=80 tokens.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["deltaId", "sourceAgent", "deltaType", "payloadTokens", "content", "timestamp"],
+  "properties": {
+    "deltaId": { "type": "string", "description": "SHA-256 of content — content-addressed dedup key" },
+    "sourceAgent": { "type": "string", "minLength": 1 },
+    "deltaType": { "type": "string", "enum": ["RECEIPT", "DOMAIN_ANCHOR", "FILE_PATCH", "REORIENT"] },
+    "payloadTokens": { "type": "integer", "minimum": 1, "maximum": 80 },
+    "content": { "type": "string", "maxLength": 320 },
+    "timestamp": { "type": "string", "format": "date-time" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentReceiptBundle",
+  "description": "Immutable proof package returned by a sub-agent to the orchestrator in FocusGate v2.8",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["bundleId", "gateId", "briefId", "gateReceipts", "artifactsProduced", "patchHashes", "status", "createdAt"],
+  "properties": {
+    "bundleId": { "type": "string", "format": "uuid" },
+    "gateId": { "type": "string", "minLength": 1 },
+    "briefId": { "type": "string", "format": "uuid" },
+    "gateReceipts": { "type": "array", "items": { "type": "object" } },
+    "deltaIds": { "type": "array", "items": { "type": "string" } },
+    "artifactsProduced": { "type": "array", "items": { "type": "string" } },
+    "patchHashes": { "type": "array", "items": { "type": "string", "pattern": "^[a-f0-9]{64}$" } },
+    "status": { "type": "string", "enum": ["PENDING", "PASS", "FAIL", "DLQ"] },
+    "errorMessage": { "type": ["string", "null"] },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}

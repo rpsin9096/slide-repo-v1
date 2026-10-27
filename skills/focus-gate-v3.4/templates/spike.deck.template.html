@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusDesign Deck Spike: {prototype_title}</title>
+  <style>
+    :root {
+      --deck-bg: #f8fafc;
+      --deck-surface: #ffffff;
+      --deck-ink: #0f172a;
+      --deck-muted: #64748b;
+      --deck-accent: #2563eb;
+      --deck-line: #e2e8f0;
+      --font-family-body: system-ui, -apple-system, sans-serif;
+      --radius-md: 8px;
+    }
+    body.dark {
+      --deck-bg: #0f172a;
+      --deck-surface: #1e293b;
+      --deck-ink: #f8fafc;
+      --deck-muted: #94a3b8;
+      --deck-line: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--deck-bg); color: var(--deck-ink);
+      font-family: var(--font-family-body); min-height: 100vh; padding: 2rem; }
+    .deck { max-width: 960px; margin: 0 auto; }
+    .slide { display: none; background: var(--deck-surface);
+      border: 1px solid var(--deck-line); border-radius: var(--radius-md);
+      padding: 3rem; min-height: 320px; }
+    .slide.active { display: block; }
+    .slide h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .slide p { color: var(--deck-muted); font-size: 1.1rem; }
+    .spark { display: flex; gap: 0.5rem; margin-top: 2rem; align-items: flex-end; height: 64px; }
+    .spark i { flex: 1; background: var(--deck-accent); border-radius: 2px; display: block; }
+    .deck-nav { display: flex; gap: 0.5rem; margin-top: 1.5rem; align-items: center; }
+    .deck-nav button { background: var(--deck-surface); color: var(--deck-ink);
+      border: 1px solid var(--deck-line); border-radius: var(--radius-md);
+      padding: 0.5rem 1rem; cursor: pointer; }
+    .variant-a .spark i { opacity: 0.55; }
+    .variant-b .spark i { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="deck variant-a" id="deck">
+    <div class="slide active" data-slide="0">
+      <h2>{prototype_title}</h2>
+      <p>Hypothesis: {question}</p>
+      <p>Variant A: calm narrative arc. Switch to variant B for high-energy beats.</p>
+      <div class="spark"><i style="height:20%"></i><i style="height:35%"></i><i style="height:55%"></i><i style="height:80%"></i><i style="height:100%"></i></div>
+    </div>
+    <div class="slide" data-slide="1">
+      <h2>Evidence</h2>
+      <p>Duarte Sparkline: what is, what could be. Replace with real numbers before review.</p>
+      <div class="spark"><i style="height:40%"></i><i style="height:30%"></i><i style="height:70%"></i><i style="height:90%"></i></div>
+    </div>
+    <div class="deck-nav" id="deck-switcher">
+      <button data-nav="prev">Previous slide</button>
+      <button data-nav="next">Next slide</button>
+      <button data-variant="a">Variant A: calm</button>
+      <button data-variant="b">Variant B: energy</button>
+      <button data-theme="toggle">Toggle theme</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var deck = document.getElementById('deck');
+      var slides = deck.querySelectorAll('.slide');
+      var idx = 0;
+      function show(i) {
+        idx = (i + slides.length) % slides.length;
+        slides.forEach(function (s, k) { s.classList.toggle('active', k === idx); });
+      }
+      deck.querySelector('[data-nav="prev"]').addEventListener('click', function () { show(idx - 1); });
+      deck.querySelector('[data-nav="next"]').addEventListener('click', function () { show(idx + 1); });
+      deck.querySelector('[data-variant="a"]').addEventListener('click', function () {
+        deck.classList.add('variant-a'); deck.classList.remove('variant-b');
+      });
+      deck.querySelector('[data-variant="b"]').addEventListener('click', function () {
+        deck.classList.add('variant-b'); deck.classList.remove('variant-a');
+      });
+      deck.querySelector('[data-theme="toggle"]').addEventListener('click', function () {
+        document.body.classList.toggle('dark');
+      });
+    })();
+  </script>
+</body>
+</html>
