@@ -1,31 +1,49 @@
-# Bauhaus edition
+# Bauhaus edition — supplied v3 compiler
 
-This replaces the earlier PDF/Word edition from PR #7. Only the Bauhaus PDF is a finished document; the Markdown, cropped figures and manifest are retained as its source assets.
+The current PDF is generated with the user's **compilador-handoff-v3-updated 2.zip**, found at `deliverables/compilador-handoff-v3-updated 2.zip` on `main` in `rpsin9096/slide-repo-v1`.
 
-## Generation
+## Compiler provenance
 
-- Formatter: DOE Formatter, `rpsin9096/js15-09`, `Newjs-main.zip` (archive dated September 14, 2026).
-- Template: `bauhaus`; justified alignment; captions enabled; date and table of contents disabled.
-- Generated locally, not through the hosted worker. Direct requests to the hosted service were blocked in the execution environment.
-- **“Encaixar pé da página” was not applied.** That control is absent from the available formatter source. This is not an exact hosted-service export with both requested settings.
-- The PDF reuses all 34 figures cropped from the user's original PDF.
+- Source commit inspected: `1c8f02be4c2810ffa19eac2bf29ca99e377afb0d`.
+- Git blob: `3bf8aba443f802752e0ce04fcf4aa105f203aa7f`.
+- Archive SHA-256: `135074951fa5c35ed2260449e6c5343c93fd41cbf4833c5fd1ac19f71757c2f9`.
+- Archive extracted into ignored `work/compiler-v3/`; dependencies installed with `npm ci`.
+- Uses the supplied `pdf-generator.js` facade and v3 PDFKit pipeline directly. **No compiler source patches.** This supersedes the previous locally patched legacy formatter rendering.
+
+## Settings and assets
+
+- `template: 'bauhaus'`, `geometry: 'v3'`, `lang: 'es'`.
+- **“Encaixar pé da página”: enabled** (`flush_columns: true`). Column balancing enabled (`balance_columns: true`). Flush fitting follows the compiler's bounded-glue rules; enabling it is not a claim that every column reaches the page foot.
+- Two-column layout, justified alignment, captions enabled, date and TOC disabled.
+- Running header: **Material de Raul de Oliveira Pasin**.
+- Retains the 34 visually corrected crops, original figure numbering and complete study text.
+- Images are embedded as data URIs to respect the new compiler's filesystem restrictions. Native figure-width attributes keep their intrinsic proportions with maximum height 164 pt. This does not require the old image-sizing patch.
 
 ## Rebuild
 
-Extract the formatter archive outside tracked files (e.g. under `work/`), install its npm dependencies if necessary, then run from this repository:
+Extract the supplied ZIP under ignored `work/`, then:
 
 ```sh
-node scripts/build_bauhaus.mjs /path/to/Newjs-main/pdf-generator.js
+cd work/compiler-v3/compilador-handoff-v3-updated
+npm ci
+cd ../../..
+node scripts/build_bauhaus.mjs work/compiler-v3/compilador-handoff-v3-updated/pdf-generator.js
 ```
 
-The formatter and its dependencies are external and are not vendored in this repository.
+Existing Markdown, manifest and PNG assets are reused. To redo the crops from the original PDF, install `pymupdf` and `Pillow`, then run:
 
-## Editorial revision
+```sh
+python scripts/recrop_figures.py '/path/to/semiotecnia del torax.pdf'
+```
 
-- Visually compared all 11 illustrated source pages with a proof of all 34 crops. Replaced every crop, removing scanned captions/neighboring text while preserving the original drawing and labels (including A/B in figure 3-8 and A–E in figure 3-12).
-- `scripts/recrop_figures.py` reproducibly renders the original PDF at 3×, applies the reviewed rectangles, adds a small white safety margin and updates the manifest. Run it with the original PDF path; requires `pymupdf` and `Pillow`.
-- `scripts/build_bauhaus.mjs` applies a guarded local patch to the external formatter: image width and height now share the same scale factor, with a 164-point maximum height and a column-width inset. This corrects the upstream aspect-ratio bug and avoids oversized illustrations.
-- Rebalanced compact percussion-table widths to keep sound names intact; shortened table headings without removing cell content. Added clear clinical-entry spacing and preserved the label/body separator across font changes.
-- Running header on every page: **Material de Raul de Oliveira Pasin**.
-- Final revision: **7 pages**, all **34 figures**, with captions kept with their illustrations. Inspected full-document render proofs and enlarged sample pages, including the percussion table and final page.
-- Validation: `python scripts/validate_bauhaus.py` (requires `pymupdf`) checks figure and caption counts, undistorted image proportions, image size/page bounds, credit on each page and the final text. Render proofs are temporary under ignored `work/`.
+## Validation
+
+```sh
+python scripts/validate_bauhaus.py
+```
+
+Requires `pymupdf`. Current result: **7 pages, 34 images and captions**, aspect ratios preserved, no oversized/off-page images, credit on every page, final text present. Reviewed the complete rendered-page overview and enlarged percussion-table/final-page renders. The small gutter arrows are native compiler reading-flow indicators, not clipping warnings. Temporary renders remain under ignored `work/`.
+
+## History
+
+This PR replaces the original non-Bauhaus PDF/Word edition from PR #7. Earlier revisions used an older formatter that did not expose the flush-bottom control. That limitation no longer applies to this v3-generated PDF.
