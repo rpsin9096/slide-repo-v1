@@ -18,7 +18,7 @@ from ..primitives import (
     C, bg, footnote, note_surface, para, pill, place_image, rect,
     set_fill_alpha, textframe, tx, unmeasured,
 )
-from ..typography import FONT_BODY, FONT_TITLE
+from ..typography import FONT_BODY, FONT_TITLE, est_height
 
 def m_title(slide, d, pal, info):
     """Academic title slide with crest layout — supports optional author."""
@@ -87,7 +87,16 @@ def m_definition(slide, d, pal, info):
         n = len(kps)
         gap = 0.22
         w = (cw - gap * (n - 1)) / n
-        ch = 6.6 - y
+        # La tarjeta se ajusta a su contenido: alto suficiente para el texto mas
+        # largo y, si sobra banda, el bloque se centra en vez de dejar huecos
+        # desiguales debajo de cada tarjeta.
+        avail = 6.6 - y
+        needed = max(
+            0.18 + est_height(kp.get('title', ''), w - 0.4, 12.5, font_role='title')
+            + 4 / 72.0 + est_height(kp.get('desc', ''), w - 0.4, 11.0) + 0.22
+            for kp in kps)
+        ch = min(avail, max(needed + 0.10, 1.75))
+        y += max(avail - ch, 0) / 2.0      # el bloque se centra en la banda
         for i, kp in enumerate(kps):
             x = SAFE_X0 + i * (w + gap)
             rect(slide, x, y, w, ch, fill=pal["card"], line=pal["border"], lw=0.6, rounded=True)

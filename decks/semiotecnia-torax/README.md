@@ -77,3 +77,12 @@ origen.
   `pectus excavatum`) van exentos en `ALLOW_TERMS`.
 - `IMAGES.max_n = 8`: ocho láminas reales, no marcadores; el modo sigue siendo
   `web-only`, sin `ai:` ni `placeholder:`.
+
+## Nota sobre el motor
+
+`studydeck/modules/core.py` (`m_definition`) cambia en este repo respecto del
+zip original: la tarjeta de cada `key_point` se dimensiona con `est_height` en
+vez de ocupar siempre el resto de la banda. Un enunciado corto dejaba tarjetas
+de 4 pulgadas con dos líneas de texto; ahora la tarjeta mide lo que su texto pide
+—con un mínimo de 1.75 in y el bloque centrado en la banda— y las 245 pruebas
+del motor más `studydeck check` (35/35 módulos, contraste 0) siguen en verde.
