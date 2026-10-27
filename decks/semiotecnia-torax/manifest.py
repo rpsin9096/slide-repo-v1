@@ -63,14 +63,14 @@ SLIDES = [
                        'alteraciones acústicas y mecánicas del parénquima pulmonar.',
      'key_points': [
          {'title': 'Inspección',
-          'desc': 'Posición, conformación parietal, deformidades y dinámica ventilatoria; '
-                  'los signos extratorácicos cierran el tiempo.'},
+          'desc': 'Posición, conformación parietal, deformidades y dinámica ventilatoria. Los '
+                  'signos extratorácicos —cianosis, tiraje, acropaquia— cierran el tiempo.'},
          {'title': 'Palpación',
           'desc': 'Seis maniobras descendentes: pared, cadenas ganglionares, resistencia, '
-                  'expansión y frémito táctil.'},
+                  'expansión torácica y frémito táctil, siempre en comparación transversal.'},
          {'title': 'Percusión y auscultación',
-          'desc': 'Mapa de timbres y límites primero; después ruidos, soplos, adventicios, '
-                  'voz y tos.'}]},
+          'desc': 'Primero el mapa de timbres y límites; después ruidos respiratorios, soplos, '
+                  'adventicios, voz y tos, en secuencia simétrica y descendente.'}]},
 
     # ------------------------------------------------------------- 1 inspección
     {'module': 'section_divider', 'divider_style': 'Bloque 1',
@@ -148,11 +148,11 @@ SLIDES = [
                        'hace distingue la variante senil de la juvenil.',
      'key_points': [
          {'title': 'Cifosis senil',
-          'desc': 'Acentúa la curvatura dorsal en su tercio medio; el dorso se redondea sin '
+          'desc': 'Acentúa la curvatura dorsal en su tercio medio: el dorso se redondea sin '
                   'desviación lateral de las apófisis espinosas.'},
          {'title': 'Cifosis juvenil',
-          'desc': 'Exagera la curvatura en el segmento inferior de la columna dorsal, por '
-                  'debajo del tercio medio.'}]},
+          'desc': 'Exagera la curvatura en el segmento inferior de la columna dorsal, por debajo '
+                  'del tercio medio, sin lateralizar la línea de apófisis espinosas.'}]},
 
     {'module': 'definition', 'kicker': 'Inspección', 'title': 'Dinámica y signos extratorácicos',
      'main_statement': 'La inspección continua de frecuencia, amplitud, ritmo y contracciones '
@@ -161,13 +161,13 @@ SLIDES = [
      'key_points': [
          {'title': 'Músculos accesorios',
           'desc': 'Hipertrofia y engrosamiento rítmico inspiratorio del esternocleidomastoideo, '
-                  'con depresión de las fosas supraclaviculares.'},
+                  'con depresión de las fosas supraclaviculares en cada inspiración.'},
          {'title': 'Facies y cuello',
           'desc': 'Cianosis labial o facial, aleteo nasal, ventilación con labios fruncidos, '
                   'ingurgitación yugular, fístulas, estrías y telangiectasias.'},
          {'title': 'Extremidades',
-          'desc': 'Dedos hipocráticos: acropaquia con redondeo del extremo digital e incurvación '
-                  'de la uña.'}]},
+          'desc': 'Dedos hipocráticos: acropaquia con redondeo del extremo digital, incurvación '
+                  'de la uña y aumento del ángulo que forma con el lecho.'}]},
 
     # -------------------------------------------------------------- 2 palpación
     {'module': 'section_divider', 'divider_style': 'Bloque 2',
@@ -179,36 +179,27 @@ SLIDES = [
     {'module': 'checklist', 'kicker': 'Palpación', 'title': 'Seis maniobras, un orden',
      'items': [
          {'label': 'Mano de escultor',
-          'desc': 'Deslizamiento palmar plano sobre caras anterior, posterior y laterales; '
+          'desc': 'Deslizamiento palmar plano sobre las caras anterior, posterior y laterales: '
                   'censa relieve cutáneo, deformaciones óseas y tumefacciones.'},
          {'label': 'Pared: trofismo y tono',
-          'desc': 'Pinzamiento bimanual de piel y tejido subcutáneo; compresión con la punta '
-                  'del índice sobre las masas musculares.'},
+          'desc': 'Pinzamiento bimanual de piel y tejido subcutáneo en zonas simétricas, y '
+                  'compresión con la punta del índice sobre las masas musculares.'},
          {'label': 'Cadenas ganglionares',
-          'desc': 'Supraclavicular desde atrás, con tres dedos y hombros elevados; axilar en '
-                  'sus cinco grupos, uno por uno.'},
+          'desc': 'Supraclavicular desde atrás, con tres dedos y los hombros elevados; axilar en '
+                  'sus cinco grupos, uno por uno y con el brazo sostenido.'},
          {'label': 'Resistencia torácica',
-          'desc': 'Compresión convergente bimanual sobre puntos homotópicos, a igual nivel por '
-                  'delante y por detrás.'},
+          'desc': 'Compresión convergente bimanual sobre puntos homotópicos anteriores y '
+                  'posteriores, a igual nivel: el cese elástico normal es simétrico.'},
          {'label': 'Expansión y frémito',
-          'desc': 'Ruault en los vértices, bases anteriores y posteriores; después vibraciones '
-                  'vocales con «treinta y tres».'}]},
+          'desc': 'Ruault en los vértices, luego bases anteriores y posteriores; al final, '
+                  'vibraciones vocales con «treinta y tres» hasta su desaparición.'}]},
 
-    {'module': 'definition', 'kicker': 'Palpación · maniobra 1',
-     'title': 'La pared que la mano registra',
-     'image': 'decks/semiotecnia-torax/imgs/fig_3_9.png',
-     'main_statement': 'Sobre la pared, la palpación busca cuatro cosas: trofismo, tono, puntos '
-                       'dolorosos y crepitación gaseosa.',
-     'elaboration': 'El trofismo se explora pinzando piel y tejido subcutáneo entre pulgar e '
-                    'índice: la atrofia localizada traduce un reflejo visceral.',
-     'key_points': [
-         {'title': 'Tono',
-          'desc': 'Compresión con la punta del índice: resistencia, contractura o espasmo.'},
-         {'title': 'Crepitación',
-          'desc': 'Enfisema subcutáneo: gas en el tejido, palpable como roce.'}],
-     'caption': 'Deslizamiento palmar plano, sin presionar: censa relieve, deformación ósea y '
-                'tumefacción.',
-     'credit': CREDIT.format(fig='fig. 3-9')},
+    {'module': 'figure', 'kicker': 'Palpación · maniobras 1 y 2',
+     'title': 'Escultor, trofismo y tono',
+     'image': 'decks/semiotecnia-torax/imgs/fig_3_9_3_10_3_11.png',
+     'caption': 'Izquierda: deslizamiento palmar. Centro: pinzamiento del trofismo. Derecha: '
+                'presión del índice sobre el tono.',
+     'credit': CREDIT.format(fig='figs. 3-9, 3-10 y 3-11')},
 
     {'module': 'figure', 'kicker': 'Palpación · maniobra 2',
      'title': 'Cadenas ganglionares',
@@ -260,10 +251,10 @@ SLIDES = [
      'key_points': [
          {'title': 'Vibraciones pleurales',
           'desc': 'Roce táctil áspero por pleuras despulidas; se percibe en ambas fases '
-                  'respiratorias, con franco predominio inspiratorio.'},
+                  'respiratorias, con franco predominio inspiratorio y sin relación con la tos.'},
          {'title': 'Regla de la comparación',
-          'desc': 'Una sola mano, lado a lado y a la misma altura: la asimetría es el hallazgo, '
-                  'no el valor absoluto.'}]},
+          'desc': 'Una sola mano, lado a lado y a la misma altura, de arriba abajo: la asimetría '
+                  'es el hallazgo, nunca el valor absoluto de un hemitórax aislado.'}]},
 
     # -------------------------------------------------------------- 3 percusión
     {'module': 'section_divider', 'divider_style': 'Bloque 3',

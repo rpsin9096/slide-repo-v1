@@ -10,7 +10,7 @@ Montserrat, contraste WCAG AA) a partir del capítulo 3 del PDF adjunto.
 | `semiotecnia_del_torax.pptx` | **Entrega.** Editable en PowerPoint / Keynote / LibreOffice. |
 | `semiotecnia_del_torax.pdf` | Vista previa paginada (render del motor, no de Office). |
 | `manifest.py` | Fuente de autoria: `COURSE_INFO`, `CONFIG` y los 33 módulos. |
-| `imgs/*.png` | Ocho láminas recortadas del PDF original. |
+| `imgs/*.png` | Ocho láminas recortadas del PDF original (14 figuras del capítulo). |
 | `imgs/_partes/` | Recortes sueltos de trabajo; no los usa el deck. |
 
 ## Cómo se regenera
@@ -44,7 +44,7 @@ El PDF trae cada página como un escaneo 1-bit de ~397 dpi sin recortes. El scri
 |---|---|---|
 | `fig_3_1_3_3.png` | 3-1 tórax en tonel · 3-3 tórax excavado | 11-12 |
 | `fig_3_8.png` | 3-8 escoliosis A y B | 13 |
-| `fig_3_9.png` | 3-9 mano de escultor | 14 |
+| `fig_3_9_3_10_3_11.png` | 3-9 mano de escultor · 3-10 trofismo · 3-11 tono | 14 |
 | `fig_3_12_3_13.png` | 3-12 grupos axilares · 3-13 supraclaviculares | 14-15 |
 | `fig_3_18_3_19.png` | 3-18 resistencia torácica · 3-19 Ruault | 16 |
 | `fig_3_21_3_22.png` | 3-21 bases por delante · 3-22 por detrás | 17 |
@@ -57,8 +57,8 @@ El PDF trae cada página como un escaneo 1-bit de ~397 dpi sin recortes. El scri
 Portada · Objetivos · La secuencia semiológica
 ├── Bloque 1 · Inspección         (6) pasos, deformidades, simetría, figuras, cifosis,
 │                                     dinámica y signos extratorácicos
-├── Bloque 2 · Palpación          (7) seis maniobras, pared, ganglios, expansión,
-│                                     resistencia/Ruault, bases, frémito y vibraciones
+├── Bloque 2 · Palpación          (7) seis maniobras, escultor/trofismo/tono, ganglios,
+│                                     expansión, resistencia/Ruault, bases, frémito
 ├── Bloque 3 · Percusión          (5) timbres del aire, grados de amortiguación,
 │                                     vértices y bases, protocolo de mapeo
 └── Bloque 4 · Auscultación       (6) ruidos normales, mapa, soplos, adventicios,

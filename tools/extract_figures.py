@@ -31,6 +31,8 @@ REGIONS = {
     'fig_3_8':  (4, (93, 470, 505, 730), ()),                       # escoliosis A/B
     'fig_3_9':  (5, (76, 86, 262, 264), ((50, 392, 300, 404),       # "escultor"."
                                          (98, 566, 136, 640))),     # rayas sueltas
+    'fig_3_10': (5, (308, 88, 552, 320), ()),                       # examen del trofismo
+    'fig_3_11': (5, (94, 420, 268, 642), ()),                       # examen del tono
     'fig_3_12': (5, (326, 391, 545, 686), ()),                      # ganglios axilares
     'fig_3_13': (6, (52, 145, 280, 402), ()),                       # ganglios supraclaviculares
     'fig_3_18': (7, (320, 90, 528, 396), ()),                       # resistencia torácica
@@ -47,6 +49,7 @@ REGIONS = {
 # Parejas que se publican como una sola lámina: dos dibujos verticales seguidos
 # caben a la misma altura que uno solo y llenan el lienzo 16:9.
 PAIRS = {
+    'fig_3_9_3_10_3_11': ('fig_3_9', 'fig_3_10', 'fig_3_11'),  # escultor, trofismo, tono
     'fig_3_1_3_3':    ('fig_3_1', 'fig_3_3'),       # cortes transversales
     'fig_3_12_3_13':  ('fig_3_12', 'fig_3_13'),     # ganglios axilares + supraclaviculares
     'fig_3_18_3_19':  ('fig_3_18', 'fig_3_19'),     # resistencia + Ruault
@@ -56,7 +59,7 @@ PAIRS = {
 }
 # Recortes que el deck usa sueltos: se publican en la carpeta de salida, no en
 # `_partes`. El resto de los recortes sueltos queda solo como material de trabajo.
-SINGLES = ('fig_3_8', 'fig_3_9')
+SINGLES = ('fig_3_8',)
 GAP_RATIO = 0.045      # separación entre las dos láminas, relativa a la altura
 DIVIDER = 208          # gris de la línea divisoria
 
@@ -132,19 +135,23 @@ def crop(doc, page_no, region, masks=(), keep=(), max_side=MAX_SIDE, pad_pt=PAD_
     return img
 
 
-def compose_pair(left, right, gap_ratio=GAP_RATIO):
-    """Lámina única con dos recortes a la misma altura y una línea divisoria."""
-    height = max(left.height, right.height)
+def compose_pair(*parts, gap_ratio=GAP_RATIO):
+    """Lámina única con dos o tres recortes a la misma altura y sus divisorias."""
+    height = max(im.height for im in parts)
     scaled = [im.resize((round(im.width * height / im.height), height), Image.BOX)
-              for im in (left, right)]
+              for im in parts]
     gap = max(int(height * gap_ratio), 12)
-    width = scaled[0].width + gap + scaled[1].width
+    width = sum(im.width for im in scaled) + gap * (len(scaled) - 1)
     canvas = Image.new('L', (width, height), 255)
-    canvas.paste(scaled[0], (0, 0))
-    canvas.paste(scaled[1], (scaled[0].width + gap, 0))
     draw = ImageDraw.Draw(canvas)
-    x = scaled[0].width + gap / 2.0
-    draw.line([(x, height * 0.06), (x, height * 0.94)], fill=DIVIDER, width=3)
+    x = 0
+    for index, im in enumerate(scaled):
+        canvas.paste(im, (x, 0))
+        x += im.width
+        if index < len(scaled) - 1:
+            draw.line([(x + gap / 2.0, height * 0.06), (x + gap / 2.0, height * 0.94)],
+                      fill=DIVIDER, width=3)
+            x += gap
     return canvas
 
 
@@ -168,8 +175,8 @@ def main(argv=None):
         if name in SINGLES:
             img.save(os.path.join(args.outdir, f'{name}.png'), compress_level=1)
     print(f'{len(plates)} recortes sueltos -> {parts_dir}')
-    for name, (left, right) in PAIRS.items():
-        img = compose_pair(plates[left], plates[right])
+    for name, parts in PAIRS.items():
+        img = compose_pair(*(plates[part] for part in parts))
         path = os.path.join(args.outdir, f'{name}.png')
         img.save(path, compress_level=1)
         print(f'{name}: {img.width}x{img.height} px · {os.path.getsize(path) // 1024} KB')
