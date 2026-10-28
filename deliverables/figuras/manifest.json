@@ -4,407 +4,475 @@
     "pdf_page": 3,
     "printed_page": 11,
     "crop_fraction": [
-      0.08,
-      0.63,
-      0.52,
-      0.83
+      0.067183,
+      0.642922,
+      0.489664,
+      0.884018
     ],
-    "caption": "Tórax enfisematoso"
+    "caption": "Tórax enfisematoso",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-2",
     "pdf_page": 3,
     "printed_page": 11,
     "crop_fraction": [
-      0.53,
-      0.63,
-      0.95,
-      0.84
+      0.502584,
+      0.665753,
+      0.908269,
+      0.893151
     ],
-    "caption": "Tórax en quilla"
+    "caption": "Tórax en quilla",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-3",
     "pdf_page": 4,
     "printed_page": 12,
     "crop_fraction": [
-      0.08,
-      0.13,
-      0.52,
-      0.35
+      0.095607,
+      0.13242,
+      0.503876,
+      0.350685
     ],
-    "caption": "Tórax excavado"
+    "caption": "Tórax excavado",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-4",
     "pdf_page": 4,
     "printed_page": 12,
     "crop_fraction": [
-      0.54,
-      0.12,
-      0.96,
-      0.36
+      0.527132,
+      0.09863,
+      0.935401,
+      0.349772
     ],
-    "caption": "Tórax piriforme"
+    "caption": "Tórax piriforme",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-5",
     "pdf_page": 4,
     "printed_page": 12,
     "crop_fraction": [
-      0.09,
-      0.58,
-      0.51,
-      0.79
+      0.102067,
+      0.577169,
+      0.516796,
+      0.803653
     ],
-    "caption": "Tórax paralítico o asténico"
+    "caption": "Tórax paralítico o asténico",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-6",
     "pdf_page": 4,
     "printed_page": 12,
     "crop_fraction": [
-      0.57,
-      0.49,
-      0.92,
-      0.82
+      0.572351,
+      0.473059,
+      0.909561,
+      0.809132
     ],
-    "caption": "Cifosis senil"
+    "caption": "Cifosis senil",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-7",
     "pdf_page": 5,
     "printed_page": 13,
     "crop_fraction": [
-      0.31,
-      0.18,
-      0.66,
-      0.53
+      0.333333,
+      0.178082,
+      0.640827,
+      0.500457
     ],
-    "caption": "Cifosis juvenil"
+    "caption": "Cifosis juvenil",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-8",
     "pdf_page": 5,
     "printed_page": 13,
     "crop_fraction": [
-      0.08,
-      0.59,
-      0.86,
-      0.87
+      0.152455,
+      0.562557,
+      0.838501,
+      0.865753
     ],
-    "caption": "Escoliosis: A, sinistroconvexa; B, dextroconvexa"
+    "caption": "Escoliosis: A, sinistroconvexa; B, dextroconvexa",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-9",
     "pdf_page": 6,
     "printed_page": 14,
     "crop_fraction": [
-      0.09,
-      0.11,
-      0.51,
-      0.43
+      0.112403,
+      0.100457,
+      0.481912,
+      0.401826
     ],
-    "caption": "Mano de escultor"
+    "caption": "Mano de escultor",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-10",
     "pdf_page": 6,
     "printed_page": 14,
     "crop_fraction": [
-      0.53,
-      0.1,
-      0.95,
-      0.43
+      0.515504,
+      0.100457,
+      0.926357,
+      0.395434
     ],
-    "caption": "Evaluación del trofismo"
+    "caption": "Evaluación del trofismo",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-11",
     "pdf_page": 6,
     "printed_page": 14,
     "crop_fraction": [
-      0.16,
-      0.52,
-      0.48,
-      0.85
+      0.142119,
+      0.493151,
+      0.459948,
+      0.806393
     ],
-    "caption": "Evaluación del tono muscular"
+    "caption": "Evaluación del tono muscular",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-12",
     "pdf_page": 6,
     "printed_page": 14,
     "crop_fraction": [
-      0.54,
-      0.51,
-      0.95,
-      0.85
+      0.542636,
+      0.465753,
+      0.921189,
+      0.819178
     ],
-    "caption": "Palpación axilar: grupo central"
+    "caption": "Localización de grupos ganglionares axilares (A–E)",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-13",
     "pdf_page": 7,
     "printed_page": 15,
     "crop_fraction": [
-      0.08,
-      0.18,
-      0.5,
-      0.49
+      0.086563,
+      0.176256,
+      0.456072,
+      0.478539
     ],
-    "caption": "Ganglios supraclaviculares"
+    "caption": "Ganglios supraclaviculares",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-14",
     "pdf_page": 7,
     "printed_page": 15,
     "crop_fraction": [
-      0.53,
-      0.18,
-      0.96,
-      0.5
+      0.498708,
+      0.178082,
+      0.921189,
+      0.484018
     ],
-    "caption": "Palpación axilar: grupo externo"
+    "caption": "Palpación del grupo axilar externo",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-15",
     "pdf_page": 7,
     "printed_page": 15,
     "crop_fraction": [
-      0.12,
-      0.57,
-      0.5,
-      0.9
+      0.130491,
+      0.555251,
+      0.468992,
+      0.875799
     ],
-    "caption": "Palpación axilar: grupo pectoral"
+    "caption": "Palpación axilar: grupo pectoral",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-16",
     "pdf_page": 7,
     "printed_page": 15,
     "crop_fraction": [
-      0.53,
-      0.58,
-      0.96,
-      0.9
+      0.507752,
+      0.576256,
+      0.925065,
+      0.882192
     ],
-    "caption": "Palpación axilar: grupo subescapular"
+    "caption": "Palpación axilar: grupo subescapular",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-17",
     "pdf_page": 8,
     "printed_page": 16,
     "crop_fraction": [
-      0.1,
-      0.1,
-      0.51,
-      0.46
+      0.077519,
+      0.102283,
+      0.48062,
+      0.483105
     ],
-    "caption": "Palpación infraclavicular"
+    "caption": "Palpación infraclavicular",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-18",
     "pdf_page": 8,
     "printed_page": 16,
     "crop_fraction": [
-      0.55,
-      0.1,
-      0.96,
-      0.46
+      0.537468,
+      0.106849,
+      0.895349,
+      0.466667
     ],
-    "caption": "Resistencia torácica"
+    "caption": "Resistencia torácica",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-19",
     "pdf_page": 8,
     "printed_page": 16,
     "crop_fraction": [
-      0.1,
-      0.56,
-      0.54,
-      0.83
+      0.111111,
+      0.613699,
+      0.5,
+      0.857534
     ],
-    "caption": "Expansión apical: maniobra de Ruault"
+    "caption": "Expansión apical: maniobra de Ruault",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-20",
     "pdf_page": 9,
     "printed_page": 17,
     "crop_fraction": [
-      0.49,
-      0.2,
-      0.92,
-      0.5
+      0.452196,
+      0.177169,
+      0.904393,
+      0.496804
     ],
-    "caption": "Expansión infraclavicular"
+    "caption": "Expansión infraclavicular",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-21",
     "pdf_page": 9,
     "printed_page": 17,
     "crop_fraction": [
-      0.07,
-      0.57,
-      0.51,
-      0.87
+      0.083979,
+      0.5379,
+      0.447028,
+      0.843836
     ],
-    "caption": "Expansión de bases anteriores"
+    "caption": "Expansión de bases anteriores",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-22",
     "pdf_page": 9,
     "printed_page": 17,
     "crop_fraction": [
-      0.54,
-      0.59,
-      0.91,
-      0.9
+      0.531008,
+      0.530594,
+      0.833333,
+      0.830137
     ],
-    "caption": "Expansión de bases posteriores"
+    "caption": "Expansión de bases posteriores",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-24",
     "pdf_page": 10,
     "printed_page": 18,
     "crop_fraction": [
-      0.53,
-      0.1,
-      0.95,
-      0.34
+      0.523256,
+      0.108676,
+      0.939276,
+      0.378995
     ],
-    "caption": "Vibraciones vocales: cara anterior"
+    "caption": "Vibraciones vocales: cara anterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-25",
     "pdf_page": 10,
     "printed_page": 18,
     "crop_fraction": [
-      0.16,
-      0.56,
-      0.55,
-      0.89
+      0.112403,
+      0.533333,
+      0.521964,
+      0.861187
     ],
-    "caption": "Vibraciones vocales: cara posterior"
+    "caption": "Vibraciones vocales: cara posterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-26",
     "pdf_page": 11,
     "printed_page": 19,
     "crop_fraction": [
-      0.1,
-      0.24,
-      0.51,
-      0.49
+      0.081395,
+      0.16895,
+      0.431525,
+      0.473973
     ],
-    "caption": "Vibraciones vocales: delimitación basal"
+    "caption": "Vibraciones vocales: delimitación basal",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-27",
     "pdf_page": 11,
     "printed_page": 19,
     "crop_fraction": [
-      0.55,
-      0.22,
-      0.95,
-      0.49
+      0.51292,
+      0.169863,
+      0.882429,
+      0.438356
     ],
-    "caption": "Percusión de campos de Krönig"
+    "caption": "Percusión de campos de Krönig",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-28",
     "pdf_page": 11,
     "printed_page": 19,
     "crop_fraction": [
-      0.55,
-      0.65,
-      0.95,
-      0.94
+      0.445736,
+      0.604566,
+      0.905685,
+      0.938813
     ],
-    "caption": "Percusión directa de clavículas"
+    "caption": "Percusión directa de clavículas",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-29",
     "pdf_page": 12,
     "printed_page": 20,
     "crop_fraction": [
-      0.1,
-      0.11,
-      0.52,
-      0.37
+      0.083979,
+      0.106849,
+      0.492248,
+      0.340639
     ],
-    "caption": "Percusión del esternón"
+    "caption": "Percusión del esternón",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-30",
     "pdf_page": 12,
     "printed_page": 20,
     "crop_fraction": [
-      0.55,
-      0.12,
-      0.96,
-      0.29
+      0.516796,
+      0.106849,
+      0.928941,
+      0.26758
     ],
-    "caption": "Percusión anterior"
+    "caption": "Percusión anterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-31",
     "pdf_page": 12,
     "printed_page": 20,
     "crop_fraction": [
-      0.12,
-      0.46,
-      0.52,
-      0.78
+      0.129199,
+      0.482192,
+      0.494832,
+      0.798174
     ],
-    "caption": "Percusión posterior"
+    "caption": "Percusión posterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-32",
     "pdf_page": 12,
     "printed_page": 20,
     "crop_fraction": [
-      0.59,
-      0.46,
-      0.94,
-      0.77
+      0.559432,
+      0.43653,
+      0.916021,
+      0.738813
     ],
-    "caption": "Excursión de las bases pulmonares"
+    "caption": "Excursión de las bases pulmonares",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-33",
     "pdf_page": 13,
     "printed_page": 21,
     "crop_fraction": [
-      0.07,
-      0.25,
-      0.52,
-      0.55
+      0.071059,
+      0.173516,
+      0.459948,
+      0.509589
     ],
-    "caption": "Percusión de la columna"
+    "caption": "Percusión de la columna",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-34",
     "pdf_page": 13,
     "printed_page": 21,
     "crop_fraction": [
-      0.53,
-      0.25,
-      0.94,
-      0.55
+      0.498708,
+      0.173516,
+      0.899225,
+      0.510502
     ],
-    "caption": "Auscultación anterior"
+    "caption": "Auscultación anterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   },
   {
     "figure": "3-35",
     "pdf_page": 13,
     "printed_page": 21,
     "crop_fraction": [
-      0.53,
-      0.66,
-      0.94,
-      0.96
+      0.546512,
+      0.600913,
+      0.910853,
+      0.939726
     ],
-    "caption": "Auscultación posterior"
+    "caption": "Auscultación posterior",
+    "raster_padding_px": 12,
+    "render_scale": 3
   }
 ]
